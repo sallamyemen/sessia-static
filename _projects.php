@@ -62,7 +62,7 @@ $projects = [
         'header' => __('Добро.Будильник'),
         'subtitle' => __('web-версия'),
         'description' => __('Социальный проект, который помогает делать первые шаги в благотворительности и совершать добровольные пожертвования на регулярной основе'),
-        'link' => null,
+        'link' => 'https://play.google.com/store/apps/details?id=com.sessia.alarm',
         'img' => 'phone8.png?v=1',
     ],
 ];
@@ -85,6 +85,8 @@ $projects = [
                     <div class="gallery-description"><?= $project->description ?></div>
                     <?php if (!empty($project->link)) { ?>
                     <a class="gallery-btn" href="<?= $project->link ?>" target="_blank" rel="nofollow"><?= __('Скачать') ?></a>
+                    <?php } else { ?>
+                    <div class="gallery-btn inactive"><?= __('Совсем скоро...') ?></div>
                     <?php } ?>
                 </div>
                 <div class="gallery__img gallery__img_<?= $project->id ?>">
