@@ -58,4 +58,5 @@ return [
 "Ваше сообщение" => "Ihre Nachricht",
 "Отправить" => "Senden",
 "Скачать" => "Herunterladen",
+"Совсем скоро..." => "On the way...",
 ];
