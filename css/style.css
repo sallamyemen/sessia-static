@@ -434,6 +434,11 @@ body {
 .gallery-btn:hover {
 	opacity: .8;
 }
+.gallery-btn.inactive {
+	color: #999;
+	border-color: #999;
+}
+
 
 .gallery {
     margin-top: 90px;
