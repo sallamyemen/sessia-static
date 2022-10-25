@@ -9,7 +9,7 @@ $langs = [
     'ru' => 'Ru',
 ];
 
-$GLOBALS['arr'] = require_once($_SERVER['DOCUMENT_ROOT'] . '/langs/' . (isset($langs[$lang]) ? $lang : $lang_default) . '.php');
+$GLOBALS['arr'] = require_once($_SERVER['DOCUMENT_ROOT'] . '/../langs/' . (isset($langs[$lang]) ? $lang : $lang_default) . '.php');
 
 function __($message, $params = []) {
     $message = $GLOBALS['arr'][$message] ?? $message;
@@ -55,19 +55,19 @@ function getOs() {
         <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
         <meta http-equiv="pragma" content="no-cache" />
         <meta http-equiv="expires" content="0" />
-        <link rel="stylesheet" href="<?= setPath('vendor/owl-carousel/owl.carousel.css?v=1') ?>">
-        <link rel="stylesheet" href="<?= setPath('vendor/owl-carousel/owl.theme.default.css?v=1') ?>">
-        <link rel="stylesheet" href="<?= setPath('vendor/owl-carousel/owl-carousel/owl.theme.green.css?v=1') ?>">
-        <link rel="stylesheet" href="<?= setPath('vendor/vendor/animate/animate.min.css?v=1') ?>">
-        <link rel="stylesheet" href="<?= setPath('css/reset.css?v=1') ?>">
-        <link rel="stylesheet" href="<?= setPath('css/style.css?v=1') ?>">
+        <link rel="stylesheet" href="<?= setPath('front/vendor/owl-carousel/owl.carousel.css?v=1') ?>">
+        <link rel="stylesheet" href="<?= setPath('front/vendor/owl-carousel/owl.theme.default.css?v=1') ?>">
+        <link rel="stylesheet" href="<?= setPath('front/vendor/owl-carousel/owl-carousel/owl.theme.green.css?v=1') ?>">
+        <link rel="stylesheet" href="<?= setPath('front/vendor/vendor/animate/animate.min.css?v=1') ?>">
+        <link rel="stylesheet" href="<?= setPath('front/css/reset.css?v=1') ?>">
+        <link rel="stylesheet" href="<?= setPath('front/css/style.css?v=1') ?>">
         <title>Sessia</title>
     </head>
     <body>
         <div class="header">
             <div class="wrapper" style="position: relative; padding-top: 12px;">
                 <div class="logo">
-                    <img src="<?= setPath('img/logo.svg?v=1') ?>" alt="logo" class="logo wow fadeIn">
+                    <img src="<?= setPath('front/img/logo.svg?v=1') ?>" alt="logo" class="logo wow fadeIn">
                 </div>
                 <div class="header__nav">
                     <div class="header__logo wow fadeInUp"><span class="blue">SESSIA.</span> GET <span class="blue">IT</span> RIGHT</div>
@@ -87,10 +87,10 @@ function getOs() {
                         </li>
                     </ul>
                 </div>
-                <img class="dotted" src="<?= setPath('img/dotted-bg.png?v=1') ?>" alt=""/>
+                <img class="dotted" src="<?= setPath('front/img/dotted-bg.png?v=1') ?>" alt=""/>
                 <div id="particles-header" class="particles"></div>
             </div>
-            <img class="circle" src="<?= setPath('img/ellipse.png?v=1') ?>" alt=""/>
+            <img class="circle" src="<?= setPath('front/img/ellipse.png?v=1') ?>" alt=""/>
         </div>
         <div class="services" id="about">
             <div class="wrapper wrapper_block" style="position: relative;">
@@ -155,7 +155,7 @@ function getOs() {
                         </div>
                     </div>
                 </div>
-                <!--<img class="dotted2" src="<?= setPath('img/dotted-bg3.png?v=1') ?>" alt=""/>-->
+                <!--<img class="dotted2" src="<?= setPath('front/img/dotted-bg3.png?v=1') ?>" alt=""/>-->
             </div>
         </div>
 
@@ -169,7 +169,7 @@ function getOs() {
                         </div>
                     </div>
                     <div class="rhombus">
-                        <img src="<?= setPath('img/rhombus2.png?v=1') ?>" alt="" />
+                        <img src="<?= setPath('front/img/rhombus2.png?v=1') ?>" alt="" />
                         <div id="particles-team" class="particles"></div>
                     </div>
                 </div>
@@ -205,7 +205,7 @@ function getOs() {
 
                     <div class="company__item company__item_last" style="">
                         <div class="company__img">
-                            <img src="<?= setPath('img/rhombus.png?v=1') ?>" alt="" />
+                            <img src="<?= setPath('front/img/rhombus.png?v=1') ?>" alt="" />
                             <div id="particles-company" class="particles"></div>
                         </div>
                         <div class="company__description wow fadeIn">
@@ -226,12 +226,12 @@ function getOs() {
                         <div class="narek__header wow fadeIn">
                             <?= __('Нарек Сираканян, {br}основатель и президент Sessia', ['br' => '</div><div class="narek__subtitle wow fadeIn">']) ?>
                         </div>
-                        <img src="<?= setPath('img/quote.svg?v=1') ?>" alt="" class="narek__quote wow fadeIn">
+                        <img src="<?= setPath('front/img/quote.svg?v=1') ?>" alt="" class="narek__quote wow fadeIn">
                         <div class="narek__text wow fadeIn">
                             <?= __('Мы исповедуем инновационность и разрабатываем диджитал-решения на стыке интересов бизнесов и обычных пользователей. С помощью наших продуктов они коммуницируют друг с другом без посредников, легко находят общий язык и устанавливают взаимовыгодное партнерство. Мы за то, чтобы каждый наш проект, каждая разработка были социально значимыми и приносили конкретную пользу людям и обществу.') ?>
                         </div>
                     </div>
-                    <img class="narek__img wow fadeIn" src="<?= setPath('img/narek.png?v=1') ?>" alt="narek">
+                    <img class="narek__img wow fadeIn" src="<?= setPath('front/img/narek.png?v=1') ?>" alt="narek">
                 </div>
             </div>
         </div>
@@ -274,7 +274,7 @@ function getOs() {
                         </div>
                     </div>
                 </div>
-                <!--<img class="dotted2" src="<?= setPath('img/dotted-bg3.png?v=1') ?>" alt=""/>-->
+                <!--<img class="dotted2" src="<?= setPath('front/img/dotted-bg3.png?v=1') ?>" alt=""/>-->
             </div>
         </div>
 
@@ -342,14 +342,14 @@ function getOs() {
                         <button class="send"><?= __('Отправить') ?></button>
                     </form>
                 </div>
-                <img class="circle" src="<?= setPath('img/ellipse.png?v=1') ?>" alt=""/>
+                <img class="circle" src="<?= setPath('front/img/ellipse.png?v=1') ?>" alt=""/>
             </div>
         </div>
         <div class="footer">
             <div class="wrapper wrapper_footer">
                 <div class="footer__block">
                     <div class="footer__logo">
-                        <img src="<?= setPath('img/logo.svg?v=1') ?>" alt="">
+                        <img src="<?= setPath('front/img/logo.svg?v=1') ?>" alt="">
                     </div>
                     <div class="footer__nav">
                         <ul class="footer__list">
@@ -364,9 +364,9 @@ function getOs() {
         </div>
 
         <script src="https://code.jquery.com/jquery-3.6.1.min.js?v=1"></script>
-        <script src="<?= setPath('vendor/owl-carousel/owl.carousel.min.js?v=1') ?>"></script>
-        <script src="<?= setPath('vendor/particles/particles.min.js?v=1') ?>"></script>
-        <script src="<?= setPath('vendor/wow/wow.min.js?v=1') ?>"></script>
+        <script src="<?= setPath('front/vendor/owl-carousel/owl.carousel.min.js?v=1') ?>"></script>
+        <script src="<?= setPath('front/vendor/particles/particles.min.js?v=1') ?>"></script>
+        <script src="<?= setPath('front/vendor/wow/wow.min.js?v=1') ?>"></script>
 
         <script>
         jQuery(document).ready(function($) {
@@ -408,9 +408,9 @@ function getOs() {
             });
 
             // PARTICLES
-            particlesJS.load('particles-header', '<?= setPath('js/particlesjs-header.json') ?>');
-            particlesJS.load('particles-team', '<?= setPath('js/particlesjs-team.json') ?>');
-            particlesJS.load('particles-company', '<?= setPath('js/particlesjs-company.json') ?>');
+            particlesJS.load('particles-header', '<?= setPath('front/js/particlesjs-header.json') ?>');
+            particlesJS.load('particles-team', '<?= setPath('front/js/particlesjs-team.json') ?>');
+            particlesJS.load('particles-company', '<?= setPath('front/js/particlesjs-company.json') ?>');
 
             // MAIN MENU
             $('body').prepend('<nav><div class="wrapper"><div class="logo"><img src="' + $('.logo img').attr('src') + '"></div><span class="btn-menu"></span><ul class="header__list">' + $('.header__list').html() + '</ul></div></nav>');

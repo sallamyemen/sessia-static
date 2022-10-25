@@ -3,3 +3,12 @@
 /.idea
 /nbproject
 .htaccess
+
+business_*.html
+kicksback_*.html
+merchant_*.html
+privacy_*.html
+user_*.html
+
+/goods
+/shop_m
