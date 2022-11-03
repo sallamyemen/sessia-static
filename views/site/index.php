@@ -252,16 +252,16 @@ $this->title = 'SESSIA. GET IT RIGHT';
 
 <?php
 
-$this->registerCssFile("@web/front/vendor/owl-carousel/owl.carousel.css", ['depends' => [AppOldAsset::class]]);
-$this->registerCssFile("@web/front/vendor/owl-carousel/owl.theme.default.css", ['depends' => [AppOldAsset::class]]);
-$this->registerCssFile("@web/front/vendor/owl-carousel/owl-carousel/owl.theme.green.css", ['depends' => [AppOldAsset::class]]);
-$this->registerCssFile("@web/front/vendor/vendor/animate/animate.min.css", ['depends' => [AppOldAsset::class]]);
-$this->registerCssFile("@web/front/css/reset.css", ['depends' => [AppOldAsset::class]]);
-$this->registerCssFile("@web/front/css/style.css", ['depends' => [AppOldAsset::class]]);
+$this->registerCssFile("@web/front-old/vendor/owl-carousel/owl.carousel.css", ['depends' => [AppOldAsset::class]]);
+$this->registerCssFile("@web/front-old/vendor/owl-carousel/owl.theme.default.css", ['depends' => [AppOldAsset::class]]);
+$this->registerCssFile("@web/front-old/vendor/owl-carousel/owl-carousel/owl.theme.green.css", ['depends' => [AppOldAsset::class]]);
+$this->registerCssFile("@web/front-old/vendor/vendor/animate/animate.min.css", ['depends' => [AppOldAsset::class]]);
+$this->registerCssFile("@web/front-old/css/reset.css", ['depends' => [AppOldAsset::class]]);
+$this->registerCssFile("@web/front-old/css/style.css", ['depends' => [AppOldAsset::class]]);
 
-$this->registerJsFile("@web/front/vendor/owl-carousel/owl.carousel.min.js", ['depends' => [AppOldAsset::class]]);
-$this->registerJsFile("@web/front/vendor/particles/particles.min.js", ['depends' => [AppOldAsset::class]]);
-$this->registerJsFile("@web/front/vendor/wow/wow.min.js", ['depends' => [AppOldAsset::class]]);
+$this->registerJsFile("@web/front-old/vendor/owl-carousel/owl.carousel.min.js", ['depends' => [AppOldAsset::class]]);
+$this->registerJsFile("@web/front-old/vendor/particles/particles.min.js", ['depends' => [AppOldAsset::class]]);
+$this->registerJsFile("@web/front-old/vendor/wow/wow.min.js", ['depends' => [AppOldAsset::class]]);
 
 $particlesHeader = Url::to('@web/front/js/particlesjs-header.json');
 $particlesTeam = Url::to('@web/front/js/particlesjs-team.json');
