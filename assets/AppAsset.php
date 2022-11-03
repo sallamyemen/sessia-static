@@ -21,18 +21,9 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
 
     public $css = [
-        'front/vendor/owl-carousel/owl.carousel.css',
-        'front/vendor/owl-carousel/owl.theme.default.css',
-        'front/vendor/owl-carousel/owl-carousel/owl.theme.green.css',
-        'front/vendor/vendor/animate/animate.min.css',
-        'front/css/reset.css',
-        'front/css/style.css',
     ];
 
     public $js = [
-        'front/vendor/owl-carousel/owl.carousel.min.js',
-        'front/vendor/particles/particles.min.js',
-        'front/vendor/wow/wow.min.js',
     ];
 
     public $depends = [

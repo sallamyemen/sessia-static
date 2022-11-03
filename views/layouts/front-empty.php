@@ -1,11 +1,11 @@
 <?php
 
-use app\assets\AppAsset;
+use app\assets\AppOldAsset;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-AppAsset::register($this);
+AppOldAsset::register($this);
 
 ?>
 
