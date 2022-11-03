@@ -30,6 +30,13 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.lang__list li {
+	display: block !important;
+	margin: 12px 0 0 0 !important;
 }
 
 .lang a:active ~ .lang__list,
@@ -1114,7 +1121,7 @@ input:focus {
     opacity: 0;
 }
 
-nav {
+.nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -1128,27 +1135,27 @@ nav {
     -moz-transform: translateY(-100%);
     transform: translateY(-100%);
 }
-nav.show {
+.nav.show {
     -webkit-transform: none;
     -moz-transform: none;
     transform: none;
 }
-nav .wrapper {
+.nav .wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 12px 0;
 }
-nav .lang__list {
+.nav .lang__list {
     background: #000;
     padding: 0 5px 5px 5px;
     margin-left: -5px;
 }
-nav .header__list {
+.nav .header__list {
     margin: 0;
 }
-nav .btn-menu {
+.nav .btn-menu {
     display: none;
     width: 30px;
     height: 30px;
@@ -1158,22 +1165,22 @@ nav .btn-menu {
     -moz-transition: all .3s ease;
     transition: all .3s ease;
 }
-nav .btn-menu.open {
+.nav .btn-menu.open {
     background: url('../img/x.svg') 0 0 / cover no-repeat;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     transform: rotate(90deg);
 }
 @media screen and (max-width: 1300px) {
-    nav .wrapper {
+    .nav .wrapper {
         padding: 12px 20px;
     }
 }
 @media screen and (max-width: 768px) {
-    nav .btn-menu {
+    .nav .btn-menu {
         display: block;
     }
-    nav .header__list {
+    .nav .header__list {
         position: fixed;
         top: 57px;
         left: 0;
@@ -1183,13 +1190,13 @@ nav .btn-menu.open {
         padding: 20px 0;
         z-index: 999;
     }
-    nav .header__list li {
+    .nav .header__list li {
         display: block;
         width: 100%;
         padding: 15px 0 15px 0;
         text-align: center;
     }
-    nav .lang__list {
+    .nav .lang__list {
         position: relative;
         bottom: 0;
         margin: 0;
