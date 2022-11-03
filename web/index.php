@@ -4,7 +4,7 @@
 header("Last-Modified: Wed, 15 Nov 1995 04:58:08 GMT");
 header("Cache-Control: no-cache, must-revalidate"); //HTTP 1.1
 header("Pragma: no-cache"); //HTTP 1.0
-header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
+header("Expires: Sat, 26 Jul 1995 05:00:00 GMT"); // Date in the past
 
 
 $request_uri = $_SERVER['REQUEST_URI'];
