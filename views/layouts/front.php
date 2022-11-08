@@ -11,7 +11,6 @@ use yii\widgets\Menu;
 
 AppAsset::register($this);
 
-$currentUrl = Yii::$app->request->url;
 $menu = [
     [
         'label' => Yii::t('app', 'О нас'),
@@ -65,7 +64,7 @@ $menu = [
             <?= $content ?>
         </div>
     </div>
-    <footer class="app__footer footer" style="background-image: url(<?= Url::to('@web/front/img/footer-bg.png?v=1') ?>">
+    <footer class="app__footer footer">
         <div class="container">
             <div class="row-nav">
                 <?= Html::a(Html::img(Url::to('@web/front/img/logo.svg?v=1'), ['class' => 'row-nav__logo-img']), ['/site/index'], ['class' => 'row-nav__logo']) ?>

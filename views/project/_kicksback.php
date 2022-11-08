@@ -12,78 +12,91 @@ use yii\web\View;
             <div class="col-xl-10 offset-xl-1">
                 <div class="project-kicksback-1__title wow fadeInDown" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/logo.svg?v=1') ?>')"></div>
                 <div class="project-kicksback-1__subtitle wow fadeInDown">
-                    <?= Yii::t('admin', 'Business') ?>
+                    <svg viewBox="0 0 1088 56" xmlns="http://www.w3.org/2000/svg">
+                        <style>.text { font-size: 51px; font-family: Roboto, sans-serif; text-transform: uppercase; }</style>
+                        <text fill="currentColor" x="0" y="51" class="text"><?= Yii::t('app', 'Друзья покупают — ты зарабатываешь!') ?></text>
+                    </svg>
                 </div>
             </div>
         </div>
         <div class="row project-kicksback-1__description">
-            <div class="col-xl-3 offset-xl-1 col-lg-4">
+            <div class="col-xl-5 offset-xl-1">
                 <div class="project-kicksback-1__text-1 wow fadeInDown">
-                    <?= Yii::t('app', 'Больше {br}никаких {br}посредников {br}и&nbsp;предоплаты {br}за&nbsp;рекламу', ['br' => '<br>']) ?>
+                    <?= Yii::t('app', '{s}FIRSTLINE&nbsp;&mdash;{e} диджитал-прoстранство, где бизнес соревнуется за&nbsp;клиентов', ['s' => '<span>', 'e' => '</span><br>']) ?>
+                </div>
+                <div class="row">
+                    <div class="col-xl-7">
+                        <div class="project-kicksback-1__text-2 wow fadeInDown">
+                            <?= Yii::t('app', 'В FIRSTLINE автоматически размещаются рекламные предложения бизнеса с качественными фото и видео товаров и услуг, которые они предлагают.') ?>
+                            <br><br>
+                            <?= Yii::t('app', 'На основе умных алгоритмов KICKSBACK реклама бизнеса доставляется наиболее релевантной аудитории приложения, а клиенты получают самые актуальные предложения.') ?>
+                        </div>
+                    </div>
+                    <div class="col-xl-5">
+                        <div class="project-kicksback-1__image-container">
+                            <div class="project-kicksback-1__image wow fadeInDown" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/image-1.png?v=1') ?>')"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-xl-2">
                 <div class="project-kicksback-1__image-container">
-                    <div class="project-kicksback-1__image wow fadeInDown" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/image-1.png?v=1') ?>')"></div>
+                    <div class="project-kicksback-1__image wow fadeInDown" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/image-2.png?v=1') ?>')"></div>
                 </div>
             </div>
-            <div class="col-xxl-3 col-lg-4">
-                <div class="project-kicksback-1__text-2 wow fadeInDown">
-                    <?= Yii::t('app', 'На&nbsp;основе умных алгоритмов {firstline} угадывает желания клиентов и&nbsp;показывает заведения, товары и&nbsp;услуги, которые интересны именно&nbsp;иму', [
-                        'firstline' => '<span>FIRSTLINE</span>',
-                    ]) ?>
-                </div>
+            <div class="col-xl-4">
                 <div class="project-kicksback-1__text-3 wow fadeInDown">
-                    <?= Yii::t('app', 'KICKSBACK дает возможность каждому бизнесу легально получить аналитические данные конкурентов, использовать собственные кассовые чеки для сохранения текущих клиентов и&nbsp;получения новых с&nbsp;уникальной платформой рекомендаций FIRSTLINE') ?>
+                    <?= Yii::t('app', 'Кэшбэк и&nbsp;подарки в&nbsp;ресторанах и&nbsp;магазинах') ?>
+                </div>
+                <div class="project-kicksback-1__text-4 wow fadeInDown">
+                    <?= Yii::t('app', 'Kicksback — это:') ?>
+                    <ul>
+                        <li><?= Yii::t('app', 'Лучшие рестораны и&nbsp;магазины Москвы, а&nbsp;также интернет-магазины и&nbsp;доставка еды') ?></li>
+                        <li><?= Yii::t('app', 'Быстрое начисление кэшбэка и&nbsp;киксбэка') ?></li>
+                        <li><?= Yii::t('app', 'Ежедневные подарки-киксы по&nbsp;твоему выбору') ?></li>
+                        <li><?= Yii::t('app', 'Вывод накопленных денег на&nbsp;карту с&nbsp;минимальной комиссией') ?></li>
+                        <li><?= Yii::t('app', 'Приложение, которое заменит тебе все скидочные и&nbsp;дисконтные карты') ?></li>
+                        <li><?= Yii::t('app', 'Карты магазинов в&nbsp;телефоне') ?></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="project-kicksback-2" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/bg-2.png?v=1') ?>')">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-4 offset-xl-4 col-md-6 offset-md-3 col-sm-8 offset-sm-2">
-                <div class="project-kicksback-2__title wow fadeInDown">
-                    <?= Yii::t('app', 'Что такое кикcбэк?') ?>
-                </div>
-                <div class="project-kicksback-2__text wow fadeInDown">
-                    <?= Yii::t('app', 'Это бонус, который выплачивается клиенту за&nbsp;приведенного друга. Вы&nbsp;создаете в&nbsp;нашем приложении программу лояльности, и&nbsp;число ваших постоянных клиентов начинает быстро расти.') ?>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="project-kicksback-3" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/bg-3.jpg?v=1') ?>')">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-                <div class="project-kicksback-3__subtitle wow fadeInDown">
-                    <?= Yii::t('app', 'Успешный бизнес {br}вместе с&nbsp;приложением', ['br' => '<br>']) ?>
-                </div>
-                <div class="project-kicksback-3__title wow fadeInDown" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/image-3.svg?v=1') ?>')"></div>
-                <div class="project-kicksback-3__info">
-                    <div class="project-kicksback-3__links wow fadeInDown">
-                        <?= Html::a('', 'https://kicksback.app/', ['class' => 'project-kicksback-3__link project-kicksback-3__link_site', 'target' => '_blank']) ?>
-                        <div class="project-kicksback-3__hr"></div>
-                        <?= Html::a('', 'https://play.google.com/store/apps/details?id=com.sessia.kickbacks', ['class' => 'project-kicksback-3__link project-kicksback-3__link_google', 'target' => '_blank']) ?>
-                        <div class="project-kicksback-3__hr"></div>
-                        <?= Html::a('', 'https://apps.apple.com/app/kicksback-cashback-and-gifts/id1546115424', ['class' => 'project-kicksback-3__link project-kicksback-3__link_apple', 'target' => '_blank']) ?>
-                    </div>
-                    <div class="project-kicksback-3__text wow fadeInDown">
-                        <?= Yii::t('app', 'Бесплатное приложение для&nbsp;привлечения новых клиентов и&nbsp;увеличения лояльной аудитории') ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<?= Html::jsFile("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js") ?>
+<?= Html::jsFile("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js") ?>
 
 <?php
 
 $js = <<<JS
+
+gsap.registerPlugin(ScrollTrigger);
+
+var item = $(".project-kicksback-business-2");
+var pic = $(".project-kicksback-business-2__bg");
+
+gsap
+    .timeline({
+        scrollTrigger: {
+            trigger: item,
+            scrub: true,
+            //markers: true,
+            start: "0% 100%",
+            end: "100% 50%"
+        }
+    })
+    .fromTo(
+        pic,
+        {
+            y: 100
+        },
+        {
+            y: -100,
+            ease: "none"
+        },
+        0
+    );
 
 new WOW().init();
 

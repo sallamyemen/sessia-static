@@ -49,10 +49,10 @@ $projects = [
     ],
     (object) [
         'id' => 4,
-        'header' => 'Kicksback <br>for Business',
+        'header' => 'Kicksback <br>Business',
         'subtitle' => Yii::t('app', 'мобильное приложение'),
         'description' => Yii::t('app', 'AdTech-продукт на основе ИИ, позволяющий малому и среднему бизнесу использовать кассовые чеки и своих клиентов для роста лояльной аудитории и продаж'),
-        'link' => ['/project/view', 'project' => 'kicksback-for-business'],
+        'link' => ['/project/view', 'project' => 'kicksback-business'],
         'store_link' => getOs() === 'ios' ? 'https://apps.apple.com/app/kicksback-business/id1414883041' : 'https://play.google.com/store/apps/details?id=com.sessia.business',
         'img' => 'phone4.png?v=1',
     ],

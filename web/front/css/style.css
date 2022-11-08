@@ -252,6 +252,11 @@ body {
     color: #fff;
 }
 
+.company {
+	background: #fff;
+	color: #000;
+}
+
 .company__header-block {
   display: flex;
 }
@@ -341,6 +346,7 @@ body {
 }
 
 .narek {
+	color: #000;
     background: linear-gradient(90deg, #F6F6F6, #F8F8F8);
 }
 
@@ -377,6 +383,11 @@ body {
 
 .narek__flex {
     display: flex;
+}
+
+.projects {
+	color: #000;
+    background: #fff;
 }
 
 .projects__header {

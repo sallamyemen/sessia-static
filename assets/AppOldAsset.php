@@ -9,7 +9,9 @@ class AppOldAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
 
-    public $css = [];
+    public $css = [
+        'front/css/main-empty.min.css',
+    ];
     public $js = [];
 
     public $depends = [

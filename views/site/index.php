@@ -10,24 +10,26 @@ $this->title = 'SESSIA. GET IT RIGHT';
 ?>
 
 <div class="header">
-    <div class="wrapper" style="position: relative; padding-top: 12px;">
-        <div class="logo">
-            <img src="<?= Url::to('@web/front/img/logo.svg?v=1') ?>" alt="logo" class="logo wow fadeIn">
+    <div class="container">
+        <div class="wrapper" style="position: relative; padding-top: 12px;">
+            <div class="logo">
+                <img src="<?= Url::to('@web/front/img/logo.svg?v=1') ?>" alt="logo" class="logo wow fadeIn">
+            </div>
+            <div class="header__nav">
+                <div class="header__logo wow fadeInUp"><span class="blue">SESSIA.</span> GET <span class="blue">IT</span> RIGHT</div>
+                <ul class="header__list wow fadeInUp">
+                    <li><a href="#about"><?= Yii::t('app', 'О нас') ?></a></li>
+                    <li><a href="#projects"><?= Yii::t('app', 'Проекты') ?></a></li>
+                    <li><a href="#team"><?= Yii::t('app', 'Команда') ?></a></li>
+                    <li><a href="#news"><?= Yii::t('app', 'Новости') ?></a></li>
+                    <li class="lang">
+                        <?= LangSwitcher::widget() ?>
+                    </li>
+                </ul>
+            </div>
+            <img class="dotted" src="<?= Url::to('@web/front/img-main/dotted-bg.png?v=1') ?>" alt=""/>
+            <div id="particles-header" class="particles"></div>
         </div>
-        <div class="header__nav">
-            <div class="header__logo wow fadeInUp"><span class="blue">SESSIA.</span> GET <span class="blue">IT</span> RIGHT</div>
-            <ul class="header__list wow fadeInUp">
-                <li><a href="#about"><?= Yii::t('app', 'О нас') ?></a></li>
-                <li><a href="#projects"><?= Yii::t('app', 'Проекты') ?></a></li>
-                <li><a href="#team"><?= Yii::t('app', 'Команда') ?></a></li>
-                <li><a href="#news"><?= Yii::t('app', 'Новости') ?></a></li>
-                <li class="lang">
-                    <?= LangSwitcher::widget() ?>
-                </li>
-            </ul>
-        </div>
-        <img class="dotted" src="<?= Url::to('@web/front/img-main/dotted-bg.png?v=1') ?>" alt=""/>
-        <div id="particles-header" class="particles"></div>
     </div>
     <img class="circle" src="<?= Url::to('@web/front/img-main/ellipse.png?v=1') ?>" alt=""/>
 </div>
@@ -229,24 +231,6 @@ $this->title = 'SESSIA. GET IT RIGHT';
             </form>
         </div>
         <img class="circle" src="<?= Url::to('@web/front/img-main/ellipse.png?v=1') ?>" alt=""/>
-    </div>
-</div>
-
-<div class="footer">
-    <div class="wrapper wrapper_footer">
-        <div class="footer__block">
-            <div class="footer__logo">
-                <img src="<?= Url::to('@web/front/img/logo.svg?v=1') ?>" alt="">
-            </div>
-            <div class="footer__nav">
-                <ul class="footer__list">
-                    <li><a href="#about"><?= Yii::t('app', 'О нас') ?></a></li>
-                    <li><a href="#projects"><?= Yii::t('app', 'Проекты') ?></a></li>
-                    <li><a href="#team"><?= Yii::t('app', 'Команда') ?></a></li>
-                    <li><a href="#news"><?= Yii::t('app', 'Новости') ?></a></li>
-                </ul>
-            </div>
-        </div>
     </div>
 </div>
 
