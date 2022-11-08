@@ -12,7 +12,7 @@ use yii\web\View;
             <div class="col-xl-10 offset-xl-1">
                 <div class="project-kicksback-1__title" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/logo.svg?v=1') ?>')"></div>
                 <div class="project-kicksback-1__subtitle wow fadeInDown">
-                    <?= Yii::t('admin', 'Business') ?> 1
+                    <?= Yii::t('admin', 'Business') ?>
                 </div>
             </div>
         </div>
