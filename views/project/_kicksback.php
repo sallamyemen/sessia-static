@@ -45,7 +45,7 @@ use yii\web\View;
     <div class="container">
         <div class="row">
             <div class="col-xl-4 offset-xl-4 col-md-6 offset-md-3 col-sm-8 offset-sm-2">
-                <div class="project-kicksback-2__title wow fadeInDown 1">
+                <div class="project-kicksback-2__title wow fadeInDown">
                     <?= Yii::t('app', 'Что такое кикcбэк?') ?>
                 </div>
                 <div class="project-kicksback-2__text wow fadeInDown">
