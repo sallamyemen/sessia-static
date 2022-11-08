@@ -69,9 +69,9 @@ use yii\web\View;
                     <div class="project__links wow fadeInDown">
                         <?= Html::a('', 'https://kicksback.app/', ['class' => 'project__link project__link_site', 'target' => '_blank']) ?>
                         <div class="project__hr"></div>
-                        <?= Html::a('', 'https://play.google.com/store/apps/details?id=com.sessia.kickbacks', ['class' => 'project__link project__link_google', 'target' => '_blank']) ?>
+                        <?= Html::a('', 'https://play.google.com/store/apps/details?id=com.sessia.business', ['class' => 'project__link project__link_google', 'target' => '_blank']) ?>
                         <div class="project__hr"></div>
-                        <?= Html::a('', 'https://apps.apple.com/app/kicksback-cashback-and-gifts/id1546115424', ['class' => 'project__link project__link_apple', 'target' => '_blank']) ?>
+                        <?= Html::a('', 'https://apps.apple.com/app/kicksback-business/id1414883041', ['class' => 'project__link project__link_apple', 'target' => '_blank']) ?>
                     </div>
                     <div class="project-kicksback-business-3__text wow fadeInDown">
                         <?= Yii::t('app', 'Бесплатное приложение для&nbsp;привлечения новых клиентов и&nbsp;увеличения лояльной аудитории') ?>
