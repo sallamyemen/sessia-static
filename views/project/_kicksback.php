@@ -24,7 +24,7 @@ use yii\web\View;
             </div>
             <div class="col-lg-4">
                 <div class="project-kicksback-1__image-container">
-                    <div class="project-kicksback-1__image wow fadeIn" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/image-1.png?v=1') ?>')"></div>
+                    <div class="project-kicksback-1__image wow fadeInDown" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/image-1.png?v=1') ?>')"></div>
                 </div>
             </div>
             <div class="col-xxl-3 col-lg-4">
