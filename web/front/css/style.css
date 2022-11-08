@@ -224,13 +224,13 @@ body {
 }
 
 .services {
-    background-image: url(../img/ser-bg.jpg);
+    background-image: url(../img-main/ser-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .services.services_advantages {
-    background-image: url(../img/advantages.jpg);
+    background-image: url(../img-main/advantages.jpg);
 }
 
 .services_advantages .services__block{
@@ -243,7 +243,7 @@ body {
 }
 
 .advantages {
-    background-image: url(../img/advantages.jpg);
+    background-image: url(../img-main/advantages.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -585,7 +585,7 @@ input:focus {
 
 .owl-prev {
     display: block;
-    background-image: url(../img/arrow.png)!important;
+    background-image: url(../img-main/arrow.png)!important;
     background-color: none!important;
     background-repeat: none !important;
     background-size: cover!important;
@@ -599,7 +599,7 @@ input:focus {
 
 .owl-next {
     display: block;
-    background-image: url(../img/arrow.png)!important;
+    background-image: url(../img-main/arrow.png)!important;
     background-color: none!important;
     background-repeat: none !important;
     background-size: cover!important;
