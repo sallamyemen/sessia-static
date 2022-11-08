@@ -1,1 +1,3 @@
-# zend studio for eclipse project files.buildpath.project.settings# composer vendor dir/vendor# messages dir/messages/runtime# composer itself is not neededcomposer.phar
+# zend studio for eclipse project files.buildpath.project.settings# composer vendor dir/vendor# messages dir/messages/runtime# composer itself is not neededcomposer.phar
+#
+runtime/logs/*
