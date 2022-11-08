@@ -62,6 +62,11 @@ $config = [
                     'forceTranslation' => true,
                     'basePath' => '@app/messages',
                 ],
+                'admin' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'forceTranslation' => true,
+                    'basePath' => '@app/messages',
+                ],
             ],
         ],
         'mailer' => [

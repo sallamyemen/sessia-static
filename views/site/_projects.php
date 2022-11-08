@@ -117,7 +117,7 @@ $projects = [
                     <?php } ?>
                 </div>
                 <div class="gallery__img gallery__img_<?= $project->id ?>">
-                    <img class="" src="<?= Url::to('@web/front/img/' . $project->img) ?>" alt="phone">
+                    <img class="" src="<?= Url::to('@web/front/img-main/' . $project->img) ?>" alt="phone">
                 </div>
             </div>
         <?php } ?>

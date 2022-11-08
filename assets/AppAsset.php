@@ -21,9 +21,13 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
 
     public $css = [
+        'front/lib/animate.min.css',
+        'front/css/main.min.css',
     ];
 
     public $js = [
+        'front/lib/wow.min.js',
+        'front/js/main.js',
     ];
 
     public $depends = [

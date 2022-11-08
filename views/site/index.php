@@ -26,10 +26,10 @@ $this->title = 'SESSIA. GET IT RIGHT';
                 </li>
             </ul>
         </div>
-        <img class="dotted" src="<?= Url::to('@web/front/img/dotted-bg.png?v=1') ?>" alt=""/>
+        <img class="dotted" src="<?= Url::to('@web/front/img-main/dotted-bg.png?v=1') ?>" alt=""/>
         <div id="particles-header" class="particles"></div>
     </div>
-    <img class="circle" src="<?= Url::to('@web/front/img/ellipse.png?v=1') ?>" alt=""/>
+    <img class="circle" src="<?= Url::to('@web/front/img-main/ellipse.png?v=1') ?>" alt=""/>
 </div>
 
 <div class="services" id="about">
@@ -108,7 +108,7 @@ $this->title = 'SESSIA. GET IT RIGHT';
                 </div>
             </div>
             <div class="rhombus">
-                <img src="<?= Url::to('@web/front/img/rhombus2.png?v=1') ?>" alt="" />
+                <img src="<?= Url::to('@web/front/img-main/rhombus2.png?v=1') ?>" alt="" />
                 <div id="particles-team" class="particles"></div>
             </div>
         </div>
@@ -144,7 +144,7 @@ $this->title = 'SESSIA. GET IT RIGHT';
 
             <div class="company__item company__item_last" style="">
                 <div class="company__img">
-                    <img src="<?= Url::to('@web/front/img/rhombus.png?v=1') ?>" alt="" />
+                    <img src="<?= Url::to('@web/front/img-main/rhombus.png?v=1') ?>" alt="" />
                     <div id="particles-company" class="particles"></div>
                 </div>
                 <div class="company__description wow fadeIn">
@@ -165,12 +165,12 @@ $this->title = 'SESSIA. GET IT RIGHT';
                 <div class="narek__header wow fadeIn">
                     <?= Yii::t('app', 'Нарек Сираканян, {br}основатель и президент Sessia', ['br' => '</div><div class="narek__subtitle wow fadeIn">']) ?>
                 </div>
-                <img src="<?= Url::to('@web/front/img/quote.svg?v=1') ?>" alt="" class="narek__quote wow fadeIn">
+                <img src="<?= Url::to('@web/front/img-main/quote.svg?v=1') ?>" alt="" class="narek__quote wow fadeIn">
                 <div class="narek__text wow fadeIn">
                     <?= Yii::t('app', 'Мы исповедуем инновационность и разрабатываем диджитал-решения на стыке интересов бизнесов и обычных пользователей. С помощью наших продуктов они коммуницируют друг с другом без посредников, легко находят общий язык и устанавливают взаимовыгодное партнерство. Мы за то, чтобы каждый наш проект, каждая разработка были социально значимыми и приносили конкретную пользу людям и обществу.') ?>
                 </div>
             </div>
-            <img class="narek__img wow fadeIn" src="<?= Url::to('@web/front/img/narek.png?v=1') ?>" alt="narek">
+            <img class="narek__img wow fadeIn" src="<?= Url::to('@web/front/img-main/narek.png?v=1') ?>" alt="narek">
         </div>
     </div>
 </div>
@@ -228,7 +228,7 @@ $this->title = 'SESSIA. GET IT RIGHT';
                 <button class="send"><?= Yii::t('app', 'Отправить') ?></button>
             </form>
         </div>
-        <img class="circle" src="<?= Url::to('@web/front/img/ellipse.png?v=1') ?>" alt=""/>
+        <img class="circle" src="<?= Url::to('@web/front/img-main/ellipse.png?v=1') ?>" alt=""/>
     </div>
 </div>
 
@@ -252,16 +252,16 @@ $this->title = 'SESSIA. GET IT RIGHT';
 
 <?php
 
-$this->registerCssFile("@web/front-old/vendor/owl-carousel/owl.carousel.css", ['depends' => [AppOldAsset::class]]);
-$this->registerCssFile("@web/front-old/vendor/owl-carousel/owl.theme.default.css", ['depends' => [AppOldAsset::class]]);
-$this->registerCssFile("@web/front-old/vendor/owl-carousel/owl-carousel/owl.theme.green.css", ['depends' => [AppOldAsset::class]]);
-$this->registerCssFile("@web/front-old/vendor/vendor/animate/animate.min.css", ['depends' => [AppOldAsset::class]]);
-$this->registerCssFile("@web/front-old/css/reset.css", ['depends' => [AppOldAsset::class]]);
-$this->registerCssFile("@web/front-old/css/style.css", ['depends' => [AppOldAsset::class]]);
+$this->registerCssFile("@web/front/vendor/owl-carousel/owl.carousel.css", ['depends' => [AppOldAsset::class]]);
+$this->registerCssFile("@web/front/vendor/owl-carousel/owl.theme.default.css", ['depends' => [AppOldAsset::class]]);
+$this->registerCssFile("@web/front/vendor/owl-carousel/owl-carousel/owl.theme.green.css", ['depends' => [AppOldAsset::class]]);
+$this->registerCssFile("@web/front/vendor/vendor/animate/animate.min.css", ['depends' => [AppOldAsset::class]]);
+$this->registerCssFile("@web/front/css/reset.css", ['depends' => [AppOldAsset::class]]);
+$this->registerCssFile("@web/front/css/style.css", ['depends' => [AppOldAsset::class]]);
 
-$this->registerJsFile("@web/front-old/vendor/owl-carousel/owl.carousel.min.js", ['depends' => [AppOldAsset::class]]);
-$this->registerJsFile("@web/front-old/vendor/particles/particles.min.js", ['depends' => [AppOldAsset::class]]);
-$this->registerJsFile("@web/front-old/vendor/wow/wow.min.js", ['depends' => [AppOldAsset::class]]);
+$this->registerJsFile("@web/front/vendor/owl-carousel/owl.carousel.min.js", ['depends' => [AppOldAsset::class]]);
+$this->registerJsFile("@web/front/vendor/particles/particles.min.js", ['depends' => [AppOldAsset::class]]);
+$this->registerJsFile("@web/front/vendor/wow/wow.min.js", ['depends' => [AppOldAsset::class]]);
 
 $particlesHeader = Url::to('@web/front/js/particlesjs-header.json');
 $particlesTeam = Url::to('@web/front/js/particlesjs-team.json');

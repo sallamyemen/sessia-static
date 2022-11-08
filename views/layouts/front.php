@@ -30,8 +30,9 @@ $menu = [
         'url' => ['/site/index', '#' => 'news'],
     ],
     [
-        'label' => 'lang',
+        'label' => 'lang-item',
         'url' => null,
+        'options' => ['class' => 'lang'],
     ],
 ];
 
@@ -39,27 +40,50 @@ $menu = [
 
 <?php $this->beginContent('@app/views/layouts/main.php') ?>
 
-<header class="header-new">
-    <div class="app-nav">
-        <?= Html::a(Html::img(Url::to('@web/front/img/logo.svg?v=1'), ['class' => 'app-nav__logo-img']), ['/main/site'], ['class' => 'app-nav__logo']) ?>
-        <nav class="app-nav__nav">
-            <?= str_replace('lang', LangSwitcher::widget(), Menu::widget([
-                'items' => $menu,
-                'options' => [
-                    'id' => 'menu',
-                    'class' => 'app-nav__nav-menu menu',
-                ],
-                'activeCssClass' => 'active',
-                'encodeLabels' => false,
-            ])); ?>
-        </nav>
+<div class="app">
+    <div class="app__wrapper">
+        <header class="app__header header">
+            <div class="container">
+                <div class="row-nav">
+                    <?= Html::a(Html::img(Url::to('@web/front/img/logo.svg?v=1'), ['class' => 'row-nav__logo-img']), ['/site/index'], ['class' => 'row-nav__logo']) ?>
+                    <nav class="row-nav__nav">
+                        <?= str_replace('lang-item', LangSwitcher::widget(), Menu::widget([
+                            'items' => $menu,
+                            'options' => [
+                                'id' => 'menu',
+                                'class' => 'row-nav__menu menu',
+                            ],
+                            'activeCssClass' => 'active',
+                            'encodeLabels' => false,
+                        ])); ?>
+                    </nav>
+                    <div class="hum"><span class="hum__item hum__item_one"></span><span class="hum__item hum__item_second"></span><span class="hum__item hum__item_third"></span></div>
+                </div>
+            </div>
+        </header>
+        <div class="app__content">
+            <?= $content ?>
+        </div>
     </div>
-</header>
-
-<?= $content ?>
-
-<footer class="footer-new">
-
-</footer>
+    <footer class="app__footer footer" style="background-image: url(<?= Url::to('@web/front/img/footer-bg.png?v=1') ?>">
+        <div class="container">
+            <div class="row-nav">
+                <?= Html::a(Html::img(Url::to('@web/front/img/logo.svg?v=1'), ['class' => 'row-nav__logo-img']), ['/site/index'], ['class' => 'row-nav__logo']) ?>
+                <nav class="row-nav__nav">
+                    <?php array_pop($menu); ?>
+                    <?= Menu::widget([
+                        'items' => $menu,
+                        'options' => [
+                            'id' => 'menu',
+                            'class' => 'row-nav__menu menu',
+                        ],
+                        'activeCssClass' => 'active',
+                        'encodeLabels' => false,
+                    ]); ?>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</div>
 
 <?php $this->endContent() ?>
