@@ -39,14 +39,14 @@ use yii\web\View;
                     </div>
                 </div>
             </div>
-            <div class="col-6 mobile">
-                <div class="project-kicksback-1__image-container">
-                    <div class="project-kicksback-1__image project-kicksback-1__image_1 wow fadeInDown" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/image-1.png?v=1') ?>')"></div>
-                </div>
-            </div>
             <div class="col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-6">
                 <div class="project-kicksback-1__image-container">
                     <div class="project-kicksback-1__image project-kicksback-1__image_2 wow fadeInDown" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/image-2.png?v=1') ?>')"></div>
+                </div>
+            </div>
+            <div class="col-6 mobile">
+                <div class="project-kicksback-1__image-container">
+                    <div class="project-kicksback-1__image project-kicksback-1__image_1 wow fadeInDown" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/image-1.png?v=1') ?>')"></div>
                 </div>
             </div>
             <div class="col-lg-4 offset-lg-0 col-md-7 offset-md-1">
