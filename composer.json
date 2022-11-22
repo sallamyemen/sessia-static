@@ -21,7 +21,8 @@
         "yiisoft/yii2-imagine": "*",
         "yiisoft/yii2-jui": "*",
         "simialbi/yii2-schema-org": "^2.0.0",
-        "vova07/yii2-imperavi-widget": "*"
+        "vova07/yii2-imperavi-widget": "*",
+        "symfony/finder": "^5.4"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.14",

@@ -11,7 +11,7 @@ use yii\db\ActiveRecord;
  * @property string name
  * @property string url
  */
-class Language extends ActiveRecord
+class Lang extends ActiveRecord
 {
     /**
      * Переменная, для хранения текущего объекта языка
@@ -38,12 +38,12 @@ class Language extends ActiveRecord
                 'name' => 'De',
                 'url' => 'de',
             ],
-            /*(object) [
+            (object) [
                 'id' => 3,
                 'locale' => 'vi-VN',
                 'name' => 'Vi',
                 'url' => 'vi',
-            ],*/
+            ],
             (object) [
                 'id' => 4,
                 'locale' => 'ru-RU',

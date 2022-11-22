@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'HTTP_ConditionalGet' => $vendorDir . '/mrclay/minify/lib/HTTP/ConditionalGet.php',
     'HTTP_Encoder' => $vendorDir . '/mrclay/minify/lib/HTTP/Encoder.php',
@@ -59,6 +60,10 @@ return array(
     'MrClay\\Cli' => $vendorDir . '/mrclay/minify/lib/MrClay/Cli.php',
     'MrClay\\Cli\\Arg' => $vendorDir . '/mrclay/minify/lib/MrClay/Cli/Arg.php',
     'Normalizer' => $vendorDir . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
+    'PhpToken' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
+    'Stringable' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
+    'UnhandledMatchError' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
+    'ValueError' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
     'lessc' => $vendorDir . '/marcusschwarz/lesserphp/lessc.inc.php',
     'lessc_formatter_classic' => $vendorDir . '/marcusschwarz/lesserphp/lessc.inc.php',
     'lessc_formatter_compressed' => $vendorDir . '/marcusschwarz/lesserphp/lessc.inc.php',

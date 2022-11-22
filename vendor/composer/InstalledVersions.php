@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'fcc4495385a1d9ee1e982536aa77f20746e588c3',
+    'reference' => 'e2f2024ce50355f9f69ca96392c6958391124b74',
     'name' => 'yiisoft/yii2-app-basic',
   ),
   'versions' => 
@@ -294,6 +294,15 @@ private static $installed = array (
       ),
       'reference' => 'e8b495ea28c1d97b5e0c121748d6f9b53d075c66',
     ),
+    'symfony/finder' => 
+    array (
+      'pretty_version' => 'v5.4.11',
+      'version' => '5.4.11.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7872a66f57caffa2916a584db1aa7f12adc76f8c',
+    ),
     'symfony/polyfill-iconv' => 
     array (
       'pretty_version' => 'v1.26.0',
@@ -339,6 +348,15 @@ private static $installed = array (
       ),
       'reference' => 'bf44a9fd41feaac72b074de600314a93e2ae78e2',
     ),
+    'symfony/polyfill-php80' => 
+    array (
+      'pretty_version' => 'v1.26.0',
+      'version' => '1.26.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'cfa0ae98841b9e461207c13ab093d76b0fa7bace',
+    ),
     'tubalmartin/cssmin' => 
     array (
       'pretty_version' => 'v4.1.1',
@@ -373,7 +391,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'fcc4495385a1d9ee1e982536aa77f20746e588c3',
+      'reference' => 'e2f2024ce50355f9f69ca96392c6958391124b74',
     ),
     'yiisoft/yii2-bootstrap' => 
     array (

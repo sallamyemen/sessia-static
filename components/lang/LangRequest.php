@@ -4,7 +4,7 @@ namespace app\components\lang;
 
 use yii\base\InvalidConfigException;
 use yii\web\Request;
-use app\entities\Language;
+use app\entities\Lang;
 
 class LangRequest extends Request
 {
@@ -19,14 +19,14 @@ class LangRequest extends Request
 
             $lang_url = $url_list[1] ?? null;
 
-            Language::setCurrent($lang_url);
+            Lang::setCurrent($lang_url);
 
             if (
                 $lang_url !== null &&
-                $lang_url === Language::getCurrent()->url &&
-                strpos($this->_lang_url, Language::getCurrent()->url) === 1
+                $lang_url === Lang::getCurrent()->url &&
+                strpos($this->_lang_url, Lang::getCurrent()->url) === 1
             ) {
-                $this->_lang_url = substr($this->_lang_url, strlen(Language::getCurrent()->url) + 1);
+                $this->_lang_url = substr($this->_lang_url, strlen(Lang::getCurrent()->url) + 1);
             }
         }
         return $this->_lang_url;

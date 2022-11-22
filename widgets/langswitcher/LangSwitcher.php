@@ -2,7 +2,7 @@
 
 namespace app\widgets\langswitcher;
 
-use app\entities\Language;
+use app\entities\Lang;
 use Yii;
 use yii\base\Widget;
 
@@ -10,7 +10,7 @@ class LangSwitcher extends Widget
 {
     public function run()
     {
-        $langs = Language::getAll();
+        $langs = Lang::getAll();
         $langCurrent = '';
         foreach ($langs as $key => $lang) {
             if ($lang->locale === Yii::$app->language) {

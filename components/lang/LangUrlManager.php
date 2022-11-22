@@ -3,7 +3,7 @@
 namespace app\components\lang;
 
 use yii\web\UrlManager;
-use app\entities\Language;
+use app\entities\Lang;
 
 class LangUrlManager extends UrlManager
 {
@@ -12,8 +12,8 @@ class LangUrlManager extends UrlManager
         if (isset($params['lang_id'])) {
             // Если указан идентификатор языка, то делаем попытку найти язык в БД,
             // иначе работаем с языком по умолчанию
-            $language = Language::getDefaultLang();
-            foreach (Language::getAll() as $val) {
+            $language = Lang::getDefaultLang();
+            foreach (Lang::getAll() as $val) {
                 if ($val->id === $params['lang_id']) {
                     $language = $val;
                     break;
@@ -22,7 +22,7 @@ class LangUrlManager extends UrlManager
             unset($params['lang_id']);
         } else {
             // Если не указан параметр языка, то работаем с текущим языком
-            $language = Language::getCurrent();
+            $language = Lang::getCurrent();
         }
 
         // Получаем сформированный URL(без префикса идентификатора языка)
