@@ -4,7 +4,7 @@ use app\widgets\langswitcher\LangSwitcher;
 use yii\helpers\Url;
 use yii\web\View;
 
-$this->title = 'SESSIA. GET IT RIGHT';
+$this->title = 'SESSIA. GET IT RIGHT - ' . strtoupper($project);
 
 ?>
 

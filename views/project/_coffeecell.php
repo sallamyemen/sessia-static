@@ -159,39 +159,9 @@ use yii\web\View;
     </div>
 </section>
 
-<?= Html::jsFile("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js") ?>
-<?= Html::jsFile("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js") ?>
-
 <?php
 
 $js = <<<JS
-
-gsap.registerPlugin(ScrollTrigger);
-
-var item = $(".project-coffeecell-3");
-var pic = $(".project-coffeecell-3__bg");
-
-gsap
-    .timeline({
-        scrollTrigger: {
-            trigger: item,
-            scrub: true,
-            //markers: true,
-            start: "0% 100%",
-            end: "100% 50%"
-        }
-    })
-    .fromTo(
-        pic,
-        {
-            y: 100
-        },
-        {
-            y: -100,
-            ease: "none"
-        },
-        0
-    );
 
 new WOW().init();
 

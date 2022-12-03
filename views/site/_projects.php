@@ -25,7 +25,7 @@ $projects = [
         'header' => 'Project V',
         'subtitle' => Yii::t('app', 'мобильное приложение'),
         'description' => Yii::t('app', 'Онлайн-магазин продуктов для красоты и здоровья из Франции и Швейцарии с продвинутой программой привилегий и интегрированной соцсетью'),
-        'link' => null,
+        'link' => ['/project/view', 'project' => 'project-v'],
         'store_link' => getOs() === 'ios' ? 'https://apps.apple.com/app/project-v/id1220488838' : 'https://play.google.com/store/apps/details?id=com.sessia',
         'img' => 'phone1.png?v=1',
     ],
