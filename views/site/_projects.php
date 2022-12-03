@@ -34,7 +34,7 @@ $projects = [
         'header' => 'COFFEECELL',
         'subtitle' => Yii::t('app', 'мобильное приложение'),
         'description' => Yii::t('app', 'Онлайн-магазин продуктов и напитков с белым императорским женьшенем с продвинутой программой привилегий и интегрированной соцсетью'),
-        'link' => null,
+        'link' => ['/project/view', 'project' => 'coffeecell'],
         'store_link' => getOs() === 'ios' ? 'https://apps.apple.com/app/coffeecell/id1643537836' : 'https://play.google.com/store/apps/details?id=com.sessia.coffeecell',
         'img' => 'phone2.png?v=1',
     ],
