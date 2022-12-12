@@ -1,0 +1,29 @@
+.project
+	&__links
+		display: grid
+		grid-template-columns: auto auto auto
+		grid-gap: 8px
+		@media (max-width : $bpLarge)
+			display: block
+	&__link
+		display: inline-block
+		vertical-align: top
+		height: 40px
+		background:
+			position: center center
+			repeat: no-repeat
+			size: contain
+		&_site
+			width: 52px
+			background-image: url("../../storage/project/icon-site.svg?v=1")
+		&_google
+			width: 135px
+			background-image: url("../../storage/project/icon-google.svg?v=1")
+		&_apple
+			width: 135px
+			background-image: url("../../storage/project/icon-apple.svg?v=1")
+	&__hr
+		display: none
+		@media (max-width : $bpLarge)
+			display: block
+			height: 12px
