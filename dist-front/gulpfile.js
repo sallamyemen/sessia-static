@@ -41,7 +41,7 @@ function watch() {
         ui: {
             port: 3001
         },
-        proxy: 'http://sessia.web.local/',
+        proxy: 'http://sessia.local/',
         notify: false // Отключаем уведомления
     });
 

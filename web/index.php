@@ -1,12 +1,5 @@
 <?php
 
-// Set headers to NOT cache a page
-header("Last-Modified: Wed, 15 Nov 1995 04:58:08 GMT");
-header("Cache-Control: no-cache, must-revalidate"); //HTTP 1.1
-header("Pragma: no-cache"); //HTTP 1.0
-header("Expires: Sat, 26 Jul 1995 05:00:00 GMT"); // Date in the past
-
-
 $request_uri = $_SERVER['REQUEST_URI'];
 $domain = $_SERVER['SERVER_NAME'];
 
@@ -15,7 +8,7 @@ if ($request_uri === "/index.php" || $request_uri === "/index.htm" || preg_match
     exit();
 }
 
-if (stristr($domain, ".web.local")) {
+if (stristr($domain, ".local")) {
     error_reporting(E_ALL);
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
