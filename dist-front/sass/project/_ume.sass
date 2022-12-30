@@ -1,0 +1,370 @@
+.project-ume-1
+   padding: 160px 0 0 0
+   background:
+      position: top center
+      repeat: no-repeat
+      size: cover
+      color: $colorBlack
+   @media (max-width : $bpLarge)
+      padding-top: 96px
+      padding-bottom: 20px
+   &__image
+        margin-bottom: 38px
+        padding-top: 79%
+        background:
+          position: center center
+          repeat: no-repeat
+          size: contain
+        @media (max-width : $bpLarge)
+           margin-bottom: 0
+.project-ume-2
+      padding: 128px 0 0 0
+      background:
+          position: top center
+          repeat: no-repeat
+          size: cover
+      @media (max-width : $bpExtraLarge)
+        padding: 96px 0 0 0
+      @media (max-width : $bpSmall)
+        padding-top: 20px
+      &__image
+            padding-top: 7%
+            background:
+              position: center center
+              repeat: no-repeat
+              size: contain
+            @media (max-width : $bpLarge)
+               margin-bottom: 64px
+            @media (max-width : $bpSmall)
+               width: 100%
+      &__text
+            text-align: initial
+            font-size: 40px
+            line-height: 48px
+            font-weight: 400
+            background: linear-gradient($colorTop,$colorBottom)
+            background-clip: text
+            -webkit-text-fill-color: transparent
+            @media (max-width : $bpExtraLarge)
+              font-size: 24px
+              line-height: 28px
+            @media (max-width : $bpSmall)
+              padding-top: 40px
+
+.project-ume-3
+    background:
+        position: 70% 40%, 0 50%
+        repeat: no-repeat, no-repeat
+        size: 60%, 50%
+        filter: brightness(1.75)
+    margin-top: 162px
+    @media (max-width : $bpExtraLarge)
+      margin-top: 62px
+    @media (max-width : $bpLarge)
+        padding: 0
+    &__image
+        background:
+          position: center center
+          repeat: no-repeat
+          size: cover
+        img
+            width: 100%
+        @media (max-width : $bpSmall)
+            width: 100%
+    &__flex
+        display: flex
+        justify-content: space-evenly
+        align-items: end
+        padding-top: 128px
+        @media (max-width : $bpExtraLarge)
+          padding-top: 40px
+        @media (max-width : $bpSmall)
+          padding: 40px 0 0 0
+          justify-content: space-evenly
+    &__text-big
+        font-size: 40px
+        line-height: 48px
+        font-weight: 400
+        @media (max-width : $bpLarge)
+          font-size: 24px
+          line-height: 28px
+        @media (max-width : $bpSmall)
+          font-size: 20px
+          line-height: 24px
+    &__text-small
+        font-size: 20px
+        line-height: 28px
+        font-weight: 400
+        color: #7D85A4
+    &__left
+        text-align: right
+        flex-basis: 30%
+        @media (max-width : $bpSmall)
+          padding-right: 10px
+
+    &__right
+        text-align: left
+        flex-basis: 30%
+        @media (max-width : $bpSmall)
+          padding-left: 10px
+    &__row-img
+        justify-content: center
+        position: relative
+
+.project-ume-4
+    padding: 128px 0 0 0
+    background:
+        position: top center
+        repeat: no-repeat
+        size: cover
+        filter: brightness(1.75)
+    @media (max-width : $bpLarge)
+        padding: 96px 0 20px
+    @media (max-width : $bpSmall)
+        padding-top: 0
+
+    &__phone-1
+        flex-basis: 23%
+        z-index: 10
+        margin-left: 7%
+        img
+          width: 100%
+        @media (max-width : $bpLarge)
+          margin-left: 0
+        @media (max-width : $bpSmall)
+          flex: 0 0 auto
+          padding: 0 8%
+    &__phone-2
+        flex-basis: 17%
+        z-index: 9
+        margin-top: -12%
+        margin-right: 28%
+        @media (max-width : $bpLarge)
+          margin-right: 0
+          margin-top: 0
+    &__phone-3
+        margin-right: 28%
+        margin-top: 113px
+        @media (max-width : $bpExtraLarge)
+          margin-right: 0
+          margin-top: 25px
+        @media (max-width : $bpLarge)
+          margin-left: 2%
+        @media (max-width : $bpSmall)
+          flex: 0 0 auto
+
+    &__phone-4
+        margin-left: 181px
+        margin-top: -260px
+        @media (max-width : $bpExtraLarge)
+          margin-left: 342px
+          margin-top: -340px
+        @media (max-width : $bpLarge)
+          margin-left: 25px //3%
+          margin-top: 0
+    &__text-left
+        text-align: right
+        flex-basis: 30%
+        align-self: self-end
+        padding-right: 7%
+        margin-bottom: 75px
+        @media (max-width : $bpLarge)
+          margin-bottom: 130px
+          padding-right: 0
+        @media (max-width : $bpMedium)
+          padding-right: 9px
+        @media (max-width : $bpSmall)
+          flex-basis: 40%
+          padding-top: 20px
+          text-align: center
+          margin-bottom: 0
+    &__text-right
+        text-align: left
+        flex-basis: 30%
+        padding-left: 7%
+        margin-top: 80px
+        @media (max-width : $bpLarge)
+          padding-left: 0
+        @media (max-width : $bpMedium)
+          padding-left: 7px
+        @media (max-width : $bpSmall)
+          margin-top: 40px
+          margin-bottom: 40px
+          text-align: center
+    &__text-title
+        font-size: 40px
+        line-height: 48px
+        font-weight: 400
+    &__text-info
+        font-size: 20px
+        line-height: 28px
+        padding-top: 32px
+        font-weight: 400
+        color: #7D85A4
+        @media (max-width : $bpSmall)
+          padding-top: 0
+    &__row-1
+        justify-content: space-between
+        position: relative
+        @media (max-width : $bpLarge)
+          justify-content: space-evenly
+        @media (max-width : $bpSmall)
+          flex-wrap: wrap-reverse
+          justify-content: center
+    &__row-2
+        justify-content: center
+        position: relative
+        @media (max-width : $bpLarge)
+          justify-content: space-evenly
+          padding-top: 40px
+        @media (max-width : $bpSmall)
+          justify-content: center
+
+    &__row-3
+        justify-content: center
+        position: relative
+        @media (max-width : $bpLarge)
+          justify-content: space-evenly
+        //@media (max-width : $bpSmall)
+        //  justify-content: center
+
+    &__row-4
+        justify-content: center
+        position: relative
+        @media (max-width : $bpLarge)
+          justify-content: space-evenly
+          padding-top: 40px
+    &__image-right
+        width: 200px
+        height: 215px
+        margin-bottom: 72px
+        img
+          width: 100%
+        @media (max-width : $bpSmall)
+          margin: 10px auto
+    &__info-right
+        position: absolute
+        right: 3%
+        width: 312px
+        bottom: -10%
+        @media (max-width : $bpLarge)
+          position: relative
+        @media (max-width : $bpMedium)
+          right: unset
+          padding-left: 5%
+        @media (max-width : $bpSmall)
+          padding-top: 20px
+          text-align: center
+    &__info-right-2
+        position: absolute
+        right: 3%
+        width: 312px
+        bottom: 109%
+        @media (max-width : $bpExtraLarge)
+          left: 3%
+        @media (max-width : $bpLarge)
+          position: relative
+        @media (max-width : $bpMedium)
+          display: flex
+          flex-direction: column
+          justify-content: center
+        @media (max-width : $bpSmall)
+          text-align: center
+          padding-top: 20px
+    &__info-left
+        position: absolute
+        left: -1px
+        width: 312px
+        bottom: 63%
+        text-align: right
+        @media (max-width : $bpLarge)
+          position: relative
+          text-align: left
+          display: flex
+          flex-direction: column
+          justify-content: center
+        @media (max-width : $bpSmall)
+          text-align: center
+          padding-top: 20px
+
+.project-ume-5
+    padding: 128px 0 0 0
+    background:
+        position: 100% 100%
+        repeat: no-repeat
+        size: 60%
+        filter: brightness(1.75)
+    @media (max-width : $bpLarge)
+      padding-top: 28px
+    &__text-info
+        font-size: 40px
+        line-height: 48px
+        font-weight: 400
+        text-align: center
+        @media (max-width : $bpSmall)
+          font-size: 20px
+          line-height: 28px
+    &__text-big
+        font-size: 100px
+        line-height: 100px
+        font-weight: 400
+        color: #B79646
+        text-align: center
+        text-transform: uppercase
+        padding-top: 63px
+        @media (max-width : $bpLarge)
+          line-height: 1em
+          font-size: 5em
+        @media (max-width : $bpMedium)
+          font-size: 5em
+          line-height: 1em
+        @media (max-width : $bpSmall)
+          padding-top: 20px
+          font-size: 3em
+          line-height: 1em
+
+    &__rows
+        justify-content: center
+        position: relative
+    &__stores
+        display: flex
+        justify-content: center
+        margin-top: 72px
+    &__android
+        padding-right: 21px
+        img
+          width: 100%
+    &__apple
+        img
+          width: 100%
+
+.info-parent
+    position: relative
+.dog-hand
+    position: absolute
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+.info-flex
+    display: flex
+    padding-top: 96px
+    @media (max-width : $bpLarge)
+      padding-top: 0
+    @media (max-width : $bpSmall)
+      display: block
+      padding-top: 0
+.info-text
+    display: flex
+    p
+      justify-content: right
+.info-img
+    display: flex
+    width: 534px
+    height: 418px
+    @media (max-width : $bpExtraLarge)
+      width: 300px
+      height: unset
+      margin: 0 auto
+      img
+          width: 100%
