@@ -123,11 +123,6 @@ use yii\web\View;
 
 
 
-
-
-
-
-
 <?php
 
 $js = <<<JS
