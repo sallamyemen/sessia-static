@@ -34,7 +34,6 @@ use yii\web\View;
     </div>
 </section>
 
-
 <section class="project-nrk-2" style="background-image: url('<?= Url::to('@web/storage/project/nrk/bg-2.svg?v=1') ?>')">
     <div class="container">
         <div class="row">

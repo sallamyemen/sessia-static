@@ -5,7 +5,6 @@ use yii\helpers\Url;
 use yii\web\View;
 
 ?>
-
 <section class="project-ume-1" style="background-image: url('<?= Url::to('@web/storage/project/ume/bg-1.svg?v=1') ?>')">
     <div class="container">
         <div class="row">

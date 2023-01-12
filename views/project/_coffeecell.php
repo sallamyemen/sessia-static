@@ -159,7 +159,6 @@ use yii\web\View;
     </div>
 </section>
 
-
 <?php
 
 $js = <<<JS

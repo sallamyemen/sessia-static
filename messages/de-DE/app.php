@@ -164,5 +164,4 @@ return [
     "для оперативного реагирования на экстренную ситуацию и вызова помощи" => "für sofortige Reaktion auf einen Notfall und Hilferuf",
     "Безопасность{br}под контролем{br}" => "Sicherheit{br}unter Kontrolle{br}",
     "С приложением NRK87. {br} вы не только сможете подчеркнуть индивидуальность своего стиля, но и быть уверенными в безопасности близких людей" => "Mit der NRK87.-App {br} könnten Sie nicht nur die Individualität Ihres Stils betonen, sondern sich auch der Gefahrlosigkeit Ihrer Lieben sicher sein",
-
 ];
