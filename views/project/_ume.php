@@ -10,7 +10,7 @@ use yii\web\View;
     <div class="container">
         <div class="row">
             <div class="col-lg-10 offset-lg-1 info-parent">
-                <div class="project-ume-1__image " style="background-image: url('<?= Url::to('@web/storage/project/ume/image-1-3.png?v=1') ?>')"></div>
+                <div class="project-ume-1__image "style="background-image: url('<?= Url::to('@web/storage/project/ume/image-1-3.png?v=1') ?>')"></div>
                 <div class="project-ume-1__image dog-hand" style="background-image: url('<?= Url::to('@web/storage/project/ume/image-1-2.png?v=1') ?>')"></div>
             </div>
 

@@ -150,11 +150,10 @@ $this->title = 'SESSIA. GET IT RIGHT';
                     <div id="particles-company" class="particles"></div>
                 </div>
                 <div class="company__description wow fadeIn">
-                    <?//= Yii::t('app', 'Мы работаем с 2016 года и входим в список IT-компаний, аккредитованных
-                    // Министерством цифрового развития, связи и массовых коммуникаций РФ. № рег. 6238 от 10.08.2016.') ?>
+                    <?//= Yii::t('app', '') ?>
                     <div class="company__description-small">
-                        <?//= Yii::t('app', 'Все наши сотрудники состоят в штате и работают в офисе по адресу:
-                        // Москва, Новинский бульвар, 18с1.') ?>
+                        <?//= Yii::t('app', '') ?>
+
                     </div>
                 </div>
             </div>

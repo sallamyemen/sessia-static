@@ -93,7 +93,6 @@ $projects = [
         'img' => 'phone8.png?v=1',
     ],
 ];
-
 ?>
 
 <div class="projects" id="projects">
