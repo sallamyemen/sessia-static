@@ -95,7 +95,6 @@ $projects = [
 ];
 ?>
 
-
 <div class="projects" id="projects">
     <div class="wrapper wrapper_block">
         <div class="projects__header wow fadeIn"><?= Yii::t('app', 'Проекты Sessia') ?></div>

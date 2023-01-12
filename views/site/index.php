@@ -8,6 +8,7 @@ use yii\web\View;
 $this->title = 'SESSIA. GET IT RIGHT';
 
 ?>
+
 <div class="header">
     <div class="container">
         <div class="wrapper" style="position: relative; padding-top: 12px;">
