@@ -28,7 +28,7 @@ use yii\web\View;
             <div class="col-lg-6">
                 <div class="project-coffeecell-1__text-2-container">
                     <div class="project-coffeecell-1__text-2 wow fadeInDown">
-                        <?= Yii::t('app', 'Создан в&nbsp;2007 году и&nbsp;насчитывает более 160&nbsp;000 клиентов в&nbsp;России, США, Вьетнаме, Германии, Австрии, Узбекистане и&nbsp;других странах Европы и&nbsp;Азии.') ?>
+                        <?= Yii::t('app', 'Создан в&nbsp;2007 году и&nbsp;насчитывает более 160&nbsp;000 клиентов в&nbsp; США, Вьетнаме, Германии, Австрии, Узбекистане и&nbsp;других странах Европы и&nbsp;Азии.') ?>
                     </div>
                 </div>
             </div>
@@ -158,6 +158,7 @@ use yii\web\View;
         </div>
     </div>
 </section>
+
 
 <?php
 

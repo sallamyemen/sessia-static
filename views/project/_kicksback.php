@@ -56,7 +56,7 @@ use yii\web\View;
                 <div class="project-kicksback-1__text-4 wow fadeInDown">
                     <?= Yii::t('app', 'Kicksback — это:') ?>
                     <ul>
-                        <li><?= Yii::t('app', 'Лучшие рестораны и&nbsp;магазины Москвы, а&nbsp;также интернет-магазины и&nbsp;доставка еды') ?></li>
+                        <li><?= Yii::t('app', 'Лучшие рестораны и&nbsp;магазины, а&nbsp;также интернет-магазины и&nbsp;доставка еды') ?></li>
                         <li><?= Yii::t('app', 'Быстрое начисление кэшбэка и&nbsp;киксбэка') ?></li>
                         <li><?= Yii::t('app', 'Ежедневные подарки-киксы по&nbsp;твоему выбору') ?></li>
                         <li><?= Yii::t('app', 'Вывод накопленных денег на&nbsp;карту с&nbsp;минимальной комиссией') ?></li>
@@ -137,6 +137,7 @@ use yii\web\View;
         </div>
     </div>
 </section>
+
 
 <?= Html::jsFile("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js") ?>
 <?= Html::jsFile("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js") ?>

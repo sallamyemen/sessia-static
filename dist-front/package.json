@@ -15,11 +15,13 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "node-bourbon": "^4.2.8",
-    "node-sass": "^7.0.1",
     "sass": "^1.49.11"
   },
   "browserslist": [
     "> 0.1%"
   ],
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
 }

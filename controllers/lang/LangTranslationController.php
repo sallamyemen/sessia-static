@@ -25,7 +25,7 @@ class LangTranslationController extends Controller
     }
 
     /**
-     * http://sessia.web.local/lang/lang-translation/table/?lang=1
+     * http://sessia.local/lang/lang-translation/table/?lang=1
      */
     public function actionTable(int $lang = 0, string $category = 'app')
     {
