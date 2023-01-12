@@ -42,7 +42,7 @@ $projects = [
         'id' => 3,
         'header' => 'Kicksback',
         'subtitle' => Yii::t('app', 'мобильное приложение'),
-        'description' => Yii::t('app', 'Кэшбэк-сервис, помогающий получать подарки и совершать выгодные покупки в ресторанах и магазинах Москвы, а также зарабатывать на рекомендациях'),
+        'description' => Yii::t('app', 'Кэшбэк-сервис, помогающий получать подарки и совершать выгодные покупки в ресторанах и магазинах, а также зарабатывать на рекомендациях'),
         'link' => ['/project/view', 'project' => 'kicksback'],
         'store_link' => getOs() === 'ios' ? 'https://apps.apple.com/app/kicksback-cashback-and-gifts/id1546115424' : 'https://play.google.com/store/apps/details?id=com.sessia.kickbacks',
         'img' => 'phone3.png?v=1',

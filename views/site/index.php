@@ -64,7 +64,7 @@ $this->title = 'SESSIA. GET IT RIGHT';
                 <div class="services__item wow fadeIn" data-wow-delay="1.5s">
                     <ul class="services__bull">
                         <li>
-                            <div class="services__item-header"><?= Yii::t('app', 'Кибербезопасность отечественных компаний') ?></div>
+                            <div class="services__item-header"><?= Yii::t('app', 'Кибербезопасность компаний в разных отраслях') ?></div>
                             <span class="services__text"><?= Yii::t('app', 'Комплексные решения для защиты инфраструктуры и баз данных') ?></span>
                         </li>
                     </ul>
@@ -104,7 +104,7 @@ $this->title = 'SESSIA. GET IT RIGHT';
     <div class="wrapper wrapper_block">
         <div class="company__header-block">
             <div class="wow fadeIn">
-                <div class="company__header"><?= Yii::t('app', 'Sessia — команда российских разработчиков программного обеспечения и мобильных приложений') ?></div>
+                <div class="company__header"><?= Yii::t('app', 'Sessia — команда разработчиков программного обеспечения и мобильных приложений') ?></div>
                 <div class="company__subtitle">
                     <?= Yii::t('app', 'Наши IT-продукты помогают компаниям автоматизировать процессы управления, финансирования, продаж и логистики, повысить их эффективность и прозрачность.') ?>
                 </div>
@@ -150,9 +150,11 @@ $this->title = 'SESSIA. GET IT RIGHT';
                     <div id="particles-company" class="particles"></div>
                 </div>
                 <div class="company__description wow fadeIn">
-                    <?= Yii::t('app', 'Мы работаем с 2016 года и входим в список IT-компаний, аккредитованных Министерством цифрового развития, связи и массовых коммуникаций РФ. № рег. 6238 от 10.08.2016.') ?>
+                    <?//= Yii::t('app', 'Мы работаем с 2016 года и входим в список IT-компаний, аккредитованных
+                    // Министерством цифрового развития, связи и массовых коммуникаций РФ. № рег. 6238 от 10.08.2016.') ?>
                     <div class="company__description-small">
-                        <?= Yii::t('app', 'Все наши сотрудники состоят в штате и работают в офисе по адресу: Москва, Новинский бульвар, 18с1.') ?>
+                        <?//= Yii::t('app', 'Все наши сотрудники состоят в штате и работают в офисе по адресу:
+                        // Москва, Новинский бульвар, 18с1.') ?>
                     </div>
                 </div>
             </div>

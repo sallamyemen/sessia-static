@@ -6,9 +6,6 @@
 # composer vendor dir
 /vendor
 
-# messages dir
-/messages
-
 /runtime
 
 # composer itself is not needed
