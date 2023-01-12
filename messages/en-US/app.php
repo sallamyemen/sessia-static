@@ -164,5 +164,5 @@ return [
     "для оперативного реагирования на экстренную ситуацию и вызова помощи" => "to quickly react to emergencies and call for help",
     "Безопасность{br}под контролем{br}" => "Safety{br}under control{br}",
     "С приложением NRK87. {br} вы не только сможете подчеркнуть индивидуальность своего стиля, но и быть уверенными в безопасности близких людей" => "With the NRK8. app {br} you will not only be able to emphasize your style's individuality, but will also be sure of the safety of your loved ones",
-
+    "Функционал {br}и возможности" => "Functionality and opportunities",
 ];

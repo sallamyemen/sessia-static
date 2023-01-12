@@ -92,7 +92,7 @@ use yii\web\View;
                     <a href="https://play.google.com/store/apps/details?id=com.sessia.nrk87"><img src="<?= Url::to('@web/storage/project/icon-google.svg?v=1') ?>" alt="android"></a>
                 </div>
                 <div class="project-nrk-3__apple">
-                    <a href="#!"><img src="<?= Url::to('@web/storage/project/icon-apple.svg?v=1') ?>" alt="apple"></a>
+                    <a href="https://apps.apple.com/ge/app/nrk87/id1602546975"><img src="<?= Url::to('@web/storage/project/icon-apple.svg?v=1') ?>" alt="apple"></a>
                 </div>
             </div>
 
