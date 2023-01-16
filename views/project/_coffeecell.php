@@ -4,6 +4,11 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\web\View;
 
+switch(Yii::$app->language) {
+    case "en-US": $path = "@web/storage/project/translate/coffeecell-en/"; break;
+    default: $path = "@web/storage/project/coffeecell/"; break;
+}
+
 ?>
 
 <section class="project-coffeecell-1" style="background-image: url('<?= Url::to('@web/storage/project/coffeecell/bg-1.svg?v=1') ?>')">
@@ -18,7 +23,8 @@ use yii\web\View;
                 <div class="project-coffeecell-1__info wow fadeInDown">
                     <?= Yii::t('app', 'Официальное приложение для&nbsp;клиентов бренда с&nbsp;функционалом онлайн-магазина, элементами соцсети и&nbsp;интегрированной программой привилегий') ?>
                 </div>
-                <div class="project-coffeecell-1__image project-coffeecell-1__image_1 wow fadeInDown" style="background-image: url('<?= Url::to('@web/storage/project/coffeecell/image-1.png?v=1') ?>')"></div>
+                <div class="project-coffeecell-1__image project-coffeecell-1__image_1 wow fadeInDown"
+                     style="background-image: url('<?= Url::to($path.'image-1.png?v=1') ?>')"></div>
             </div>
             <div class="col-lg-6">
                 <div class="project-coffeecell-1__text-1 wow fadeInDown">
@@ -41,7 +47,7 @@ use yii\web\View;
         <div class="project-coffeecell-2__row-1">
             <div class="row">
                 <div class="col-lg-3 offset-lg-5">
-                    <div class="project-coffeecell-2__image-1 wow fadeInDown" style="background-image: url('<?= Url::to('@web/storage/project/coffeecell/image-2-1.png?v=1') ?>')"></div>
+                    <div class="project-coffeecell-2__image-1 wow fadeInDown" style="background-image: url('<?= Url::to($path.'image-2-1.png?v=1') ?>')"></div>
                 </div>
                 <div class="col-lg-3 offset-lg-1">
                     <div class="project-coffeecell-2__title-first wow fadeInDown">
@@ -54,7 +60,7 @@ use yii\web\View;
             </div>
         </div>
         <div class="project-coffeecell-2__row-2">
-            <div class="project-coffeecell-2__image-2 wow fadeInDown tablet mobile" style="background-image: url('<?= Url::to('@web/storage/project/coffeecell/image-2-2.png?v=1') ?>')"></div>
+            <div class="project-coffeecell-2__image-2 wow fadeInDown tablet mobile" style="background-image: url('<?= Url::to($path.'image-2-2.png?v=1') ?>')"></div>
             <div class="row">
                 <div class="col-lg-3">
                     <div class="project-coffeecell-2__title wow fadeInDown">
@@ -72,7 +78,7 @@ use yii\web\View;
         <div class="project-coffeecell-2__row-3">
             <div class="row">
                 <div class="col-lg-3 offset-lg-6">
-                    <div class="project-coffeecell-2__image-3 wow fadeInDown" style="background-image: url('<?= Url::to('@web/storage/project/coffeecell/image-2-3.png?v=1') ?>')"></div>
+                    <div class="project-coffeecell-2__image-3 wow fadeInDown" style="background-image: url('<?= Url::to($path.'image-2-3.png?v=1') ?>')"></div>
                 </div>
                 <div class="col-lg-3">
                     <div class="project-coffeecell-2__title wow fadeInDown">
@@ -85,7 +91,7 @@ use yii\web\View;
             </div>
         </div>
         <div class="project-coffeecell-2__row-4">
-            <div class="project-coffeecell-2__image-4 wow fadeInDown tablet mobile" style="background-image: url('<?= Url::to('@web/storage/project/coffeecell/image-2-4.png?v=1') ?>')"></div>
+            <div class="project-coffeecell-2__image-4 wow fadeInDown tablet mobile" style="background-image: url('<?= Url::to($path.'image-2-4.png?v=1') ?>')"></div>
             <div class="row">
                 <div class="col-lg-3">
                     <div class="project-coffeecell-2__title wow fadeInDown">
@@ -96,14 +102,14 @@ use yii\web\View;
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="project-coffeecell-2__image-4 wow fadeInDown desktop laptop" style="background-image: url('<?= Url::to('@web/storage/project/coffeecell/image-2-4.png?v=1') ?>')"></div>
+                    <div class="project-coffeecell-2__image-4 wow fadeInDown desktop laptop" style="background-image: url('<?= Url::to($path.'image-2-4.png?v=1') ?>')"></div>
                 </div>
             </div>
         </div>
         <div class="project-coffeecell-2__row-5">
             <div class="row">
                 <div class="col-lg-3 offset-lg-6">
-                    <div class="project-coffeecell-2__image-5 wow fadeInDown" style="background-image: url('<?= Url::to('@web/storage/project/coffeecell/image-2-5.png?v=1') ?>')"></div>
+                    <div class="project-coffeecell-2__image-5 wow fadeInDown" style="background-image: url('<?= Url::to($path.'image-2-5.png?v=1') ?>')"></div>
                 </div>
                 <div class="col-lg-3">
                     <div class="project-coffeecell-2__title wow fadeInDown">
@@ -151,7 +157,7 @@ use yii\web\View;
             <div class="project-coffeecell-3__image-container">
                 <div class="row">
                     <div class="col-lg-5 offset-lg-7">
-                        <div class="project-coffeecell-3__image wow fadeInDown" style="background-image: url('<?= Url::to('@web/storage/project/coffeecell/image-3.png?v=1') ?>')"></div>
+                        <div class="project-coffeecell-3__image wow fadeInDown" style="background-image: url('<?= Url::to($path.'image-3.png?v=1') ?>')"></div>
                     </div>
                 </div>
             </div>

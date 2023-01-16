@@ -4,6 +4,10 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\web\View;
 
+switch(Yii::$app->language) {
+    case "en-US": $path = "@web/storage/project/translate/ume-en/"; break;
+    default: $path = "@web/storage/project/ume/"; break;
+}
 ?>
 
 <section class="project-ume-1" style="background-image: url('<?= Url::to('@web/storage/project/ume/bg-1.svg?v=1') ?>')">
@@ -39,7 +43,7 @@ use yii\web\View;
     <div class="container">
         <div class="row project-ume-3__row-img">
             <div class="project-ume-3__image wow fadeInDown">
-                <img src="<?= Url::to('@web/storage/project/ume/image-3-1.png?v=1') ?>" alt="">
+               <img src="<?= Url::to($path .'image-3-1.png?v=1') ?>" alt="">
             </div>
             <div class="project-ume-3__flex wow fadeInDown">
                 <p class="project-ume-3__text-big project-ume-3__left">
@@ -62,7 +66,7 @@ use yii\web\View;
                 <p class="project-ume-4__text-info"><?= Yii::t('app', 'приглашайте друзей своего питомца и ведите ленту с его постами') ?></p>
             </div>
             <div class="project-ume-4__phone-1">
-                <img src="<?= Url::to('@web/storage/project/ume/image-4-1.png?v=1') ?>" alt="">
+               <img src="<?= Url::to($path .'image-4-1.png?v=1') ?>" alt="">
             </div>
             <div class="project-ume-4__text-right">
                 <p class="project-ume-4__text-title"><?= Yii::t('app', 'Маркетплейс') ?></p>
@@ -72,7 +76,7 @@ use yii\web\View;
         </div>
         <div class="row project-ume-4__row-2 wow fadeInUp">
             <div class="project-ume-4__phone-2">
-                <img src="<?= Url::to('@web/storage/project/ume/image-4-3.png?v=1') ?>" alt="">
+                <img src="<?= Url::to($path .'image-4-3.png?v=1') ?>" alt="">
             </div>
             <div class="project-ume-4__info-right">
                 <div class="project-ume-4__image-right">
@@ -84,7 +88,7 @@ use yii\web\View;
         </div>
         <div class="row project-ume-4__row-3 wow fadeInUp">
             <div class="project-ume-4__phone-3">
-                <img src="<?= Url::to('@web/storage/project/ume/image-4-4.png?v=1') ?>" alt="">
+                <img src="<?= Url::to($path .'image-4-4.png?v=1') ?>" alt="">
             </div>
             <div class="project-ume-4__info-left">
                 <p class="project-ume-4__text-title"><?= Yii::t('app', 'Консьерж') ?></p>
@@ -93,7 +97,7 @@ use yii\web\View;
         </div>
         <div class="row project-ume-4__row-4 wow fadeInUp">
             <div class="project-ume-4__phone-4">
-                <img src="<?= Url::to('@web/storage/project/ume/image-4-5.png?v=1') ?>" alt="">
+                <img src="<?= Url::to($path .'image-4-5.png?v=1') ?>" alt="">
             </div>
             <div class="project-ume-4__info-right-2">
                 <p class="project-ume-4__text-title"><?= Yii::t('app', 'Документы') ?></p>
