@@ -96,8 +96,11 @@ $projects = [
 
 switch(Yii::$app->language) {
     case "en-US": $path = "@web/front/img-main-en/"; break;
+    case "de-DE": $path = "@web/front/img-main-en/"; break;
+    case "vi-VN": $path = "@web/front/img-main-en/"; break;
     default: $path = "@web/front/img-main/"; break;
 }
+
 ?>
 
 <div class="projects" id="projects">

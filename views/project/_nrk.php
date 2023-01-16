@@ -6,8 +6,11 @@ use yii\web\View;
 
 switch(Yii::$app->language) {
     case "en-US": $path = "@web/storage/project/translate/nrk-en/"; break;
+    case "de-DE": $path = "@web/storage/project/translate/nrk-en/"; break;
+    case "vi-VN": $path = "@web/storage/project/translate/nrk-en/"; break;
     default: $path = "@web/storage/project/nrk/"; break;
 }
+
 ?>
 
 <section class="project-nrk-1" style="background-image: url('<?= Url::to('@web/storage/project/nrk/bg-1.svg?v=1') ?>')">
