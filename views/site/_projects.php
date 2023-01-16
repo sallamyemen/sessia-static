@@ -99,7 +99,7 @@ switch(Yii::$app->language) {
     default: $path = "@web/front/img-main/"; break;
 }
 ?>
-?>
+
 
 <div class="projects" id="projects">
     <div class="wrapper wrapper_block">
