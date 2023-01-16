@@ -24,7 +24,11 @@ require __DIR__ . '/../vendor/yiisoft/yii2/Yii.php';
 
 // загрузка конфигурации приложения
 $config = require __DIR__ . '/../config/web.php';
-
+function dd($a) {
+    echo "<pre>";
+    print_r($a);
+    echo "</pre>";
+}
 try {
     (new yii\web\Application($config))->run();
 } catch (\yii\base\InvalidConfigException $e) {

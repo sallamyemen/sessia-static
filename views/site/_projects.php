@@ -93,6 +93,12 @@ $projects = [
         'img' => 'phone8.png?v=1',
     ],
 ];
+
+switch(Yii::$app->language) {
+    case "en-US": $path = "@web/front/img-main-en/"; break;
+    default: $path = "@web/front/img-main/"; break;
+}
+?>
 ?>
 
 <div class="projects" id="projects">
@@ -116,7 +122,7 @@ $projects = [
                     <?php } ?>
                 </div>
                 <div class="gallery__img gallery__img_<?= $project->id ?>">
-                    <img class="" src="<?= Url::to('@web/front/img-main/' . $project->img) ?>" alt="phone">
+                        <img class="" src="<?= Url::to($path . $project->img) ?>" alt="phone">
                 </div>
             </div>
         <?php } ?>

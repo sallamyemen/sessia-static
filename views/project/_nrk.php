@@ -4,6 +4,10 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\web\View;
 
+switch(Yii::$app->language) {
+    case "en-US": $path = "@web/storage/project/translate/nrk-en/"; break;
+    default: $path = "@web/storage/project/nrk/"; break;
+}
 ?>
 
 <section class="project-nrk-1" style="background-image: url('<?= Url::to('@web/storage/project/nrk/bg-1.svg?v=1') ?>')">
@@ -27,7 +31,7 @@ use yii\web\View;
                     <?= Yii::t('app', 'Приложение {br} для клиентов бренда с функционалом онлайн-магазина и сервисом поддержки GPS-трекер', ['br' => '<br>']) ?>
                 </div>
                 <div class="project-nrk-1__logo-phone wow fadeInUp">
-                    <img src="<?= Url::to('@web/storage/project/nrk/image-1-2.png?v=1') ?>" alt="">
+                    <img src="<?= Url::to($path .'image-1-2.png?v=1') ?>" alt="">
                 </div>
             </div>
         </div>
@@ -44,7 +48,7 @@ use yii\web\View;
         <div class="row project-nrk-2__wrap">
                 <div class="project-nrk-2__colomn-1" >
                     <div class="project-nrk-2__image project-nrk-2__phone-1 wow fadeInDown">
-                        <img src="<?= Url::to('@web/storage/project/nrk/image-2-1.png?v=1') ?>" alt="">
+                        <img src="<?= Url::to($path .'image-2-1.png?v=1') ?>" alt="">
                     </div>
                     <div class="project-nrk-2__text-1">
                         <div class="project-nrk-2__title-text"><?= Yii::t('app', 'Онлайн-магазин') ?></div>
@@ -54,7 +58,7 @@ use yii\web\View;
                         <div class="project-nrk-2__title-text"><?= Yii::t('app', 'Приватные звонки для связи с обладателем одежды NRK87., оснащенной GPS-трекером') ?></div>
                     </div>
                     <div class="project-nrk-2__image project-nrk-2__phone-4 wow fadeInUP">
-                        <img src="<?= Url::to('@web/storage/project/nrk/image-2-3.png?v=1') ?>" alt="">
+                       <img src="<?= Url::to($path .'image-2-3.png?v=1') ?>" alt="">
                     </div>
                 </div>
                 <div class="project-nrk-2__colomn-2">
@@ -63,10 +67,10 @@ use yii\web\View;
                         <div class="project-nrk-2__small-text"><?= Yii::t('app', 'с картой для отслеживания устройства по геопозиции и истории передвижений') ?></div>
                     </div>
                     <div class="project-nrk-2__image project-nrk-2__phone-2 wow fadeInUp">
-                        <img src="<?= Url::to('@web/storage/project/nrk/image-2-2.png?v=1') ?>" alt="">
+                        <img src="<?= Url::to($path .'image-2-2.png?v=1') ?>" alt="">
                     </div>
                     <div class="project-nrk-2__image project-nrk-2__phone-3 wow fadeInDown">
-                        <img src="<?= Url::to('@web/storage/project/nrk/image-2-4.png?v=1') ?>" alt="">
+                        <img src="<?= Url::to($path .'image-2-4.png?v=1') ?>" alt="">
                     </div>
                     <div class="project-nrk-2__text-4">
                         <div class="project-nrk-2__title-text"><?= Yii::t('app', 'SOS-кнопка') ?></div>
@@ -98,7 +102,6 @@ use yii\web\View;
 
     </div>
 </section>
-
 
 <?php
 
