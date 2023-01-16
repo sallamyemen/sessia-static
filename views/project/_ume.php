@@ -10,6 +10,7 @@ switch(Yii::$app->language) {
     case "vi-VN": $path = "@web/storage/project/translate/ume-en/"; break;
     default: $path = "@web/storage/project/ume/"; break;
 }
+
 ?>
 
 <section class="project-ume-1" style="background-image: url('<?= Url::to('@web/storage/project/ume/bg-1.svg?v=1') ?>')">

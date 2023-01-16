@@ -6,8 +6,8 @@ use yii\web\View;
 
 switch(Yii::$app->language) {
     case "en-US": $path = "@web/storage/project/translate/project-v-en/"; $class = "eng-lang";break;
-    case "de-DE": $path = "@web/storage/project/translate/project-v-en/"; $class = "eng-lang";break;
-    case "vi-VN": $path = "@web/storage/project/translate/project-v-en/"; $class = "eng-lang";break;
+    case "de-DE": $path = "@web/storage/project/translate/project-v-de/"; $class = "eng-lang";break;
+    case "vi-VN": $path = "@web/storage/project/translate/project-v-vi/"; $class = "eng-lang";break;
     default: $path = "@web/storage/project/project-v/"; break;
 }
 ?>

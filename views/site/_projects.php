@@ -100,6 +100,7 @@ switch(Yii::$app->language) {
     case "vi-VN": $path = "@web/front/img-main-en/"; break;
     default: $path = "@web/front/img-main/"; break;
 }
+
 ?>
 
 <div class="projects" id="projects">
