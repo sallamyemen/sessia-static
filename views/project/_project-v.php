@@ -87,15 +87,15 @@ $arr = [
         </div>
         <div class="project-project-v-3__list">
         <?php foreach ($arr as $key => $val) { ?>
-            <div class="project-project-v-3__item block<?=$key?>">
+            <div class="project-project-v-3__item block<?=$key?>  wow fadeInDown">
                 <div class="row">
-                    <div class="col-lg-<?= (4 + $key) ?> ">
-                        <div class="project-project-v-3__item-title"><?= $val->title ?></div>
+                    <div class="col-lg-<?= (4 + $key) ?> wow fadeInDown">
+                        <div class="project-project-v-3__item-title "><?= $val->title ?></div>
                         <div class="project-project-v-3__item-hr"></div>
                         <div class="project-project-v-3__item-text"><?= $val->text ?></div>
                     </div>
-                    <div class="col-lg-<?= (8 - $key) ?>">
-                        <div class="project-project-v-3__item-image-container wow fadeInDown">
+                    <div class="col-lg-<?= (8 - $key) ?> wow fadeInDown">
+                        <div class="project-project-v-3__item-image-container">
                             <div class="project-project-v-3__item-image " style="background-image: url('<?= Url::to($path . 'image-3-' . ($key + 1) . '.png?v=1') ?>'); z-index: <?= (9 - $key) ?>"></div>
                         </div>
                     </div>
