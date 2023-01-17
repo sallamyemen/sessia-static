@@ -94,8 +94,8 @@
 	color: $colorBlack
 	@media (max-width : $bpLarge)
 		padding: 64px 0
-	@media (max-width : $bpMedium)
-		height: unset
+	//@media (max-width : $bpMedium)
+	//	height: unset
 	&__title
 		text-align: center
 		margin-bottom: 192px
@@ -115,20 +115,19 @@
 			line-height: 40px
 	&__list
 		position: relative
-		transform: translateY(40em)
-		@media (max-width : $bpMedium)
-			transform: translateY(0em)
-
+		//transform: translateY(40em)
+		//@media (max-width : $bpMedium)
+		//	transform: translateY(0em)
 	&__item
-		//margin-top: 128px
-		position: absolute
-		bottom: 0
-		transition: all 1500ms ease 0s
+		margin-top: 128px
+		//position: absolute
+		//bottom: 0
+		//transition: all 1500ms ease 0s
 		@media (max-width : $bpLarge)
 			margin-top: 0
-		@media (max-width : $bpMedium)
-			position: unset
-			transform: unset
+		//@media (max-width : $bpMedium)
+		//	position: unset
+		//	transform: unset
 		&-title
 			width: 302px
 			margin-bottom: 12px
@@ -169,7 +168,7 @@
 			@media (max-width : $bpLarge)
 				height: 349px
 		&-image
-			//position: absolute
+			position: absolute
 			top: -156px
 			left: -108px
 			width: 1170px
