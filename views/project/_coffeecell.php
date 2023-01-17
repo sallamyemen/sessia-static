@@ -72,7 +72,8 @@ switch(Yii::$app->language) {
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="project-coffeecell-2__image-2 wow fadeInDown desktop laptop" style="background-image: url('<?= Url::to('@web/storage/project/coffeecell/image-2-2.png?v=1') ?>')"></div>
+                    <div class="project-coffeecell-2__image-2 wow fadeInDown desktop laptop" style="background-image:
+                            url('<?= Url::to($path.'image-2-2.png?v=1') ?>')"></div>
                 </div>
             </div>
         </div>
