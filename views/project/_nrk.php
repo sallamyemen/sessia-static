@@ -95,11 +95,16 @@ switch(Yii::$app->language) {
 
             </div>
             <div class="project-nrk-3__stores wow fadeInDown">
-                <div class="project-nrk-3__android">
-                    <a href="https://play.google.com/store/apps/details?id=com.sessia.nrk87"><img src="<?= Url::to('@web/storage/project/icon-google.svg?v=1') ?>" alt="android"></a>
+                <div class="project-nrk-3__link">
+                    <?= Html::a('', 'https://nrk87.com', ['class' => 'project__link project__link_site', 'target' => '_blank']) ?>
                 </div>
+                <div class="project__hr"></div>
+                <div class="project-nrk-3__android">
+                    <?= Html::a('', 'https://play.google.com/store/apps/details?id=com.sessia.nrk87', ['class' => 'project__link project__link_google', 'target' => '_blank']) ?>
+                </div>
+                <div class="project__hr"></div>
                 <div class="project-nrk-3__apple">
-                    <a href="https://apps.apple.com/ge/app/nrk87/id1602546975"><img src="<?= Url::to('@web/storage/project/icon-apple.svg?v=1') ?>" alt="apple"></a>
+                    <?= Html::a('', 'https://apps.apple.com/ge/app/nrk87/id1602546975', ['class' => 'project__link project__link_apple', 'target' => '_blank']) ?>
                 </div>
             </div>
 

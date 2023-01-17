@@ -46,7 +46,7 @@ switch(Yii::$app->language) {
                     </div>
                     <div class="project-project-v-2__caption wow fadeInDown">
                         <b><?= Yii::t('app', 'Работает в&nbsp;17&nbsp;странах:') ?></b><br>
-                        <?= Yii::t('app', 'США, России, Вьетнаме, Германии, Австрии, Польше Болгарии, Узбекистане, Казахстане, Армении, Сингапуре и&nbsp;др.') ?>
+                        <?= Yii::t('app', 'США, Вьетнаме, Германии, Австрии, Польше Болгарии, Узбекистане, Казахстане, Армении, Сингапуре и&nbsp;др.') ?>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@ $arr = [
         </div>
         <div class="project-project-v-3__list">
         <?php foreach ($arr as $key => $val) { ?>
-            <div class="project-project-v-3__item wow fadeInDown">
+            <div class="project-project-v-3__item block<?=$key?> wow fadeInDown">
                 <div class="row">
                     <div class="col-lg-<?= (4 + $key) ?> wow fadeInDown">
                         <div class="project-project-v-3__item-title "><?= $val->title ?></div>
@@ -126,9 +126,11 @@ $arr = [
                     <div class="project-project-v-4__links">
                         <div class="project">
                             <div class="project__links wow fadeInDown">
-                                <?= Html::a('', 'https://apps.apple.com/app/project-v/id1220488838', ['class' => 'project__link project__link_google', 'target' => '_blank']) ?>
+                                <?= Html::a('', 'https://projectvint.ru/', ['class' => 'project__link project__link_site', 'target' => '_blank']) ?>
                                 <div class="project__hr"></div>
-                                <?= Html::a('', 'https://play.google.com/store/apps/details?id=com.sessia', ['class' => 'project__link project__link_apple', 'target' => '_blank']) ?>
+                                <?= Html::a('', 'https://play.google.com/store/apps/details?id=com.sessia', ['class' => 'project__link project__link_google', 'target' => '_blank']) ?>
+                                <div class="project__hr"></div>
+                                <?= Html::a('', 'https://apps.apple.com/app/project-v/id1220488838', ['class' => 'project__link project__link_apple', 'target' => '_blank']) ?>
                             </div>
                         </div>
                     </div>

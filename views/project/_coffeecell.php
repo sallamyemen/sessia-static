@@ -148,6 +148,8 @@ switch(Yii::$app->language) {
                     <div class="project-coffeecell-3__links">
                         <div class="project">
                             <div class="project__links wow fadeInDown">
+                                <?= Html::a('', 'https://coffeecell.com', ['class' => 'project__link project__link_site', 'target' => '_blank']) ?>
+                                <div class="project__hr"></div>
                                 <?= Html::a('', 'https://play.google.com/store/apps/details?id=com.sessia.coffeecell', ['class' => 'project__link project__link_google', 'target' => '_blank']) ?>
                                 <div class="project__hr"></div>
                                 <?= Html::a('', 'https://apps.apple.com/app/coffeecell/id1643537836', ['class' => 'project__link project__link_apple', 'target' => '_blank']) ?>
