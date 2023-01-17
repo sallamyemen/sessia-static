@@ -328,14 +328,23 @@
         justify-content: center
         margin-top: 72px
         padding-bottom: 234px
+        @media (max-width : $bpSmall)
+          flex-direction: column
     &__android
         padding: 0 21px
         img
           width: 100%
+        @media (max-width : $bpSmall)
+          padding: 0
+          align-self: center
     &__apple
         img
           width: 100%
-
+        @media (max-width : $bpSmall)
+          align-self: center
+    &__link
+      @media (max-width : $bpSmall)
+        align-self: center
 .info-parent
     position: relative
 .dog-hand
