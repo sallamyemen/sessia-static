@@ -116,11 +116,15 @@ switch(Yii::$app->language) {
             <p class="project-ume-5__text-info wow fadeInDown"><?= Yii::t('app', 'Приложение UME помогает лучше{br}понимать своих четвероногих друзей{br}и подбирать для них всё самое лучшее', ['br' => '<br>']) ?></p>
             <p class="project-ume-5__text-big wow fadeInDown"><?= Yii::t('app', 'Ведь они{br}совсем как мы', ['br' => '<br>']) ?></p>
             <div class="project-ume-5__stores wow fadeInDown">
+                <div class="project-ume-5__link">
+                    <?= Html::a('', '#!', ['class' => 'project__link project__link_site', 'target' => '_blank']) ?>
+                </div>
+                <div class="project__hr"></div>
                 <div class="project-ume-5__android">
-                    <a href="#!"><img src="<?= Url::to('@web/storage/project/icon-google.svg?v=1') ?>" alt="android"></a>
+                    <?= Html::a('', '#!', ['class' => 'project__link project__link_google', 'target' => '_blank']) ?>
                 </div>
                 <div class="project-ume-5__apple">
-                    <a href="#!"><img src="<?= Url::to('@web/storage/project/icon-apple.svg?v=1') ?>" alt="apple"></a>
+                    <?= Html::a('', '#!', ['class' => 'project__link project__link_apple', 'target' => '_blank']) ?>
                 </div>
             </div>
         </div>
