@@ -39,7 +39,7 @@ return [
     "Команда" => "Đội ngũ",
     "Комплексные {br}IT-проекты" => "Các dự án {br} IT phức tạp",
     "Комплексные решения для защиты инфраструктуры и баз данных" => "Các giải pháp toàn diện để bảo vệ cơ sở hạ tầng và cơ sở dữ liệu",
-    "Кэшбэк и&nbsp;подарки в&nbsp;ресторанах и&nbsp;магазинах" => "",
+    "Кэшбэк и&nbsp;подарки в&nbsp;ресторанах и&nbsp;магазинах" => "Hoàn tiền và quà tặng tại các nhà hàng và cửa hàng",
     "Кэшбэк-сервис, помогающий получать подарки и совершать выгодные покупки в ресторанах и магазинах, а также зарабатывать на рекомендациях" => "Dịch vụ hoàn tiền giúp bạn nhận quà tặng và mua hàng có lợi tại các nhà hàng và cửa hàng, cũng như kiếm tiền từ việc giới thiệu",
     "Лучшие рестораны и&nbsp;магазины, а&nbsp;также интернет-магазины и&nbsp;доставка еды" => "Các nhà hàng và cửa hàng tốt nhất, cũng như cửa hàng trực tuyến và dịch vụ giao đồ ăn.",
     "Любой пользователь приложения ежедневно может получать в&nbsp;подарок один новый кикс. Заглядывай почаще на&nbsp;карту Kicksback, выбирай понравившийся кикс&nbsp;&mdash; например, блюдо в&nbsp;ресторане, бокал пива, маникюр или стрижку&nbsp;&mdash; и&nbsp;отправляйся за&nbsp;подарком." => "Hằng ngày, người dùng ứng dụng sẽ được tặng một “Kicks”. Hãy truy cập thẻ Kicksback thường xuyên để chọn những “Kicks” yêu thích, ví dụ như món ăn tại nhà hàng, cốc bia, một buổi làm móng hoặc cắt tóc và đến tận nơi để nhận quà tặng của bạn",
