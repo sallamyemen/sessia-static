@@ -4,6 +4,13 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\web\View;
 
+switch(Yii::$app->language) {
+    case "en-US": $path = "@web/storage/project/translate/project-v-en/"; $class = "eng-lang";break;
+    case "de-DE": $path = "@web/storage/project/translate/project-v-en/"; $class = "de-lang";break;
+    case "vi-VN": $path = "@web/storage/project/translate/project-v-en/"; $class = "viet-lang";break;
+    default: $path = ""; break;
+}
+
 ?>
 
 <section class="project-kicksback-business-1" style="background-image: url('<?= Url::to('@web/storage/project/kicksback-business/bg-1.svg?v=1') ?>')">
@@ -18,7 +25,7 @@ use yii\web\View;
         </div>
         <div class="row project-kicksback-business-1__description">
             <div class="col-xl-3 offset-xl-1 col-lg-4">
-                <div class="project-kicksback-business-1__text-1 wow fadeInDown">
+                <div class="project-kicksback-business-1__text-1 <?= $class ?> wow fadeInDown">
                     <?= Yii::t('app', 'Больше {br}никаких {br}посредников {br}и&nbsp;предоплаты {br}за&nbsp;рекламу', ['br' => '<br>']) ?>
                 </div>
             </div>
