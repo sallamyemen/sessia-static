@@ -87,7 +87,7 @@ $arr = [
         </div>
         <div class="project-project-v-3__list">
         <?php foreach ($arr as $key => $val) { ?>
-            <div class="project-project-v-3__item block<?=$key?>  wow fadeInDown">
+            <div class="project-project-v-3__item wow fadeInDown">
                 <div class="row">
                     <div class="col-lg-<?= (4 + $key) ?> wow fadeInDown">
                         <div class="project-project-v-3__item-title "><?= $val->title ?></div>
