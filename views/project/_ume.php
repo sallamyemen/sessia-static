@@ -123,6 +123,7 @@ switch(Yii::$app->language) {
                 <div class="project-ume-5__android">
                     <?= Html::a('', '#!', ['class' => 'project__link project__link_google', 'target' => '_blank']) ?>
                 </div>
+                <div class="project__hr"></div>
                 <div class="project-ume-5__apple">
                     <?= Html::a('', '#!', ['class' => 'project__link project__link_apple', 'target' => '_blank']) ?>
                 </div>
