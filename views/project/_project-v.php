@@ -89,12 +89,12 @@ $arr = [
         <?php foreach ($arr as $key => $val) { ?>
             <div class="project-project-v-3__item block<?=$key?> wow fadeInDown">
                 <div class="row">
-                    <div class="col-lg-<?= (4 + $key) ?> wow fadeInDown">
+                    <div class="col-lg-4 <?//= (4 + $key) ?> wow fadeInDown">
                         <div class="project-project-v-3__item-title "><?= $val->title ?></div>
                         <div class="project-project-v-3__item-hr"></div>
                         <div class="project-project-v-3__item-text"><?= $val->text ?></div>
                     </div>
-                    <div class="col-lg-<?= (8 - $key) ?> wow fadeInDown">
+                    <div class="col-lg-8 <?//= (8 - $key) ?> wow fadeInDown">
                         <div class="project-project-v-3__item-image-container">
                             <div class="project-project-v-3__item-image " style="background-image: url('<?= Url::to($path . 'image-3-' . ($key + 1) . '.png?v=1') ?>'); z-index: <?= (9 - $key) ?>"></div>
                         </div>
@@ -146,141 +146,141 @@ $js = <<<JS
 
 new WOW().init();
 
-//var lastScrollTop = 0;
-//$(window).scroll(function(){
-//    
-//    var st = $(this).scrollTop();
-//    var one_up = "translateY(" + 20 + "em)";
-//    var one_down = "translateY(" + 0 + "em)";
-//    var two_up = "translateY(" + 40 + "em)";
-//    var two_down = "translateY(" + 0 + "em)";
-//    var three_up = "translateY(" + 60 + "em)";
-//    var three_down = "translateY(" + 0 + "em)";
-//    var four_up = "translateY(" + 80 + "em)";
-//    var four_down = "translateY(" + 0 + "em)";
-//    
-//    var disp_block = "block";
-//    var disp_none = "none";
-//   
-//   if (st > lastScrollTop){       
-//       if ($(window).width() > 991) {
-//           $('.block1').css({
-//             transform : one_up
-//           });    
-//            $('.block2').css({
-//              transform : two_up
-//            });    
-//            $('.block3').css({
-//              transform : three_up
-//            });    
-//            $('.block4').css({
-//              transform : four_up
-//            });  
-//            $('.project-project-v-3__item-title').css({
-//              display : disp_block
-//            });
-//            $('.project-project-v-3__item-hr').css({
-//              display : disp_block
-//            });
-//            $('.project-project-v-3__item-text').css({
-//              display : disp_block
-//            });
-//            $('.project-project-v-3').css({
-//              height : "135em"
-//            });
-//       }else{
-//           $('.block1').css({
-//             transform :"unset"
-//           });    
-//            $('.block2').css({
-//              transform : "unset"
-//            });    
-//            $('.block3').css({
-//              transform : "unset"
-//            });    
-//            $('.block4').css({
-//              transform : "unset"
-//            });  
-//            $('.project-project-v-3__item-title').css({
-//              display : "inherit"
-//            });
-//            $('.project-project-v-3__item-hr').css({
-//              display : "inherit"
-//            });
-//            $('.project-project-v-3__item-text').css({
-//              display : "inherit"
-//            });
-//            $('.project-project-v-3').css({
-//              height : "unset"
-//            });
-//            $('.project-project-v-3__item').css({
-//              position : "relative"
-//            });
-//            $('.project-project-v-3__list').css({
-//              transform : "unset"
-//            });
-//       }       
-//   } else {
-//       if ($(window).width() > 991) { 
-//           $('.block1').css({
-//              transform : one_down
-//           });    
-//           $('.block2').css({
-//              transform : two_down
-//           });    
-//           $('.block3').css({
-//              transform : three_down
-//           });    
-//           $('.block4').css({
-//              transform : four_down
-//           });
-//           $('.project-project-v-3__item-title').css({
-//              display : disp_none
-//            });
-//            $('.project-project-v-3__item-hr').css({
-//              display : disp_none
-//            });
-//            $('.project-project-v-3__item-text').css({
-//              display : disp_none
-//            });
-//           $('.project-project-v-3').css({
-//              height : "80em"
-//            });
-//       } else{
-//           $('.block1').css({
-//             transform :"unset"
-//           });    
-//            $('.block2').css({
-//              transform : "unset"
-//            });    
-//            $('.block3').css({
-//              transform : "unset"
-//            });    
-//            $('.block4').css({
-//              transform : "unset"
-//            });  
-//            $('.project-project-v-3__item-title').css({
-//              display : "inherit"
-//            });
-//            $('.project-project-v-3__item-hr').css({
-//              display : "inherit"
-//            });
-//            $('.project-project-v-3__item-text').css({
-//              display : "inherit"
-//            });
-//            $('.project-project-v-3').css({
-//              height : "unset"
-//            });
-//            $('.project-project-v-3__item').css({
-//              position : "relative"
-//            });
-//            $('.project-project-v-3__list').css({
-//              transform : "unset"
-//            });
-//       }          
-//   }
-//       lastScrollTop = st;
-//});
+var lastScrollTop = 0;
+$(window).scroll(function(){
+    
+    var st = $(this).scrollTop();
+    var one_up = "translateY(" + 20 + "em)";
+    var one_down = "translateY(" + 0 + "em)";
+    var two_up = "translateY(" + 40 + "em)";
+    var two_down = "translateY(" + 0 + "em)";
+    var three_up = "translateY(" + 60 + "em)";
+    var three_down = "translateY(" + 0 + "em)";
+    var four_up = "translateY(" + 80 + "em)";
+    var four_down = "translateY(" + 0 + "em)";
+    
+    var disp_block = "block";
+    var disp_none = "none";
+   
+   if (st > lastScrollTop){       
+       if ($(window).width() > 991) {
+           $('.block1').css({
+             transform : one_up
+           });    
+            $('.block2').css({
+              transform : two_up
+            });    
+            $('.block3').css({
+              transform : three_up
+            });    
+            $('.block4').css({
+              transform : four_up
+            });  
+            $('.project-project-v-3__item-title').css({
+              display : disp_block
+            });
+            $('.project-project-v-3__item-hr').css({
+              display : disp_block
+            });
+            $('.project-project-v-3__item-text').css({
+              display : disp_block
+            });
+            $('.project-project-v-3').css({
+              height : "135em"
+            });
+       }else{
+           $('.block1').css({
+             transform :"unset"
+           });    
+            $('.block2').css({
+              transform : "unset"
+            });    
+            $('.block3').css({
+              transform : "unset"
+            });    
+            $('.block4').css({
+              transform : "unset"
+            });  
+            $('.project-project-v-3__item-title').css({
+              display : "inherit"
+            });
+            $('.project-project-v-3__item-hr').css({
+              display : "inherit"
+            });
+            $('.project-project-v-3__item-text').css({
+              display : "inherit"
+            });
+            $('.project-project-v-3').css({
+              height : "unset"
+            });
+            $('.project-project-v-3__item').css({
+              position : "relative"
+            });
+            $('.project-project-v-3__list').css({
+              transform : "unset"
+            });
+       }       
+   } else {
+       if ($(window).width() > 991) { 
+           $('.block1').css({
+              transform : one_down
+           });    
+           $('.block2').css({
+              transform : two_down
+           });    
+           $('.block3').css({
+              transform : three_down
+           });    
+           $('.block4').css({
+              transform : four_down
+           });
+           $('.project-project-v-3__item-title').css({
+              display : disp_none
+            });
+            $('.project-project-v-3__item-hr').css({
+              display : disp_none
+            });
+            $('.project-project-v-3__item-text').css({
+              display : disp_none
+            });
+           $('.project-project-v-3').css({
+              height : "80em"
+            });
+       } else{
+           $('.block1').css({
+             transform :"unset"
+           });    
+            $('.block2').css({
+              transform : "unset"
+            });    
+            $('.block3').css({
+              transform : "unset"
+            });    
+            $('.block4').css({
+              transform : "unset"
+            });  
+            $('.project-project-v-3__item-title').css({
+              display : "inherit"
+            });
+            $('.project-project-v-3__item-hr').css({
+              display : "inherit"
+            });
+            $('.project-project-v-3__item-text').css({
+              display : "inherit"
+            });
+            $('.project-project-v-3').css({
+              height : "unset"
+            });
+            $('.project-project-v-3__item').css({
+              position : "relative"
+            });
+            $('.project-project-v-3__list').css({
+              transform : "unset"
+            });
+       }          
+   }
+       lastScrollTop = st;
+});
 
 JS;
 $this->registerJs($js, View::POS_END);
