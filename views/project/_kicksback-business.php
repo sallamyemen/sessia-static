@@ -5,10 +5,10 @@ use yii\helpers\Url;
 use yii\web\View;
 
 switch(Yii::$app->language) {
-    case "en-US": $path = "@web/storage/project/translate/project-v-en/"; $class = "eng-lang";break;
-    case "de-DE": $path = "@web/storage/project/translate/project-v-en/"; $class = "de-lang";break;
-    case "vi-VN": $path = "@web/storage/project/translate/project-v-en/"; $class = "viet-lang";break;
-    default: $path = ""; break;
+    case "en-US": $path = "@web/storage/project/translate/kicksback-business-en/"; $class = "eng-lang";break;
+    case "de-DE": $path = "@web/storage/project/translate/kicksback-business-en/"; $class = "de-lang";break;
+    case "vi-VN": $path = "@web/storage/project/translate/kicksback-business-en/"; $class = "viet-lang";break;
+    default: $path = "@web/storage/project/kicksback-business/"; $class = "";break;
 }
 
 ?>
