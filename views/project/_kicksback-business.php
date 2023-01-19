@@ -5,19 +5,19 @@ use yii\helpers\Url;
 use yii\web\View;
 
 switch(Yii::$app->language) {
-    case "en-US": $path = "@web/storage/project/translate/kicksback-business-en/"; $class = "eng-lang";break;
-    case "de-DE": $path = "@web/storage/project/translate/kicksback-business-en/"; $class = "de-lang";break;
-    case "vi-VN": $path = "@web/storage/project/translate/kicksback-business-en/"; $class = "viet-lang";break;
-    default: $path = "@web/storage/project/kicksback-business/"; $class = "";break;
+    case "en-US": $class = "eng-lang";break;
+    case "de-DE": $class = "eng-lang";break;
+    case "vi-VN": $class = "eng-lang";break;
+    default: $class =""; break;
 }
-
 ?>
 
 <section class="project-kicksback-business-1" style="background-image: url('<?= Url::to('@web/storage/project/kicksback-business/bg-1.svg?v=1') ?>')">
     <div class="container">
         <div class="row">
             <div class="col-xl-10 offset-xl-1">
-                <div class="project-kicksback-business-1__title wow fadeInDown" style="background-image: url('<?= Url::to('@web/storage/project/kicksback-business/logo.svg?v=1') ?>')"></div>
+                <div class="project-kicksback-business-1__title wow fadeInDown" style="background-image: url('<?=
+                Url::to('@web/storage/project/kicksback-business/logo.svg?v=1') ?>')"></div>
                 <div class="project-kicksback-business-1__subtitle wow fadeInDown">
                     <?= Yii::t('admin', 'Business') ?>
                 </div>
@@ -61,7 +61,14 @@ switch(Yii::$app->language) {
             </div>
         </div>
     </div>
-    <div class="project-kicksback-business-2__bg" style="background-image: url('<?= Url::to('@web/storage/project/kicksback-business/bg-2.png?v=1') ?>')"></div>
+    <?php if (Yii::$app->language != "ru-RU"): ?>
+        <div class="project-kicksback-business-2__bg" style="background-image: url('<?= Url::to('@web/storage/project/kicksback-business/big-2.png?v=1') ?>')
+            "></div>
+    <?php else :?>
+        <div class="project-kicksback-business-2__bg" style="background-image: url('<?= Url::to('@web/storage/project/kicksback-business/bg-2.png?v=1') ?>')
+            "></div>
+    <?php endif ?>
+
 </section>
 
 <section class="project-kicksback-business-3" style="background-image: url('<?= Url::to('@web/storage/project/kicksback-business/bg-3.jpg?v=1') ?>')">
