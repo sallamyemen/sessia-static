@@ -88,7 +88,7 @@ $projects = [
         'header' => Yii::t('app', 'Добро.Будильник'),
         'subtitle' => Yii::t('app', 'web-версия'),
         'description' => Yii::t('app', 'Социальный проект, который помогает делать первые шаги в благотворительности и совершать добровольные пожертвования на регулярной основе'),
-        'link' => null,
+        'link' => ['/project/view', 'project' => 'dobro'],
         'store_link' => 'https://play.google.com/store/apps/details?id=com.sessia.alarm',
         'img' => 'phone8.png?v=1',
     ],
