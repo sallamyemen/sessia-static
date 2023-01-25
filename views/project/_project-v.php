@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\web\View;
+use app\assets\AppOldAsset;
 
 switch(Yii::$app->language) {
     case "en-US": $path = "@web/storage/project/translate/project-v-en/"; $class = "eng-lang";break;
@@ -13,6 +14,7 @@ switch(Yii::$app->language) {
 ?>
 
 <section class="project-project-v-1" style="background-image: url('<?= Url::to('@web/storage/project/project-v/bg-1.svg?v=1') ?>')">
+
     <div class="container">
         <div class="row">
             <div class="col-xl-10 offset-xl-1">
@@ -28,6 +30,12 @@ switch(Yii::$app->language) {
                 <div class="project-project-v-1__text wow fadeInDown">
                     <?= Yii::t('app', 'Мобильная платформа, объединяющая маркетплейс, кэшбэк-сервис, систему отчетности и&nbsp;социальную сеть') ?>
                 </div>
+            </div>
+        </div>
+        <div class="project-project-v-1__particles" style="">
+            <div class="project-project-v-1__particles-img">
+                <img src="<?= Url::to('@web/front/img-main/rhombus.png?v=1') ?>" alt="" />
+                <div id="particles-prjv" class="particles"></div>
             </div>
         </div>
     </div>
@@ -142,9 +150,17 @@ $arr = [
 
 <?php
 
+$this->registerJsFile("@web/front/vendor/particles/particles.min.js", ['depends' => [AppOldAsset::class]]);
+
+$particlesV = Url::to('@web/front/js/particlesjs-prjv.json');
+
 $js = <<<JS
 
+// PARTICLES
+
 new WOW().init();
+
+particlesJS.load('particles-prjv', '$particlesV');
 
 var lastScrollTop = 0;
 $(window).scroll(function(){

@@ -68,7 +68,21 @@
 			text-align: center
 			font-size: 16px
 			line-height: 24px
-
+	&__particles
+		display: flex
+		justify-content: flex-end
+	&__particles-img
+		position: relative
+		.particles
+			position: absolute
+			bottom: 400px
+			left: 0
+			right: 0
+			@media (max-width : $bpLarge)
+				position: relative
+				bottom: 150px
+		img
+			opacity: 0
 
 .project-coffeecell-2
 	padding: 128px 0
@@ -153,7 +167,20 @@
 		background-position: left center
 		@media (max-width : $bpLarge)
 			background-position: center center
-
+	&__particles
+		display: flex
+		justify-content: flex-start
+	&__particles-img
+		position: relative
+		.particles
+			position: absolute
+			bottom: 500px
+			left: 0
+			@media (max-width : $bpLarge)
+				position: relative
+				bottom: 150px
+		img
+			opacity: 0
 
 .project-coffeecell-3
 	padding: 128px 0

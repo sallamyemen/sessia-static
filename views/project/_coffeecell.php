@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\web\View;
+use app\assets\AppOldAsset;
 
 switch(Yii::$app->language) {
     case "en-US": $path = "@web/storage/project/translate/coffeecell-en/"; break;
@@ -40,6 +41,12 @@ switch(Yii::$app->language) {
                 </div>
             </div>
         </div>
+        <div class="project-coffeecell-1__particles" style="">
+            <div class="project-coffeecell-1__particles-img">
+                <img src="<?= Url::to('@web/front/img-main/rhombus.png?v=1') ?>" alt="" />
+                <div id="particles-cfcl" class="particles"></div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -57,6 +64,12 @@ switch(Yii::$app->language) {
                     <div class="project-coffeecell-2__text wow fadeInDown">
                         <?= Yii::t('app', 'Покупать с&nbsp;выгодой{br} женьшень и&nbsp;продукты{br} на&nbsp;его основе', ['br' => '<br>']) ?>
                     </div>
+                </div>
+            </div>
+            <div class="project-coffeecell-2__particles" style="">
+                <div class="project-coffeecell-2__particles-img">
+                    <img src="<?= Url::to('@web/front/img-main/rhombus.png?v=1') ?>" alt="" />
+                    <div id="particles-cfcl-2" class="particles"></div>
                 </div>
             </div>
         </div>
@@ -172,9 +185,18 @@ switch(Yii::$app->language) {
 
 <?php
 
+$this->registerJsFile("@web/front/vendor/particles/particles.min.js", ['depends' => [AppOldAsset::class]]);
+
+$particlesC = Url::to('@web/front/js/particlesjs-cfcl.json');
+
+
 $js = <<<JS
 
 new WOW().init();
+
+particlesJS.load('particles-cfcl', '$particlesC');
+particlesJS.load('particles-cfcl-2', '$particlesC');
+
 
 JS;
 $this->registerJs($js, View::POS_END);
