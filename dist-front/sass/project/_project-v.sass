@@ -1,5 +1,5 @@
 .project-project-v-1
-	padding: 160px 0 128px 0
+	padding: 160px 0 0 0
 	background:
 		position: top center
 		repeat: no-repeat
@@ -36,10 +36,22 @@
 		@media (max-width : $bpSmall)
 			font-size: 20px
 			line-height: 24px
-
+	&__particles
+		display: flex
+		justify-content: flex-end
+	&__particles-img
+		position: relative
+		.particles
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+		img
+			opacity: 0
 
 .project-project-v-2
-	padding: 128px 0
+	padding: 0 0 128px 0
 	background:
 		position: top center
 		repeat: no-repeat

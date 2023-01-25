@@ -117,7 +117,7 @@ switch(Yii::$app->language) {
             <p class="project-ume-5__text-big wow fadeInDown"><?= Yii::t('app', 'Ведь они{br}совсем как мы', ['br' => '<br>']) ?></p>
             <div class="project-ume-5__stores wow fadeInDown">
                 <div class="project-ume-5__link">
-                    <?= Html::a('', '#!', ['class' => 'project__link project__link_site', 'target' => '_blank']) ?>
+                    <?= Html::a('', 'https://ume.tech/', ['class' => 'project__link project__link_site', 'target' => '_blank']) ?>
                 </div>
                 <div class="project__hr"></div>
                 <div class="project-ume-5__android">
