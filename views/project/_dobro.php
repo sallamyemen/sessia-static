@@ -7,8 +7,8 @@ use app\assets\AppOldAsset;
 
 switch(Yii::$app->language) {
     case "en-US": $path = "@web/storage/project/translate/dobro-en/"; $class = "eng-lang";break;
-    case "de-DE": $path = "@web/storage/project/translate/dobro-en/"; $class = "eng-lang";break;
-    case "vi-VN": $path = "@web/storage/project/translate/dobro-en/"; $class = "eng-lang";break;
+    case "de-DE": $path = "@web/storage/project/translate/dobro-en/"; $class = "de-lang";break;
+    case "vi-VN": $path = "@web/storage/project/translate/dobro-en/"; $class = "vi-lang";break;
     default: $path = "@web/storage/project/dobro/"; break;
 }
 
@@ -22,7 +22,7 @@ switch(Yii::$app->language) {
             </div>
         </div>
         <div class="row dobro-1__columns" >
-            <div class="offset-lg-1 dobro-1__image-1">
+            <div class="offset-lg-1 dobro-1__image-1 wow fadeInDown">
                 <img src="<?= Url::to($path . 'image-1-1.png?v=1') ?>" alt="">
             </div>
             <div class="dobro-1__text">
@@ -30,7 +30,7 @@ switch(Yii::$app->language) {
             </div>
         </div>
         <div class="row dobro-1__single-phone">
-            <div class="dobro-1__image-2">
+            <div class="dobro-1__image-2 wow fadeInDown" data-wow-delay="1s">
                 <img src="<?= Url::to($path . 'image-1-2.png?v=1') ?>" alt="">
             </div>
         </div>
@@ -46,12 +46,12 @@ switch(Yii::$app->language) {
 </section>
 
 <section class="dobro-2">
-    <img src="<?= Url::to($path . 'image-2-1.png?v=1')?>" alt="">
+    <object data="<?= Url::to($path . 'image-2-1.svg?v=1')?>" type="image/svg+xml" width="100%"  class="mylogo"></object>
     <div class=" dobro-2__ccontainer" style="background-image: url('<?= Url::to($path.'bg-3h.svg?v=1')?>'),
             url('<?= Url::to($path.'bg-4.svg?v=1')?>')">
         <div class="container">
             <div class="dobro-2__wrap">
-                <div class="col-lg-7 dobro-2__text-big">
+                <div class="col-lg-7 dobro-2__text-big dobro-2__<?=$class?>">
                     <?= Yii::t('app', 'Как это {br}работает', ['br' => '<br>']) ?>
                 </div>
                 <div class="col-lg-5  dobro-2__text-info">
