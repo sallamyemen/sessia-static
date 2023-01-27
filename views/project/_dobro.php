@@ -9,7 +9,7 @@ switch(Yii::$app->language) {
     case "en-US": $path = "@web/storage/project/translate/dobro-en/"; $class = "eng-lang";break;
     case "de-DE": $path = "@web/storage/project/translate/dobro-en/"; $class = "de-lang";break;
     case "vi-VN": $path = "@web/storage/project/translate/dobro-en/"; $class = "vi-lang";break;
-    default: $path = "@web/storage/project/dobro/"; break;
+    default: $path = "@web/storage/project/dobro/"; $class = ""; break;
 }
 
 ?>
