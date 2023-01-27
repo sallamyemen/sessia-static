@@ -166,4 +166,18 @@ return [
     "Безопасность{br}под контролем{br}" => "An toàn{br}được kiểm soát{br}",
     "С приложением NRK87. {br} вы не только сможете подчеркнуть индивидуальность своего стиля, но и быть уверенными в безопасности близких людей" => "Với ứng dụng NRK87. {br} bạn sẽ không chỉ nhấn mạnh cá tính trong phong cách của mình mà còn đảm bảo an toàn cho những người thân yêu của mình",
     "Функционал {br}и возможности" => "Chức năng và tính năng",
+
+    "Добро." => "DoGood",
+    "Будильник" => "Alarm",
+    'Это мобильное приложение помогает сделать первые шаги в благотворительности и превратить добрые дела в полезную привычку' => "This mobile app helps you take your first steps into the world of charity and make doing good deeds into a useful habit.",
+    "Добро. Будильник — социальный проект фонда поддержки благотворительности «Взрослеем вместе»" => 'DoGood.Alarm is a social project of the "Growing Up Together" Foundation for the Promotion of Charity',
+    "Его цель — увеличить долю людей, которые занимаются благотворительностью на регулярной основе, и суммарный объем пожертвований, упростить и автоматизировать этот процесс." => "Its goal is to increase the proportion of people doing charity work on a regular basis and the total amount of donations, to simplify and automate this process.",
+    "Как это {br}работает" => "How it {br}works",
+    "Настройте будильник и укажите {br} сумму для пожертвований" => "Set up the alarm and indicate {br} the donation amount",
+    "Выберите благотворительный фонд — {br} в приложении их более 200" => "Choose a charity: {br} there are over 200 of them in the app",
+    "Отложили будильник? Указанная сумма {br} будет перечислена автоматически" => "Did you hit snooze? The indicated amount {br} will be automatically donated",
+    "Установите даты для пожертвований {br} в календаре добрых дел" => "Set donation dates {br} in the calendar of good deeds",
+    "Следите за статистикой вашей благотворительности в личном {br} кабинете" => "Follow your charity statistics on your account {br} page",
+    "Время правильных {br}поступков" => "Time to do {br}good",
+    "Установите Добро. Будильник {br}и начинайте каждый день с добрых дел!" => "Install the DoGood.Alarm and start every day with good deeds!",
 ];

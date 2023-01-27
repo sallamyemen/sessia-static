@@ -165,4 +165,19 @@ return [
     "Безопасность{br}под контролем{br}" => "Sicherheit{br}unter Kontrolle{br}",
     "С приложением NRK87. {br} вы не только сможете подчеркнуть индивидуальность своего стиля, но и быть уверенными в безопасности близких людей" => "Mit der NRK87.-App {br} könnten Sie nicht nur die Individualität Ihres Stils betonen, sondern sich auch der Gefahrlosigkeit Ihrer Lieben sicher sein",
     "Функционал {br}и возможности" => "Funktionalität und Gelegenheiten",
+
+
+    "Добро." => "Güte.",
+    "Будильник" => "Wecker",
+    'Это мобильное приложение помогает сделать первые шаги в благотворительности и превратить добрые дела в полезную привычку' => "Diese mobile App hilft Ihnen, Ihre ersten Schritte in die Welt der Wohltätigkeit zu machen und gute Taten zu einer nützlichen Gewohnheit zu machen.",
+    "Добро. Будильник — социальный проект фонда поддержки благотворительности «Взрослеем вместе»" => 'Güte.Wecker ist ist ein soziales Projekt der "Gemeinsam erwachsen werden"-Stiftung zur Förderung der Wohltätigkeit.',
+    "Его цель — увеличить долю людей, которые занимаются благотворительностью на регулярной основе, и суммарный объем пожертвований, упростить и автоматизировать этот процесс." => "Das Ziel besteht darin, den Anteil der Menschen, die regelmäßig für wohltätige Zwecke spenden, zu erhöhen, das Gesamtvolumen der Spenden zu steigern und den Prozess zu vereinfachen und zu automatisieren.",
+    "Как это {br}работает" => "Wie es {br} funktioniert",
+    "Настройте будильник и укажите {br} сумму для пожертвований" => "Stellen Sie den Wecker ein und geben Sie {br} einen Spendenbetrag an",
+    "Выберите благотворительный фонд — {br} в приложении их более 200" => "Wählen Sie eine Wohltätigkeitsorganisation - {br} es gibt über 200 in der App",
+    "Отложили будильник? Указанная сумма {br} будет перечислена автоматически" => "Haben Sie die Schlummertaste gedrückt? Der von Ihnen angegebene Betrag {br} wird automatisch überwiesen",
+    "Установите даты для пожертвований {br} в календаре добрых дел" => "Stellen Sie Termine für Spenden {br} in Ihrem Kalender für gute Taten ein",
+    "Следите за статистикой вашей благотворительности в личном {br} кабинете" => "Verfolgen Sie Ihre Wohltätigkeitsstatistiken in Ihrem {br} Profil",
+    "Время правильных {br}поступков" => "Zeit, das Richtige {br} zu tun",
+    "Установите Добро. Будильник {br}и начинайте каждый день с добрых дел!" => "Installieren Sie die Güte.Wecker-App {br}und beginnen Sie jeden Tag mit einer guten Tat!",
 ];
