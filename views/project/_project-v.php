@@ -22,9 +22,13 @@ switch(Yii::$app->language) {
             </div>
         </div>
         <div class="row project-project-v-1__info">
-            <div class="col-lg-4 offset-lg-4">
-               <div class="project-project-v-1__image project-project-v-1__image_1 wow fadeInDown"
-                    style="background-image: url('<?= Url::to($path . 'image-1.png?v=1') ?>')"></div>
+            <div class="col-lg-4 offset-lg-3">
+               <div class="project-project-v-1__image-1 project-project-v-1__image_1 wow fadeInDown"
+                    style="background-image: url('<?= Url::to($path . 'image-1-1.png?v=1') ?>')">
+               </div>
+                <div class="project-project-v-1__image-2 project-project-v-1__image_1 wow fadeInDown"
+                     data-wow-delay="0.5s" style="background-image: url('<?= Url::to($path . 'image-1-2.png?v=1') ?>')">
+                </div>
             </div>
             <div class="col-lg-8 offset-lg-2">
                 <div class="project-project-v-1__text wow fadeInDown">
@@ -95,14 +99,14 @@ $arr = [
         </div>
         <div class="project-project-v-3__list">
         <?php foreach ($arr as $key => $val) { ?>
-            <div class="project-project-v-3__item block<?=$key?> wow fadeInDown">
+            <div class="project-project-v-3__item block<?=$key?>">
                 <div class="row">
-                    <div class="col-lg-4 <?//= (4 + $key) ?> wow fadeInDown">
+                    <div class="col-lg-4">
                         <div class="project-project-v-3__item-title "><?= $val->title ?></div>
                         <div class="project-project-v-3__item-hr"></div>
                         <div class="project-project-v-3__item-text"><?= $val->text ?></div>
                     </div>
-                    <div class="col-lg-8 <?//= (8 - $key) ?> wow fadeInDown">
+                    <div class="col-lg-8">
                         <div class="project-project-v-3__item-image-container">
                             <div class="project-project-v-3__item-image " style="background-image: url('<?= Url::to($path . 'image-3-' . ($key + 1) . '.png?v=1') ?>'); z-index: <?= (9 - $key) ?>"></div>
                         </div>
