@@ -10,9 +10,6 @@ switch(Yii::$app->language) {
     case "vi-VN": $class = "eng-lang";break;
     default: $class =""; break;
 }
-//$this->registerJsFile( '@web/front/onepage-scroll/jquery.onepage-scroll.js',  ['depends' => ['app\assets\AppAsset']]);
-//$this->registerCssFile( '@web/front/onepage-scroll/jquery.onepage-scroll.css',  ['depends' => ['app\assets\AppAsset']]);
-
 
 ?>
 <div class="sections">
