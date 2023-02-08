@@ -179,6 +179,7 @@ $this->title = 'SESSIA. GET IT RIGHT';
 </div>
 
 <?= $this->renderFile('@app/views/site/_projects.php') ?>
+<!--    <div class="owl-navi"></div>-->
 
 <div class="services services_advantages">
     <div class="wrapper wrapper_block" style="position: relative;">
@@ -269,31 +270,76 @@ jQuery(document).ready(function($) {
         return elementBottom > viewportTop && elementTop < viewportBottom;
     };
 
-    // OWL CAROUSEL
-    $('.owl-carousel').owlCarousel({
-        stagePadding: 120,
-        dots: true,
-        nav: true,
-        margin: 10,
-        responsive: {
-            0: {
-                items: 1,
-                stagePadding: 0,
-                nav: false,
-                margin:0
-            },
-            600: {
-                items: 1,
-                nav: false,
-                stagePadding: 0,
-                margin: 0
-            },
-            1000: {
-                items: 1
+    // OWL CAROUSEL    
+    $('.owl-carousel').each(function () {
+    var owlStacked = $(this);
+    
+    owlStacked
+        .on('initialized.owl.carousel resized.owl.carousel', function (event) {
+            setTimeout(function () {
+                owlStacked
+                    .width(owlStacked.find('.owl-item').width());
+                        
+                owlStacked.find('.owl-next').removeClass('disabled');
+                        
+                owlStacked.find('.owl-item').each(function(k, item) {
+                    $(this)
+                        .addClass('transition')
+                        .css({
+                            'z-index': k
+                        });
+                });                
+                owlStacked.trigger('to.owl.carousel', [0, 0]);
+            }, 100, owlStacked);
+        })
+        .on('change.owl.carousel', function (event) {
+            if (event.item.index > event.property.value) {
+                owlStacked.find('.owl-item.active').eq(0).prev().removeClass('stacked');   
+                owlStacked.find('.owl-item.active').eq(0).nextAll().removeClass('stacked');   
+            } else if (event.item.index < event.property.value) {
+                owlStacked.find('.owl-item.active').eq(0).addClass('stacked');
             }
-        }
-    });
-
+            if (event.property.value == 0) {
+                owlStacked.find('.owl-item').removeClass('stacked');   
+            }
+            if (owlStacked.is('[data-related]')) {
+                owlGoTo(owlStacked.data('related'), event.property.value, 1000);
+            }
+        });
+    
+   //owlStacked.imagesLoaded(function () {
+        //owlStacked.removeClass('d-none').addClass('owl-carousel owl-theme');
+        
+        var owlStackedItems = owlStacked.attr('data-items') ? owlStacked.attr('data-items').split('-') : false,
+            owlStackedLoop = owlStacked.attr('data-loop') == 'true' ? true : false;
+            
+        owlStacked.owlCarousel({
+            stagePadding: 60,
+            center:true,            
+			nav: true,
+			margin: 10,			
+			smartSpeed: 1000,
+			responsive: {
+				0: {
+					items: 1,
+					stagePadding: 0,
+					nav: false,
+					margin:0
+				},
+				600: {
+					items: 1,
+					nav: false,
+					stagePadding: 0,
+					margin: 0
+				},
+				1000: {
+					items: 1,					
+				}
+			},			
+		});    
+    //});
+});
+    
     // PARTICLES
     particlesJS.load('particles-header', '$particlesHeader');
     particlesJS.load('particles-team', '$particlesTeam');
