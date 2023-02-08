@@ -107,9 +107,9 @@ use yii\web\View;
         </div>
     </div>
     <?php if (Yii::$app->language != "ru-RU"): ?>
-        <div class="project-kicksback-3__bg" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/big-3.svg?v=1') ?>')"></div>
+        <div class="project-kicksback-3__bg" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/big-3.png?v=1') ?>')"></div>
     <?php else :?>
-        <div class="project-kicksback-3__bg" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/big-4.svg?v=1') ?>')"></div>
+        <div class="project-kicksback-3__bg" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/bg-3.png?v=1') ?>')"></div>
     <?php endif ?>
 </section>
 

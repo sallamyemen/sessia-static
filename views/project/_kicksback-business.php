@@ -63,10 +63,10 @@ switch(Yii::$app->language) {
             </div>
         </div>
         <?php if (Yii::$app->language != "ru-RU"): ?>
-            <div class="project-kicksback-business-2__bg" style="background-image: url('<?= Url::to('@web/storage/project/kicksback-business/big-2.svg?v=1') ?>')
+            <div class="project-kicksback-business-2__bg" style="background-image: url('<?= Url::to('@web/storage/project/kicksback-business/big-2.png?v=1') ?>')
                     "></div>
         <?php else :?>
-            <div class="project-kicksback-business-2__bg" style="background-image: url('<?= Url::to('@web/storage/project/kicksback-business/big-3.svg?v=1') ?>')
+            <div class="project-kicksback-business-2__bg" style="background-image: url('<?= Url::to('@web/storage/project/kicksback-business/bg-2.png?v=1') ?>')
                     "></div>
         <?php endif ?>
 
