@@ -17,7 +17,7 @@ switch(Yii::$app->language) {
     <div class="container">
         <div class="row project-nrk-1__wrap">
             <div class="project-nrk-1__colomn-1" >
-                <div class="project-nrk-1__logo-image wow fadeInDown">
+                <div class="project-nrk-1__logo-image wow fadeInUp">
                     <img src="<?= Url::to('@web/storage/project/nrk/image-1-1.png?v=1') ?>" alt="">
                 </div>
                 <div class="project-nrk-1__text">
@@ -44,13 +44,13 @@ switch(Yii::$app->language) {
 <section class="project-nrk-2" style="background-image: url('<?= Url::to('@web/storage/project/nrk/bg-2.svg?v=1') ?>')">
     <div class="container">
         <div class="row">
-            <div class="col-lg-10 offset-lg-1 project-nrk-2__wrap wow fadeInDown">
+            <div class="col-lg-10 offset-lg-1 project-nrk-2__wrap wow fadeInUp">
                 <div class="project-nrk-2__big-text-image"><?= Yii::t('app', 'Функционал {br}и возможности', ['br' => '<br>']) ?></div>
             </div>
         </div>
         <div class="row project-nrk-2__wrap">
                 <div class="project-nrk-2__colomn-1" >
-                    <div class="project-nrk-2__image project-nrk-2__phone-1 wow fadeInDown">
+                    <div class="project-nrk-2__image project-nrk-2__phone-1 wow fadeInUp">
                         <img src="<?= Url::to($path .'image-2-1.png?v=1') ?>" alt="">
                     </div>
                     <div class="project-nrk-2__text-1">
@@ -60,7 +60,7 @@ switch(Yii::$app->language) {
                     <div class="project-nrk-2__text-3">
                         <div class="project-nrk-2__title-text"><?= Yii::t('app', 'Приватные звонки для связи с обладателем одежды NRK87., оснащенной GPS-трекером') ?></div>
                     </div>
-                    <div class="project-nrk-2__image project-nrk-2__phone-4 wow fadeInUP">
+                    <div class="project-nrk-2__image project-nrk-2__phone-4 wow fadeInUp">
                        <img src="<?= Url::to($path .'image-2-3.png?v=1') ?>" alt="">
                     </div>
                 </div>
@@ -72,7 +72,7 @@ switch(Yii::$app->language) {
                     <div class="project-nrk-2__image project-nrk-2__phone-2 wow fadeInUp">
                         <img src="<?= Url::to($path .'image-2-2.png?v=1') ?>" alt="">
                     </div>
-                    <div class="project-nrk-2__image project-nrk-2__phone-3 wow fadeInDown">
+                    <div class="project-nrk-2__image project-nrk-2__phone-3 wow fadeInUp">
                         <img src="<?= Url::to($path .'image-2-4.png?v=1') ?>" alt="">
                     </div>
                     <div class="project-nrk-2__text-4">
@@ -81,7 +81,7 @@ switch(Yii::$app->language) {
                     </div>
                 </div>
         </div>
-        <div class="col-lg-12 project-nrk-2__text-bottom-wrap wow fadeInDown">
+        <div class="col-lg-12 project-nrk-2__text-bottom-wrap wow fadeInUp">
             <div class="project-nrk-2__big-text project-nrk-2__text-bottom"><?= Yii::t('app', 'Безопасность{br}под контролем{br}', ['br' => '<br>']) ?><span>24/7</span></div>
         </div>
     </div>
@@ -90,11 +90,11 @@ switch(Yii::$app->language) {
 <section class="project-nrk-3" style="background-image: url('<?= Url::to('@web/storage/project/nrk/bg-3.svg?v=1') ?>')">
     <div class="container">
 
-            <div class="project-nrk-3__text wow fadeInDown">
+            <div class="project-nrk-3__text wow fadeInUp">
                 <?= Yii::t('app', 'С приложением NRK87. {br} вы не только сможете подчеркнуть индивидуальность своего стиля, но и быть уверенными в безопасности близких людей', ['br' => '<br>']) ?>
 
             </div>
-            <div class="project-nrk-3__stores wow fadeInDown">
+            <div class="project-nrk-3__stores wow zoomIn">
                 <div class="project-nrk-3__link">
                     <?= Html::a('', 'https://nrk87.com', ['class' => 'project__link project__link_site', 'target' => '_blank']) ?>
                 </div>

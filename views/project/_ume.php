@@ -29,10 +29,10 @@ switch(Yii::$app->language) {
     <div class="container">
         <div class="row">
             <div class="col-lg-10 offset-lg-1">
-                <div class="project-ume-2__image wow fadeInDown" style="background-image: url('<?= Url::to('@web/storage/project/ume/image-2-1.png?v=1') ?>')"></div>
+                <div class="project-ume-2__image wow fadeInUp" style="background-image: url('<?= Url::to('@web/storage/project/ume/image-2-1.png?v=1') ?>')"></div>
             </div>
             <div class="info-flex">
-                <div class="col-lg-6 info wow fadeInDown">
+                <div class="col-lg-6 info wow fadeInUp">
                     <div class="info-img"><img src="<?= Url::to('@web/storage/project/ume/image-2-2.png?v=1') ?>" alt=""></div>
                 </div>
                 <div class="col-lg-6"><p class="project-ume-2__text"><?= Yii::t('app', 'Приложение, благодаря которому владелец и питомец смогут лучше понимать друг друга, с функционалом онлайн-магазина, элементами соцсети, интегрированной программой лояльности и картой услуг для питомцев') ?></p></div>
@@ -45,10 +45,10 @@ switch(Yii::$app->language) {
                                                         url('<?= Url::to('@web/storage/project/ume/bg-3-2.svg?v=1') ?>')   ">
     <div class="container">
         <div class="row project-ume-3__row-img">
-            <div class="project-ume-3__image wow fadeInDown">
+            <div class="project-ume-3__image wow fadeInUp">
                <img src="<?= Url::to($path .'image-3-1.png?v=1') ?>" alt="">
             </div>
-            <div class="project-ume-3__flex wow fadeInDown">
+            <div class="project-ume-3__flex wow fadeInUp">
                 <p class="project-ume-3__text-big project-ume-3__left">
                     <?= Yii::t('app', 'UME — {br}это премиальные корма с добавлением гипоаллергенного белка насекомых и корня шестилетнего белого императорского женьшеня', ['br' => '<br>']) ?>
                 </p>
@@ -113,9 +113,9 @@ switch(Yii::$app->language) {
 <section class="project-ume-5" style="background-image: url('<?= Url::to('@web/storage/project/ume/bg-5.svg?v=1') ?>') ">
     <div class="container">
         <div class="project-ume-5__rows">
-            <p class="project-ume-5__text-info wow fadeInDown"><?= Yii::t('app', 'Приложение UME помогает лучше{br}понимать своих четвероногих друзей{br}и подбирать для них всё самое лучшее', ['br' => '<br>']) ?></p>
-            <p class="project-ume-5__text-big wow fadeInDown"><?= Yii::t('app', 'Ведь они{br}совсем как мы', ['br' => '<br>']) ?></p>
-            <div class="project-ume-5__stores wow fadeInDown">
+            <p class="project-ume-5__text-info wow fadeInUp"><?= Yii::t('app', 'Приложение UME помогает лучше{br}понимать своих четвероногих друзей{br}и подбирать для них всё самое лучшее', ['br' => '<br>']) ?></p>
+            <p class="project-ume-5__text-big wow fadeInUp"><?= Yii::t('app', 'Ведь они{br}совсем как мы', ['br' => '<br>']) ?></p>
+            <div class="project-ume-5__stores wow zoomIn">
                 <div class="project-ume-5__link">
                     <?= Html::a('', 'https://ume.tech/', ['class' => 'project__link project__link_site', 'target' => '_blank']) ?>
                 </div>

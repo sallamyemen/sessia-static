@@ -18,20 +18,20 @@ switch(Yii::$app->language) {
     <div class="container">
         <div class="row">
             <div class="col-xl-10 offset-xl-1">
-                <div class="project-project-v-1__title wow fadeInDown" style="background-image: url('<?= Url::to('@web/storage/project/project-v/logo.svg?v=1') ?>')"></div>
+                <div class="project-project-v-1__title wow fadeInUp" style="background-image: url('<?= Url::to('@web/storage/project/project-v/logo.svg?v=1') ?>')"></div>
             </div>
         </div>
         <div class="row project-project-v-1__info">
             <div class="col-lg-4 offset-lg-3">
-               <div class="project-project-v-1__image-1 project-project-v-1__image_1 wow fadeInDown"
+               <div class="project-project-v-1__image-1 project-project-v-1__image_1 wow fadeInUp"
                     style="background-image: url('<?= Url::to($path . 'image-1-1.png?v=1') ?>')">
                </div>
-                <div class="project-project-v-1__image-2 project-project-v-1__image_1 wow fadeInDown"
+                <div class="project-project-v-1__image-2 project-project-v-1__image_1 wow fadeInUp"
                      data-wow-delay="0.5s" style="background-image: url('<?= Url::to($path . 'image-1-2.png?v=1') ?>')">
                 </div>
             </div>
             <div class="col-lg-8 offset-lg-2">
-                <div class="project-project-v-1__text wow fadeInDown">
+                <div class="project-project-v-1__text wow fadeInUp">
                     <?= Yii::t('app', 'Мобильная платформа, объединяющая маркетплейс, кэшбэк-сервис, систему отчетности и&nbsp;социальную сеть') ?>
                 </div>
             </div>
@@ -49,14 +49,14 @@ switch(Yii::$app->language) {
     <div class="container">
         <div class="row">
             <div class="col-lg-4 offset-lg-1">
-                <div class="project-project-v-2__image wow fadeInDown" style="background-image: url('<?= Url::to($path . 'image-2.png?v=1') ?>')"></div>
+                <div class="project-project-v-2__image wow fadeInUp" style="background-image: url('<?= Url::to($path . 'image-2.png?v=1') ?>')"></div>
             </div>
             <div class="col-lg-5 offset-lg-1">
                 <div class="project-project-v-2__info">
-                    <div class="project-project-v-2__text wow fadeInDown">
+                    <div class="project-project-v-2__text wow fadeInUp">
                         <?= Yii::t('app', 'Project V&nbsp;&mdash; международный бренд инновационных натуральных продуктов для красоты и&nbsp;здоровья с&nbsp;производством во&nbsp;Франции и&nbsp;Швейцарии') ?>
                     </div>
-                    <div class="project-project-v-2__caption wow fadeInDown">
+                    <div class="project-project-v-2__caption wow fadeInUp">
                         <b><?= Yii::t('app', 'Работает в&nbsp;17&nbsp;странах:') ?></b><br>
                         <?= Yii::t('app', 'США, Вьетнаме, Германии, Австрии, Польше Болгарии, Узбекистане, Казахстане, Армении, Сингапуре и&nbsp;др.') ?>
                     </div>
@@ -92,7 +92,7 @@ $arr = [
 ];
 
 ?>
-<section class="project-project-v-3">
+<section id="section3" class="project-project-v-3">
     <div class="container">
         <div class="project-project-v-3__title ">
             <?= Yii::t('app', 'Функционал и&nbsp;возможности') ?>
@@ -123,21 +123,21 @@ $arr = [
         <div class="project-coffeecell-4__container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-1">
-                    <div class="project-project-v-4__title wow fadeInDown">
+                    <div class="project-project-v-4__title wow fadeInUp">
                         <?= Yii::t('app', 'Универсальный помощник для&nbsp;покупок и&nbsp;общения') ?>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-5 offset-lg-1">
-                    <div class="project-project-v-4__text wow fadeInDown">
+                    <div class="project-project-v-4__text wow fadeInUp">
                         <?= Yii::t('app', 'Приложение COFFEECELL помогает клиентам бренда покупать с&nbsp;максимальной выгодой продукты с&nbsp;белым императорским женьшенем, пользоваться преимуществами программы лояльности и&nbsp;раскрывать таланты') ?>
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-1">
                     <div class="project-project-v-4__links">
                         <div class="project">
-                            <div class="project__links wow fadeInDown">
+                            <div class="project__links wow zoomIn">
                                 <?= Html::a('', 'https://projectvint.ru/', ['class' => 'project__link project__link_site', 'target' => '_blank']) ?>
                                 <div class="project__hr"></div>
                                 <?= Html::a('', 'https://play.google.com/store/apps/details?id=com.sessia', ['class' => 'project__link project__link_google', 'target' => '_blank']) ?>
@@ -166,10 +166,14 @@ new WOW().init();
 
 particlesJS.load('particles-prjv', '$particlesV');
 
-var lastScrollTop = 0;
-$(window).scroll(function(){
+// let lastScrollTop = 0;
+let elem = document.querySelector('.project-project-v-3');
+let rect = elem.getBoundingClientRect();
+let eltop = rect.top
+console.log(top);
+$(window).scroll(function(){    
     
-    var st = $(this).scrollTop();
+    var st = $(this).scrollTop();    
     var one_up = "translateY(" + 20 + "em)";
     var one_down = "translateY(" + 0 + "em)";
     var two_up = "translateY(" + 40 + "em)";
@@ -182,7 +186,7 @@ $(window).scroll(function(){
     var disp_block = "block";
     var disp_none = "none";
    
-   if (st > lastScrollTop){       
+   if (st >= eltop){       
        if ($(window).width() > 991) {
            $('.block1').css({
              transform : one_up
@@ -240,7 +244,7 @@ $(window).scroll(function(){
               transform : "unset"
             });
        }       
-   } else {
+   } else if (st < eltop){
        if ($(window).width() > 991) { 
            $('.block1').css({
               transform : one_down
@@ -280,13 +284,13 @@ $(window).scroll(function(){
               transform : "unset"
             });  
             $('.project-project-v-3__item-title').css({
-              display : "inherit"
+              display : disp_none
             });
             $('.project-project-v-3__item-hr').css({
-              display : "inherit"
+              display : disp_none
             });
             $('.project-project-v-3__item-text').css({
-              display : "inherit"
+              display : disp_none
             });
             $('.project-project-v-3').css({
               height : "unset"
@@ -299,7 +303,7 @@ $(window).scroll(function(){
             });
        }          
    }
-       lastScrollTop = st;
+       // lastScrollTop = st;
 });
 
 JS;

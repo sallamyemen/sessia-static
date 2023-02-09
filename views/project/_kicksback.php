@@ -9,8 +9,8 @@ use yii\web\View;
     <div class="container">
         <div class="row">
             <div class="col-xl-10 offset-xl-1">
-                <div class="project-kicksback-1__title wow fadeInDown" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/logo.svg?v=1') ?>')"></div>
-                <div class="project-kicksback-1__subtitle wow fadeInDown">
+                <div class="project-kicksback-1__title wow fadeInUp" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/logo.svg?v=1') ?>')"></div>
+                <div class="project-kicksback-1__subtitle wow fadeInUp">
                     <svg viewBox="0 0 1088 56" xmlns="http://www.w3.org/2000/svg">
                         <style>.text { font-size: 51px; font-family: Roboto, sans-serif; text-transform: uppercase; }</style>
                         <text fill="currentColor" x="0" y="51" class="text"><?= Yii::t('app', 'Друзья покупают — ты зарабатываешь!') ?></text>
@@ -20,12 +20,12 @@ use yii\web\View;
         </div>
         <div class="row project-kicksback-1__description">
             <div class="col-xl-5 offset-xl-1 col-lg-6">
-                <div class="project-kicksback-1__text-1 wow fadeInDown">
+                <div class="project-kicksback-1__text-1 wow fadeInUp">
                     <?= Yii::t('app', '{s}FIRSTLINE&nbsp;&mdash;{e} диджитал-прoстранство, где бизнес соревнуется за&nbsp;клиентов', ['s' => '<span>', 'e' => '</span><br>']) ?>
                 </div>
                 <div class="row">
                     <div class="col-xl-7 col-lg-8 col-md-7">
-                        <div class="project-kicksback-1__text-2 wow fadeInDown">
+                        <div class="project-kicksback-1__text-2 wow fadeInUp">
                             <?= Yii::t('app', 'В&nbsp;FIRSTLINE автоматически размещаются рекламные предложения бизнеса с&nbsp;качественными фото и&nbsp;видео товаров и&nbsp;услуг, которые они предлагают.') ?>
                             <br><br>
                             <?= Yii::t('app', 'На&nbsp;основе умных алгоритмов KICKSBACK реклама бизнеса доставляется наиболее релевантной аудитории приложения, а&nbsp;клиенты получают самые актуальные предложения.') ?>
@@ -33,26 +33,26 @@ use yii\web\View;
                     </div>
                     <div class="col-xl-5 col-lg-4 offset-lg-0 col-md-3 offset-md-1 col-8 offset-2">
                         <div class="project-kicksback-1__image-container desktop laptop tablet">
-                            <div class="project-kicksback-1__image project-kicksback-1__image_1 wow fadeInDown" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/image-1.png?v=1') ?>')"></div>
+                            <div class="project-kicksback-1__image project-kicksback-1__image_1 wow fadeInUp" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/image-1.png?v=1') ?>')"></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 offset-lg-0 col-md-3 offset-md-1 col-6">
                 <div class="project-kicksback-1__image-container">
-                    <div class="project-kicksback-1__image project-kicksback-1__image_2 wow fadeInDown" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/image-2.png?v=1') ?>')"></div>
+                    <div class="project-kicksback-1__image project-kicksback-1__image_2 wow fadeInUp" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/image-2.png?v=1') ?>')"></div>
                 </div>
             </div>
             <div class="col-6 mobile">
                 <div class="project-kicksback-1__image-container">
-                    <div class="project-kicksback-1__image project-kicksback-1__image_1 wow fadeInDown" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/image-1.png?v=1') ?>')"></div>
+                    <div class="project-kicksback-1__image project-kicksback-1__image_1 wow fadeInUp" style="background-image: url('<?= Url::to('@web/storage/project/kicksback/image-1.png?v=1') ?>')"></div>
                 </div>
             </div>
             <div class="col-lg-4 offset-lg-0 col-md-7 offset-md-1">
-                <div class="project-kicksback-1__text-3 wow fadeInDown">
+                <div class="project-kicksback-1__text-3 wow fadeInUp">
                     <?= Yii::t('app', 'Кэшбэк и&nbsp;подарки в&nbsp;ресторанах и&nbsp;магазинах') ?>
                 </div>
-                <div class="project-kicksback-1__text-4 wow fadeInDown">
+                <div class="project-kicksback-1__text-4 wow fadeInUp">
                     <?= Yii::t('app', 'Kicksback — это:') ?>
                     <ul>
                         <li><?= Yii::t('app', 'Лучшие рестораны и&nbsp;магазины, а&nbsp;также интернет-магазины и&nbsp;доставка еды') ?></li>
@@ -72,18 +72,18 @@ use yii\web\View;
     <div class="container">
         <div class="row">
             <div class="col-xl-10 offset-xl-1">
-                <div class="project-kicksback-2__title wow fadeInDown">
+                <div class="project-kicksback-2__title wow fadeInUp">
                     <?= Yii::t('app', 'Больше друзей —') ?>
                 </div>
-                <div class="project-kicksback-2__subtitle wow fadeInDown">
+                <div class="project-kicksback-2__subtitle wow fadeInUp">
                     <?= Yii::t('app', 'выше доход') ?>
                 </div>
             </div>
             <div class="col-xl-3 offset-xl-3 col-lg-4 offset-lg-3 col-md-5 offset-md-3">
-                <div class="project-kicksback-2__caption wow fadeInDown">
+                <div class="project-kicksback-2__caption wow fadeInUp">
                     <?= Yii::t('app', 'Друзья дороже. {br}Когда есть Kicksback.', ['br' => '<br>']) ?>
                 </div>
-                <div class="project-kicksback-2__text wow fadeInDown">
+                <div class="project-kicksback-2__text wow fadeInUp">
                     <?= Yii::t('app', 'Чем больше у&nbsp;тебя друзей в&nbsp;приложении, тем больше бонусов летит в&nbsp;твой кошелек. Чтобы пригласить нового друга, просто поделись с&nbsp;ним ссылкой.') ?>
                 </div>
             </div>
@@ -95,12 +95,12 @@ use yii\web\View;
     <div class="container project-kicksback-3__container">
         <div class="row">
             <div class="col-xl-6 offset-xl-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
-                <div class="project-kicksback-3__title wow fadeInDown">
+                <div class="project-kicksback-3__title wow fadeInUp">
                     <?= Yii::t('app', 'Подарки каждый день&nbsp;&mdash; {br}без условий', ['br' => '<br>']) ?>
                 </div>
             </div>
             <div class="col-xl-4 offset-xl-4 col-md-6 offset-md-3 col-sm-8 offset-sm-2">
-                <div class="project-kicksback-3__text wow fadeInDown">
+                <div class="project-kicksback-3__text wow fadeInUp">
                     <?= Yii::t('app', 'Любой пользователь приложения ежедневно может получать в&nbsp;подарок один новый кикс. Заглядывай почаще на&nbsp;карту Kicksback, выбирай понравившийся кикс&nbsp;&mdash; например, блюдо в&nbsp;ресторане, бокал пива, маникюр или стрижку&nbsp;&mdash; и&nbsp;отправляйся за&nbsp;подарком.') ?>
                 </div>
             </div>
@@ -117,11 +117,11 @@ use yii\web\View;
     <div class="container">
         <div class="row">
             <div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-6">
-                <div class="project-kicksback-4__title wow fadeInDown">
+                <div class="project-kicksback-4__title wow fadeInUp">
                     <?= Yii::t('app', 'В&nbsp;Kicksback много возможностей&nbsp;&mdash; открывай их&nbsp;все!', ['br' => '<br>']) ?>
                 </div>
                 <div class="project">
-                    <div class="project-kicksback-4__links project__links wow fadeInDown">
+                    <div class="project-kicksback-4__links project__links wow zoomIn">
                         <?= Html::a('', 'https://kicksback.app/', ['class' => 'project__link project__link_site', 'target' => '_blank']) ?>
                         <div class="project__hr"></div>
                         <?= Html::a('', 'https://play.google.com/store/apps/details?id=com.sessia.kickbacks', ['class' => 'project__link project__link_google', 'target' => '_blank']) ?>
@@ -131,7 +131,7 @@ use yii\web\View;
                 </div>
             </div>
             <div class="col-xl-4 offset-xl-1 col-md-5 offset-md-1">
-                <ul class="project-kicksback-4__list wow fadeInDown">
+                <ul class="project-kicksback-4__list wow fadeInUp">
                     <li><?= Yii::t('app', 'Новостная Лента с&nbsp;анонсами выгодных акций и&nbsp;скидок') ?></li>
                     <li><?= Yii::t('app', 'Возможность бронирования через чаты с&nbsp;ресторанами и&nbsp;салонами') ?></li>
                     <li><?= Yii::t('app', 'Онлайн-отчеты по&nbsp;всем покупкам и&nbsp;бонусам') ?></li>
