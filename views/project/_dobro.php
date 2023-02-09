@@ -22,7 +22,7 @@ switch(Yii::$app->language) {
             </div>
         </div>
         <div class="row dobro-1__columns" >
-            <div class="offset-lg-1 dobro-1__image-1 wow fadeInDown">
+            <div class="offset-lg-1 dobro-1__image-1 wow fadeInUp">
                 <img src="<?= Url::to($path . 'image-1-1.png?v=1') ?>" alt="">
             </div>
             <div class="dobro-1__text">
@@ -30,7 +30,7 @@ switch(Yii::$app->language) {
             </div>
         </div>
         <div class="row dobro-1__single-phone">
-            <div class="dobro-1__image-2 wow fadeInDown" data-wow-delay="1s">
+            <div class="dobro-1__image-2 wow fadeInUp" data-wow-delay="1s">
                 <img src="<?= Url::to($path . 'image-1-2.png?v=1') ?>" alt="">
             </div>
         </div>
@@ -76,7 +76,7 @@ switch(Yii::$app->language) {
         <div class="dobro-3__text">
             <?= Yii::t('app', 'Установите Добро. Будильник {br}и начинайте каждый день с добрых дел!', ['br' => '<br>']) ?>
         </div>
-        <div class="dobro-3__stores wow fadeInDown">
+        <div class="dobro-3__stores wow zoomIn">
             <div class="dobro-3__link">
                 <?= Html::a('', '#!', ['class' => 'project__link project__link_site', 'target' => '_blank']) ?>
             </div>
