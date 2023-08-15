@@ -22,7 +22,7 @@ $this->title = 'SESSIA. GET IT RIGHT';
                 <ul class="header__list wow fadeInUp">
                     <li><a href="#about"><?= Yii::t('app', 'О нас') ?></a></li>
                     <li><a href="#projects"><?= Yii::t('app', 'Проекты') ?></a></li>
-                    <li><a href="<?= Url::to('project/white') ?>"><?= Yii::t('app', 'White Label') ?></a></li>
+                    <li><a href="<?= Url::to('/project/white/') ?>"><?= Yii::t('app', 'White Label') ?></a></li>
                     <li><a href="#team"><?= Yii::t('app', 'Команда') ?></a></li>
                     <li><a href="#news"><?= Yii::t('app', 'Новости') ?></a></li>
                     <li class="lang">
