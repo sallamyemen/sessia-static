@@ -155,7 +155,7 @@ return [
     "NRK87.— это авторская techwear одежда с интегрированными GPS-трекерами, помогающими найти человека и быть с ним на связи" => "NRK87. is designer techwear with integrated GPS trackers, which helps find people and stay in touch with them",
     "NRK87. создает лимитированные коллекции, руководствуясь принципами личной безопасности, ответственным отношением к Земле и планами освоения Марса" => "NRK87. creates limited collections, guided by principles of personal safety, a responsible attitude towards the Earth and plans for the exploration of Mars",
     "Приложение {br} для клиентов бренда с функционалом онлайн-магазина и сервисом поддержки GPS-трекер" => "An application {br} for the brand's clients with an online store function and support for the GPS tracker",
-    "Онлайн-магазин" => "Online store",
+    //"Онлайн-магазин" => "Online store",
     "с возможностями быстрой покупки, оплаты и отслеживания истории заказов" => "with the ability to quickly purchase, pay and track order history",
     "Приватные звонки для связи с обладателем одежды NRK87., оснащенной GPS-трекером" => "Private calls to connect with the wearer of NRK87. apparel equipped with a GPS tracker",
     "GPS-трекинг" => "GPS tracking",
@@ -178,4 +178,12 @@ return [
     "Следите за статистикой вашей благотворительности в личном {br} кабинете" => "Follow your charity statistics on your account {br} page",
     "Время правильных {br}поступков" => "Time to do {br}good",
     "Установите Добро. Будильник {br}и начинайте каждый день с добрых дел!" => "Install the DoGood.Alarm {br}and start every day with good deeds!",
+
+    'Услуга White Label' => 'White Label Service',
+    'Sessia предлагает вашему бизнесу персональные Whie Label бизнес-решения и мобильные приложения, сделанные по индивидуальному заказу.' => 'Sessia offers businesses customizable white-label solutions and creates tailor-made mobile apps.',
+    'Вы сможете управлять своим делом, магазинами и покупателями, пользоваться интернет-эквайрингом и получите доступ к прямому маркетингу своего продукта!'=> 'You will be able to manage your activity, stores and customers, use internet acquiring, and have access to direct marketing of your products!',
+    'Благодаря Sessia, вы сможете создать свой онлайн-магазин с продуктовыми карточками, складом и спецификациями.' => 'Thanks to Sessia, you can also create your online store with product cards, stocks, and detailed specifications.',
+    'Воспользуйтесь нашей передовой СРМ системой, чтобы управлять продажами и продвигать ваши продукты!' => 'You can use our leading CRM platform system to manage sales and market your products!',
+    'Нужны дополнительные возможности и функции? Наши талантливые разработчики готовы настроить платформу Sessia специально для вашего бизнеса!' => 'Need extra customization? Our talented developers are available to set Sessia up just for your business!',
+    'Свяжитесь с нами по адресу info@sessia.com для личной консультации, и чтобы получить ценовое предложение от нашей команды IT-экспертов.' => 'Please contact info@sessia.com for a 1:1 consultation and to get a quotation from our expert IT team.',
 ];

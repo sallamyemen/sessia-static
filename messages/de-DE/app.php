@@ -180,4 +180,12 @@ return [
     "Следите за статистикой вашей благотворительности в личном {br} кабинете" => "Verfolgen Sie Ihre Wohltätigkeitsstatistiken in Ihrem {br} Profil",
     "Время правильных {br}поступков" => "Zeit, das Richtige {br} zu tun",
     "Установите Добро. Будильник {br}и начинайте каждый день с добрых дел!" => "Installieren Sie die Güte.Wecker-App {br}und beginnen Sie jeden Tag mit einer guten Tat!",
+
+    'Услуга White Label' => 'White Label Service',
+    'Sessia предлагает вашему бизнесу персональные Whie Label бизнес-решения и мобильные приложения, сделанные по индивидуальному заказу.' => 'Sessia offers businesses customizable white-label solutions and creates tailor-made mobile apps.',
+    'Вы сможете управлять своим делом, магазинами и покупателями, пользоваться интернет-эквайрингом и получите доступ к прямому маркетингу своего продукта!'=> 'You will be able to manage your activity, stores and customers, use internet acquiring, and have access to direct marketing of your products!',
+    'Благодаря Sessia, вы сможете создать свой онлайн-магазин с продуктовыми карточками, складом и спецификациями.' => 'Thanks to Sessia, you can also create your online store with product cards, stocks, and detailed specifications.',
+    'Воспользуйтесь нашей передовой СРМ системой, чтобы управлять продажами и продвигать ваши продукты!' => 'You can use our leading CRM platform system to manage sales and market your products!',
+    'Нужны дополнительные возможности и функции? Наши талантливые разработчики готовы настроить платформу Sessia специально для вашего бизнеса!' => 'Need extra customization? Our talented developers are available to set Sessia up just for your business!',
+    'Свяжитесь с нами по адресу info@sessia.com для личной консультации, и чтобы получить ценовое предложение от нашей команды IT-экспертов.' => 'Please contact info@sessia.com for a 1:1 consultation and to get a quotation from our expert IT team.',
 ];

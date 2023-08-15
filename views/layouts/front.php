@@ -21,6 +21,10 @@ $menu = [
         'url' => ['/site/index', '#' => 'projects'],
     ],
     [
+        'label' => Yii::t('app', 'White Label'),
+        'url' => ['project/white'],
+    ],
+    [
         'label' => Yii::t('app', 'Команда'),
         'url' => ['/site/index', '#' => 'team'],
     ],
