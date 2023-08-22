@@ -1,67 +1,267 @@
-.white
-  //align-self: baseline !important
-  background-color: $colorBlue
+.white-1
+  padding-top: 90px
   max-width: 1440px
   margin:
     right: auto
     left: auto
-  padding:
-    right: 60px
-    left: 60px
-    top: 30px
-    bottom: 60px
   box-sizing: border-box
-  &__title
-    font-weight: bold
+  display: flex
+  &__h1
     list-style-position: outside
-    padding: 0 50px 50px
-    font-size: 36px
-    line-height: 38px
-    margin-top: 80px
-  &__content
-    padding: 30px
-  &__text
+    font-size: 100px
+    line-height: 100px
+    letter-spacing: 5px
+    text-transform: uppercase
+    margin-top: 30px
+    font-weight: 400
+    span
+      color: $colorBlue
+  &__left-text
+    font-size: 22px
+    line-height: normal
+    padding-left: 50px
+  &__left
     display: flex
     flex-direction: column
-    font-size: 22px
-    line-height: 24px
-    padding-left: 50px
-  &__offer-text-2
+    align-items: center
+    justify-content: flex-start
+    padding-top: 43px
+  &__right
+    margin-left: 160px
+  &__columns
+    padding-top: 60px
+    display: flex
+    justify-content: space-evenly
+  &__h2
+    font-size: 40px
+    font-weight: 400
+    line-height: normal
+  &__text
+    font-size: 16px
+    line-height: normal
+    color: #7D85A4
     padding-top: 20px
-    //padding-left: 50px
+
+  &__btn
+    display: inline-block
+    vertical-align: top
+    padding: 13px 40px
+    font:
+      size: 16px
+      weight: 300
+    line-height: 20px
+    color: $colorWhite
+    border: 1px solid $colorBlack
+      radius: 24px
+    text-decoration: none
+    cursor: pointer
+    transition: opacity .25s
+    background-color: $colorBlue
+    outline: none
+    margin-top: 68px
+    @media (max-width: $bpExtraExtraLarge)
+      font-size: 14px
+      line-height: 18px
+      padding: 8px 25px
+      border-radius: 20px
+    @media (max-width: $bpMedium)
+      font-size: 12px
+      line-height: 16px
+      padding: 8px 20px
+      border-radius: 20px
+    @media (hover: hover)
+      &:hover
+        opacity: .8
+    &.inactive
+      cursor: default
+      @media (hover: hover)
+        &:hover
+          opacity: 1
+
+
+.white-2
+  background-color: $colorWhite
+  &__h1
+    color: $colorBlack
+    font-weight: 700
+    list-style-position: outside
+    font-size: 50px
+    line-height: 100px
+    letter-spacing: 2.5px
+    margin-top: 70px
+    padding-top: 70px
+  &__price
+    font-size: 100px
+    font-weight: 400
+    padding-bottom: 30px
+    margin:
+      top: 31px
+      left: 25%
+      bottom: 34px
+  &__detail
+    display: flex
+    flex-direction: row
+    background-color: #F8F8F8
+    justify-content: space-evenly
+    padding:
+      top: 60px
+      bottom: 75px
   &__details
-    padding-bottom: 1rem
+    color: $colorBlack
     border-bottom: 1px solid lightgrey
-    padding-left: 50px
-  &__details *
-    max-width: 65ch
+    padding: 46px 70px 51px
+  &__details[open]
+    padding-bottom: 0
+  &__pack-include
+    color: #7D85A4
+    font-size: 40px
+    line-height: normal
+    font-weight: 400
+
   &__summary
-    font-weight: bold
-    font-size: 1.1rem
+    font-weight: 400
+    font-size: 40px
     cursor: pointer
     list-style-position: outside
+    color: $colorBlack
+    line-height: normal
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 0 20px
+    p
+      font-weight: 400
+      font-size: 22px
+      line-height: normal
   &__summary::marker
-    content: "+   "
-    font-size: 2rem
+    content: "+" !important
+    font-size: 48px
     font-weight: normal
     text-align: center
-    color: $colorBottom
+    color: $colorBlack
   &__details[open] summary::marker
-    content: "–   "
+    content: "–"
   &__sub-list
     padding-left: 50px
-    list-style-type: circle
+    list-style-type: none
 
-.pay-footer
-  background-color: $colorLightBlue
-  border-radius: 32px
-  height: 200px
-  display: flex
-  flex-direction: row
-  align-items: center
-  justify-content: space-evenly
-  margin-top: 50px
-  &__sys
-    width: 200px
-    img
-      width: 50%
+.dop
+  justify-content: space-between
+
+.white-3
+  background-repeat: no-repeat
+  padding-bottom: 80px
+  &__wrap
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-top: 80px
+  &__text
+    font-size: 22px
+    font-weight: 400
+    text-align: center
+  &__header
+    font-size: 50px
+    font-weight: 700
+    letter-spacing: 2.5px
+    text-transform: uppercase
+    padding-top: 24px
+    text-align: center
+    margin-top: 24px
+    line-height: normal
+  &__form
+    padding-top: 80px
+
+  &__btn
+    vertical-align: top
+    padding: 13px 40px
+    font:
+      size: 16px
+      weight: 300
+    line-height: 20px
+    color: $colorWhite
+    border: 1px solid $colorBlack
+      radius: 24px
+    text-decoration: none
+    cursor: pointer
+    transition: opacity .25s
+    background-color: $colorBlue
+    outline: none
+    @media (max-width: $bpExtraExtraLarge)
+      font-size: 14px
+      line-height: 18px
+      padding: 8px 25px
+      border-radius: 20px
+    @media (max-width: $bpMedium)
+      font-size: 12px
+      line-height: 16px
+      padding: 8px 20px
+      border-radius: 20px
+    @media (hover: hover)
+      &:hover
+        opacity: .8
+    &.inactive
+      cursor: default
+      @media (hover: hover)
+        &:hover
+          opacity: 1
+
+  &__send
+    display: block
+    background-color: #5C43F4
+    color: #fff
+    border-radius: 40px
+    text-transform: uppercase
+    width: 277px
+    height: 50px
+    text-align: center
+    margin: 0 auto
+    margin-top: 80px
+    border: none!important
+    position: relative
+    z-index: 1000
+    cursor: pointer
+
+.input
+  background: transparent
+  border: none
+  border-bottom: 1px solid #7E7D86
+  box-shadow: none!important
+  padding-bottom: 16px
+  font-size: 16px
+  color: #666666
+  z-index: 1000
+  position: relative
+  width: 44%
+
+.input:first-child
+  margin-right: 66px
+
+.input-text
+  background: transparent
+  border: none
+  border-bottom: 1px solid #7E7D86
+  box-shadow: none!important
+  padding-bottom: 16px
+  font-size: 16px
+  color: #666666
+  z-index: 1000
+  position: relative
+  width: 94%
+  padding-top: 86px
+
+.control-icon
+  fill: rebeccapurple
+  transition: .3s ease
+  pointer-events: none
+
+.control-icon-close
+  display: none
+
+details[open] .control-icon-close
+  display: initial
+  transition: .3s ease
+
+details[open] .control-icon-expand
+  display: none
