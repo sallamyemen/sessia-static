@@ -20,7 +20,7 @@ $url = '@web/storage/project/white/';
                 <?= Yii::t('app', 'Sessia предлагает вашему бизнесу персональные White Label бизнес-решения и мобильные приложения, сделанные по индивидуальному заказу.')?>
             </div>
             <div class="white-1__btn">
-                <?= Yii::t('app', 'Свяжитесь с нами')?>
+                <a href="#form"><?= Yii::t('app', 'Свяжитесь с нами')?></a>
             </div>
         </div>
         <div class="white-1__right col-lg-8 col-sm-12 col-md-12">
@@ -225,10 +225,9 @@ $url = '@web/storage/project/white/';
        </div>
     </section>
 
-    <section class="white-3" style="position: relative; background-image: url('<?= Url::to('@web/front/img-main/ellipse.png?v=1') ?>')">
+    <section id="form" class="white-3" style="position: relative; background-image: url('<?= Url::to('@web/front/img-main/ellipse.png?v=1') ?>')">
             <div class="white-3__wrap">
-                <div class="white-3__text wow fadeIn col-lg-4"><?= Yii::t('app', 'для личной консультации, и чтобы получить ценовое предложение от нашей команды IT-экспертов
-') ?></div>
+                <div class="white-3__text wow fadeIn col-lg-4"><?= Yii::t('app', 'для личной консультации, и чтобы получить ценовое предложение от нашей команды IT-экспертов') ?></div>
                 <div class="white-3__header wow fadeIn col-lg-4"><?= Yii::t('app', 'Свяжитесь с нами') ?></div>
                 <div class="white-3__form form wow fadeIn col-lg-8">
                     <form class="" action="" method="">
@@ -248,6 +247,19 @@ $url = '@web/storage/project/white/';
 $js = <<<JS
 
 new WOW().init();
+
+$('a[href*="#"]:not([href="#"]):not(.fancybox)').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top-55
+				}, 1000);
+				return false;
+			}
+		}
+	});
 
 JS;
 $this->registerJs($js, View::POS_END);

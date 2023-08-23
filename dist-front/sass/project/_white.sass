@@ -1,4 +1,5 @@
 .white-1
+  scroll-behavior: smooth
   padding-top: 90px
   max-width: 1440px
   margin:
@@ -6,6 +7,8 @@
     left: auto
   box-sizing: border-box
   display: flex
+  @media (max-width: $bpLarge)
+    display: block
   &__h1
     list-style-position: outside
     font-size: 100px
@@ -28,10 +31,14 @@
     padding-top: 43px
   &__right
     margin-left: 160px
+    @media (max-width: $bpLarge)
+      margin-left: 0
   &__columns
     padding-top: 60px
     display: flex
     justify-content: space-evenly
+    @media (max-width: $bpMedium)
+      display: block
   &__h2
     font-size: 40px
     font-weight: 400
@@ -59,6 +66,9 @@
     background-color: $colorBlue
     outline: none
     margin-top: 68px
+    a
+      color: $colorWhite
+      text-decoration: none
     @media (max-width: $bpExtraExtraLarge)
       font-size: 14px
       line-height: 18px
@@ -106,6 +116,8 @@
     padding:
       top: 60px
       bottom: 75px
+    @media (max-width: $bpSmall)
+      display: block
   &__details
     color: $colorBlack
     border-bottom: 1px solid lightgrey
@@ -234,6 +246,9 @@
   z-index: 1000
   position: relative
   width: 44%
+  @media (max-width: $bpSmall)
+    font-size: unset
+    width: unset
 
 .input:first-child
   margin-right: 66px
