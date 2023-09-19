@@ -13,6 +13,7 @@ use yii\widgets\Spaceless;
     <meta charset="<?= Yii::$app->charset ?>" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="keywords" content="For Admitad, 2023-09-20"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="shortcut icon" href="<?= Url::to('@web/favicon.ico?v=1') ?>" type="image/x-icon" />
     <?= Html::csrfMetaTags() ?>
