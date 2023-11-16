@@ -242,20 +242,20 @@ $this->title = 'SESSIA. GET IT RIGHT';
     </div>
 </div>
 
-<div class="pay-footer">
-    <div class="pay-footer__sys col-lg-2">
-        <img src="<?= Url::to($url.'up.svg') ?>">
-    </div>
-    <div class="pay-footer__sys col-lg-2">
-        <img src="<?= Url::to($url.'payment__visa.svg') ?>">
-    </div>
-    <div class="pay-footer__sys col-lg-2">
-        <img src="<?= Url::to($url.'payment__mastercard.svg') ?>">
-    </div>
-    <div class="pay-footer__sys col-lg-2">
-        <img src="<?= Url::to($url.'payment__paypal.svg') ?>">
-    </div>
-</div>
+<!--<div class="pay-footer">-->
+<!--    <div class="pay-footer__sys col-lg-2">-->
+<!--        <img src="--><?//= Url::to($url.'up.svg') ?><!--">-->
+<!--    </div>-->
+<!--    <div class="pay-footer__sys col-lg-2">-->
+<!--        <img src="--><?//= Url::to($url.'payment__visa.svg') ?><!--">-->
+<!--    </div>-->
+<!--    <div class="pay-footer__sys col-lg-2">-->
+<!--        <img src="--><?//= Url::to($url.'payment__mastercard.svg') ?><!--">-->
+<!--    </div>-->
+<!--    <div class="pay-footer__sys col-lg-2">-->
+<!--        <img src="--><?//= Url::to($url.'payment__paypal.svg') ?><!--">-->
+<!--    </div>-->
+<!--</div>-->
 
 <?php
 

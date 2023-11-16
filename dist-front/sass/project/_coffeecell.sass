@@ -71,6 +71,7 @@
 	&__particles
 		display: flex
 		justify-content: flex-end
+		height: 0
 	&__particles-img
 		position: relative
 		.particles
@@ -218,6 +219,8 @@
 			line-height: 24px
 	&__links
 		text-align: right
+		@media (max-width : $bpLarge)
+			text-align: center
 		.project
 			display: inline-block
 			vertical-align: top

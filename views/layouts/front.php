@@ -9,6 +9,15 @@ use yii\widgets\Menu;
 /* @var $this \yii\web\View */
 /* @var $content string */
 
+switch(Yii::$app->language) {
+    case "ru-RU": $path = "/ru"; break;
+    case "de-DE": $path = "/de"; break;
+    case "vi-VN": $path = "/vi"; break;
+    default: $path = "/"; break;
+}
+
+$white_url = Url::to($path.'/project/white');
+
 AppAsset::register($this);
 
 $menu = [
@@ -22,11 +31,11 @@ $menu = [
     ],
     [
         'label' => Yii::t('app', 'White Label'),
-        'url' => ['project/white'],
+        'url' => $white_url,
     ],
     [
         'label' => Yii::t('app', 'Команда'),
-        'url' => ['/site/index', '#' => 'team'],
+        'url' => [Url::to('/site/index'), '#' => 'team'],
     ],
     [
         'label' => Yii::t('app', 'Новости'),

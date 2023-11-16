@@ -10,7 +10,7 @@ $config = [
     'basePath' => dirname(__DIR__),
     'timeZone' => 'Europe/Moscow', // UTC
 
-    'language' => 'en-US',
+    'language' => 'ru-RU',
     'sourceLanguage' => 'en-US',
 
     'bootstrap' => ['log'],

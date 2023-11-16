@@ -1,12 +1,13 @@
 .white-1
   scroll-behavior: smooth
   padding-top: 90px
-  max-width: 1440px
-  margin:
-    right: auto
-    left: auto
+  //max-width: 1440px
+  //margin:
+  //  right: auto
+  //  left: auto
   box-sizing: border-box
   display: flex
+  justify-content: flex-start //space-between
   @media (max-width: $bpLarge)
     display: block
   &__h1
@@ -17,20 +18,25 @@
     text-transform: uppercase
     margin-top: 30px
     font-weight: 400
+    margin-left: 24px
     span
       color: $colorBlue
   &__left-text
     font-size: 22px
     line-height: normal
-    padding-left: 50px
+    padding-left: 45% //50px
+    @media (max-width : $bpLarge)
+      padding-left: 0
   &__left
     display: flex
     flex-direction: column
     align-items: center
     justify-content: flex-start
     padding-top: 43px
+    @media (max-width : $bpLarge)
+      padding-top: 0
   &__right
-    margin-left: 160px
+    //margin-left: 24px //160px
     @media (max-width: $bpLarge)
       margin-left: 0
   &__columns
@@ -52,7 +58,7 @@
   &__btn
     display: inline-block
     vertical-align: top
-    padding: 13px 40px
+    padding: 13px 60px
     font:
       size: 16px
       weight: 300
@@ -66,6 +72,7 @@
     background-color: $colorBlue
     outline: none
     margin-top: 68px
+    margin-left: 40% //45% //20%
     a
       color: $colorWhite
       text-decoration: none
@@ -87,6 +94,9 @@
       @media (hover: hover)
         &:hover
           opacity: 1
+    @media (max-width : $bpLarge)
+      margin-top: 0
+      margin-left: 0
 
 
 .white-2
@@ -106,13 +116,12 @@
     padding-bottom: 30px
     margin:
       top: 31px
-      left: 25%
+      left: 32% //26%
       bottom: 34px
   &__detail
     display: flex
     flex-direction: row
     background-color: #F8F8F8
-    justify-content: space-evenly
     padding:
       top: 60px
       bottom: 75px
@@ -121,7 +130,10 @@
   &__details
     color: $colorBlack
     border-bottom: 1px solid lightgrey
-    padding: 46px 70px 51px
+    //padding: 46px 70px 51px
+    padding: 46px 190px 51px
+    @media (max-width : $bpLarge)
+      padding: 46px 70px 51px
   &__details[open]
     padding-bottom: 0
   &__pack-include
@@ -129,36 +141,50 @@
     font-size: 40px
     line-height: normal
     font-weight: 400
+    padding-left: 0 !important
 
   &__summary
-    font-weight: 400
-    font-size: 40px
-    cursor: pointer
     list-style-position: outside
+    cursor: pointer
     color: $colorBlack
     line-height: normal
     display: flex
     justify-content: space-between
     align-items: center
     padding: 0 0 20px
-    p
+    @media (max-width : $bpSmall)
+      display: block
+    &_text
       font-weight: 400
       font-size: 22px
       line-height: normal
-  &__summary::marker
-    content: "+" !important
-    font-size: 48px
-    font-weight: normal
-    text-align: center
-    color: $colorBlack
-  &__details[open] summary::marker
-    content: "–"
+      @media (max-width : $bpLarge)
+        margin-left: 20px
+    &_h1
+      font-weight: 400
+      font-size: 40px
+      cursor: pointer
+    &_plus
+      @media (max-width : $bpSmall)
+        display: none
+  //&__summary::marker
+  //  content: "+" !important
+  //  font-size: 48px
+  //  font-weight: normal
+  //  text-align: center
+  //  color: $colorBlack
+  //&__details[open] summary::marker
+  //  content: "–"
   &__sub-list
-    padding-left: 50px
     list-style-type: none
+    padding-left: 0 !important //50px
 
 .dop
-  justify-content: space-between
+  &__detail
+    justify-content: flex-start
+  &__summary
+    justify-content: space-between
+    margin-left: 8%
 
 .white-3
   background-repeat: no-repeat

@@ -3,6 +3,8 @@
 use yii\helpers\Url;
 use yii\web\View;
 
+//dd($langCurrent);die;
+
 switch(Yii::$app->language) {
     case "en-US": $path = "@web/storage/project/translate/ume-en/"; break;
     case "de-DE": $path = "@web/storage/project/translate/ume-en/"; break;
@@ -15,7 +17,7 @@ $url = '@web/storage/project/white/';
 
 ?>
     <section class="white-1 col-lg-12 col-sm-12 col-md-12">
-        <div class="white-1__left col-lg-3 col-sm-12 col-md-12">
+        <div class="white-1__left col-lg-4 col-sm-12 col-md-12">
             <div class="white-1__left-text">
                 <?= Yii::t('app', 'Sessia предлагает вашему бизнесу персональные White Label бизнес-решения и мобильные приложения, сделанные по индивидуальному заказу.')?>
             </div>
@@ -58,24 +60,28 @@ $url = '@web/storage/project/white/';
        <div class="white-2__packages">
 
            <details class="white-2__details">
-               <summary class="white-2__summary offset-lg-1">Starter <p class="col-lg-8"><?= Yii::t('app', 'Базовый пакет чтобы начать работу с Kicksback включает все, чтобы привлечь новых клиентов.') ?></p>
-                   <svg class="control-icon control-icon-expand" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
-                       <line x1="1" y1="21.8462" x2="44" y2="21.8462" stroke="black" stroke-width="2" stroke-linecap="round"/>
-                       <line x1="23.1543" y1="1" x2="23.1543" y2="44" stroke="black" stroke-width="2" stroke-linecap="round"/>
-                   </svg>
-                   <svg class="control-icon control-icon-close" xmlns="http://www.w3.org/2000/svg" width="45" height="3" viewBox="0 0 45 3" fill="none">
-                       <line x1="1" y1="1.84619" x2="44" y2="1.84619" stroke="black" stroke-width="2" stroke-linecap="round"/>
-                   </svg>
+               <summary class="white-2__summary offset-lg-1">
+                   <p class="col-lg-3 white-2__summary_h1" style="padding-left: 0">Starter</p>
+                   <p class="col-lg-6 white-2__summary_text"><?= Yii::t('app', 'Базовый пакет чтобы начать работу с Kicksback включает все, чтобы привлечь новых клиентов.') ?></p>
+                   <p class="col-lg-3 white-2__summary_plus">
+                       <svg class="control-icon control-icon-expand" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                           <line x1="1" y1="21.8462" x2="44" y2="21.8462" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                           <line x1="23.1543" y1="1" x2="23.1543" y2="44" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                       </svg>
+                       <svg class="control-icon control-icon-close" xmlns="http://www.w3.org/2000/svg" width="45" height="3" viewBox="0 0 45 3" fill="none">
+                           <line x1="1" y1="1.84619" x2="44" y2="1.84619" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                       </svg>
+                   </p>
                </summary>
                <div class="white-2__content">
                    <div class="white-2__price">
                        <?= Yii::t('app', '5М₽') ?>
                    </div>
                    <div class="white-2__detail">
-                       <div class="white-2__pack-include col-lg-3">
+                       <div class="white-2__pack-include col-lg-3 offset-1">
                            <?= Yii::t('app', 'В пакет входит') ?>
                        </div>
-                       <ul class="white-2__list col-lg-3">
+                       <ul class="white-2__list col-lg-3" style="padding-left: 0">
                            <li><?= Yii::t('app', 'Авторизация/регистрация клиента по SMS') ?></li>
                            <li><?= Yii::t('app', 'Профайл клиента') ?></li>
                            <li><?= Yii::t('app', 'Брендирование логотипом компании-покупателя') ?></li>
@@ -96,25 +102,29 @@ $url = '@web/storage/project/white/';
            </details>
 
            <details class="white-2__details">
-               <summary class="white-2__summary offset-lg-1">Plus <p class="col-lg-8"><?= Yii::t('app', 'Наш пакет Plus включает нашу полезную ленту новостей чтобы быть на связи с клиентами 24/7.') ?></p>
-                   <svg class="control-icon control-icon-expand" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
-                       <line x1="1" y1="21.8462" x2="44" y2="21.8462" stroke="black" stroke-width="2" stroke-linecap="round"/>
-                       <line x1="23.1543" y1="1" x2="23.1543" y2="44" stroke="black" stroke-width="2" stroke-linecap="round"/>
-                   </svg>
-                   <svg class="control-icon control-icon-close" xmlns="http://www.w3.org/2000/svg" width="45" height="3" viewBox="0 0 45 3" fill="none">
-                       <line x1="1" y1="1.84619" x2="44" y2="1.84619" stroke="black" stroke-width="2" stroke-linecap="round"/>
-                   </svg>
+               <summary class="white-2__summary offset-lg-1">
+                   <p class="col-lg-3 white-2__summary_h1" style="padding-left: 0">Plus</p>
+                   <p class="col-lg-6 white-2__summary_text"><?= Yii::t('app', 'Наш пакет Plus включает нашу полезную ленту новостей чтобы быть на связи с клиентами 24/7.') ?></p>
+                   <p class="col-lg-3 white-2__summary_plus">
+                       <svg class="control-icon control-icon-expand" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                           <line x1="1" y1="21.8462" x2="44" y2="21.8462" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                           <line x1="23.1543" y1="1" x2="23.1543" y2="44" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                       </svg>
+                       <svg class="control-icon control-icon-close" xmlns="http://www.w3.org/2000/svg" width="45" height="3" viewBox="0 0 45 3" fill="none">
+                           <line x1="1" y1="1.84619" x2="44" y2="1.84619" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                       </svg>
+                   </p>
                </summary>
                <div class="white-2__price">
                    <?= Yii::t('app', '10М₽') ?>
                </div>
                <div class="white-2__detail">
-                   <div class="white-2__pack-include col-lg-3">
+                   <div class="white-2__pack-include col-lg-3 offset-1">
                        <?= Yii::t('app', 'Пакет Starter + следующие функции') ?>
                    </div>
                    <ul class="white-2__list col-lg-3">
                        <li><?= Yii::t('app', 'Социальная сеть для клиента:') ?>
-                           <ul class="white-2__sub-list">
+                           <ul class="white-2__sub-list" style="padding-left: 0">
                                <li>&minus; <?= Yii::t('app', 'новостная лента,') ?></li>
                                <li>&minus; <?= Yii::t('app', 'писать посты,') ?></li>
                                <li>&minus; <?= Yii::t('app', 'писать комментарии,') ?></li>
@@ -152,23 +162,27 @@ $url = '@web/storage/project/white/';
            </details>
 
            <details class="white-2__details">
-               <summary class="white-2__summary offset-lg-1">Pro <p class="col-lg-8"><?= Yii::t('app', 'Пакет Pro — это наше готовое решение для максимального функционала Kicksback: вознаграждения, календари и управление сотрудниками - все включено. Вы также можете использовать дополнительные функции, как денежные переводы между магазинами!') ?></p>
-                   <svg class="control-icon control-icon-expand" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
-                       <line x1="1" y1="21.8462" x2="44" y2="21.8462" stroke="black" stroke-width="2" stroke-linecap="round"/>
-                       <line x1="23.1543" y1="1" x2="23.1543" y2="44" stroke="black" stroke-width="2" stroke-linecap="round"/>
-                   </svg>
-                   <svg class="control-icon control-icon-close" xmlns="http://www.w3.org/2000/svg" width="45" height="3" viewBox="0 0 45 3" fill="none">
-                       <line x1="1" y1="1.84619" x2="44" y2="1.84619" stroke="black" stroke-width="2" stroke-linecap="round"/>
-                   </svg>
+               <summary class="white-2__summary offset-lg-1">
+                   <p class="col-lg-3 white-2__summary_h1" style="padding-left: 0">Pro</p>
+                   <p class="col-lg-6 white-2__summary_text"><?= Yii::t('app', 'Пакет Pro — это наше готовое решение для максимального функционала Kicksback: вознаграждения, календари и управление сотрудниками - все включено. Вы также можете использовать дополнительные функции, как денежные переводы между магазинами!') ?></p>
+                   <p class="col-lg-3 white-2__summary_plus">
+                       <svg class="control-icon control-icon-expand" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                           <line x1="1" y1="21.8462" x2="44" y2="21.8462" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                           <line x1="23.1543" y1="1" x2="23.1543" y2="44" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                       </svg>
+                       <svg class="control-icon control-icon-close" xmlns="http://www.w3.org/2000/svg" width="45" height="3" viewBox="0 0 45 3" fill="none">
+                           <line x1="1" y1="1.84619" x2="44" y2="1.84619" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                       </svg>
+                   </p>
                </summary>
                <div class="white-2__price">
                    <?= Yii::t('app', '20М₽') ?>
                </div>
                <div class="white-2__detail">
-                   <div class="white-2__pack-include col-lg-3">
+                   <div class="white-2__pack-include col-lg-3 offset-1">
                        <?= Yii::t('app', 'Plus + следующие функции') ?>
                    </div>
-                   <ul class="white-2__list col-lg-3">
+                   <ul class="white-2__list col-lg-3" style="padding-left: 0">
                        <li><?= Yii::t('app', 'Календарь событий от бизнеса в приложении клиента') ?></li>
                        <li><?= Yii::t('app', 'Доступ к бизнес-версии приложения') ?>
                            <ul class="white-2__sub-list">
@@ -198,21 +212,24 @@ $url = '@web/storage/project/white/';
                </div>
            </details>
 
-           <details class="white-2__details">
-               <summary class="white-2__summary offset-lg-1 dop"><?= Yii::t('app', 'Дополнительные услуги') ?>
-                   <svg class="control-icon control-icon-expand" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
-                       <line x1="1" y1="21.8462" x2="44" y2="21.8462" stroke="black" stroke-width="2" stroke-linecap="round"/>
-                       <line x1="23.1543" y1="1" x2="23.1543" y2="44" stroke="black" stroke-width="2" stroke-linecap="round"/>
-                   </svg>
-                   <svg class="control-icon control-icon-close" xmlns="http://www.w3.org/2000/svg" width="45" height="3" viewBox="0 0 45 3" fill="none">
-                       <line x1="1" y1="1.84619" x2="44" y2="1.84619" stroke="black" stroke-width="2" stroke-linecap="round"/>
-                   </svg>
+           <details class="white-2__details dop">
+               <summary class="white-2__summary offset-lg-1 dop__summary">
+                   <p class="col-lg-3 white-2__summary_h1" style="padding-left: 0"><?= Yii::t('app', 'Дополнительные услуги') ?></p>
+                   <p class="col-lg-3 white-2__summary_plus">
+                       <svg class="control-icon control-icon-expand" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                           <line x1="1" y1="21.8462" x2="44" y2="21.8462" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                           <line x1="23.1543" y1="1" x2="23.1543" y2="44" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                       </svg>
+                       <svg class="control-icon control-icon-close" xmlns="http://www.w3.org/2000/svg" width="45" height="3" viewBox="0 0 45 3" fill="none">
+                           <line x1="1" y1="1.84619" x2="44" y2="1.84619" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                       </svg>
+                   </p>
                </summary>
-               <div class="white-2__detail">
-                   <div class="white-2__pack-include col-lg-3">
+               <div class="white-2__detail dop__detail">
+                   <div class="white-2__pack-include offset-lg-1 col-lg-3">
                        <?= Yii::t('app', 'Приобретаются отдельно') ?>
                    </div>
-                   <ul class="white-2__list col-lg-3">
+                   <ul class="white-2__list offset-lg-1 col-lg-3" style="margin-left: 0; padding-left: 0">
                        <li><?= Yii::t('app', 'Час разработки доп. функций за {strong}10k₽{close}', ['strong' => '<strong>', 'close' => '</strong>']) ?></li>
                        <li><?= Yii::t('app', 'Дополнительная техническая поддержка от Sessia (при штатной работе приложения)') ?></li>
                        <li><?= Yii::t('app', 'Чат с клиентом') ?></li>
