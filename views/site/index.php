@@ -22,7 +22,7 @@ $this->title = 'SESSIA. GET IT RIGHT';
                 <ul class="header__list wow fadeInUp">
                     <li><a href="#about"><?= Yii::t('app', 'О нас') ?></a></li>
                     <li><a href="#projects"><?= Yii::t('app', 'Проекты') ?></a></li>
-                    <li><a href="<?= Url::to('/project/white/') ?>"><?= Yii::t('app', 'White Label') ?></a></li>
+                    <li><a href="<?= Url::to(['/project/view', 'project' => 'white']) ?>"><?= Yii::t('app', 'White Label') ?></a></li>
                     <li><a href="#team"><?= Yii::t('app', 'Команда') ?></a></li>
                     <li><a href="#news"><?= Yii::t('app', 'Новости') ?></a></li>
                     <li class="lang">
@@ -241,21 +241,6 @@ $this->title = 'SESSIA. GET IT RIGHT';
         <img class="circle" src="<?= Url::to('@web/front/img-main/ellipse.png?v=1') ?>" alt=""/>
     </div>
 </div>
-
-<!--<div class="pay-footer">-->
-<!--    <div class="pay-footer__sys col-lg-2">-->
-<!--        <img src="--><?//= Url::to($url.'up.svg') ?><!--">-->
-<!--    </div>-->
-<!--    <div class="pay-footer__sys col-lg-2">-->
-<!--        <img src="--><?//= Url::to($url.'payment__visa.svg') ?><!--">-->
-<!--    </div>-->
-<!--    <div class="pay-footer__sys col-lg-2">-->
-<!--        <img src="--><?//= Url::to($url.'payment__mastercard.svg') ?><!--">-->
-<!--    </div>-->
-<!--    <div class="pay-footer__sys col-lg-2">-->
-<!--        <img src="--><?//= Url::to($url.'payment__paypal.svg') ?><!--">-->
-<!--    </div>-->
-<!--</div>-->
 
 <?php
 
