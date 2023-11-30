@@ -241,7 +241,7 @@ return [
     'Тинькофф' => 'Tinkoff',
     'Газпромбанк' => 'Gazprombank',
     'Нужны дополнительные настройки? Наши талантливые разработчики готовы настроить Kicksback специально для вашего бизнеса!' => 'Need more customization? Our talented developers are available to set Kicksback up just for your business!',
-    'Дополнительные услуги {em}(приобретаются отдельно){cl}' => 'Dịch vụ bổ sung {em}(purchased separately){cl}',
+    'Дополнительные услуги {em}(приобретаются отдельно){cl}' => 'Dịch vụ bổ sung {em}(Cần được mua riêng){cl}',
     'Дополнительные услуги' => 'Dịch vụ bổ sung',
     'Приобретаются отдельно' => 'Cần được mua riêng',
     'Час разработки доп. функций за 10k₽' => 'Phát triển các chức năng bổ sung trong một tiếng với giá 10k RUB',
