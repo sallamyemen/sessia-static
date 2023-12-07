@@ -267,5 +267,6 @@ return [
     'Воспользуйтесь нашей передовой CRM- системой, чтобы управлять продажами и продвигать ваши продукты!' => 'Hãy tận dụng hệ thống CRM tiên tiến để quản lý doanh số bán hàng và quảng bá sản phẩm của bạn!',
     'Наши талантливые разработчики готовы настроить платформу Sessia специально для вашего бизнеса!' => 'Đội ngũ phát triển chuyên nghiệp sẵn sàng tùy chỉnh nền tảng Sessia theo nhu cầu doanh nghiệp của bạn!',
     'Услуга {br}{span}White Label{close}' => 'Service {br}{span}White Label{close}',
+    'Мы работаем с системами:' => 'We are working with the systems:',
 
 ];

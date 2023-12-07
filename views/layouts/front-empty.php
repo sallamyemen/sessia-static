@@ -40,6 +40,8 @@ $menu = [
     ],
 ];
 
+$url = '@web/storage/project/white/';
+
 ?>
 
 <?php $this->beginContent('@app/views/layouts/main.php') ?>
@@ -54,6 +56,27 @@ $menu = [
         <div class="container">
             <div class="row-nav">
                 <?= Html::a(Html::img(Url::to('@web/front/img/logo.svg?v=1'), ['class' => 'row-nav__logo-img']), ['/site/index'], ['class' => 'row-nav__logo']) ?>
+
+                <div class="footer-left">
+                    <div class="footer-text">
+                        <?= Yii::t('app', 'Мы работаем с системами:') ?>
+                    </div>
+                    <div class="pay-footer">
+                        <div class="pay-footer__sys">
+                            <img src="<?= Url::to($url.'up.svg') ?>">
+                        </div>
+                        <div class="pay-footer__sys">
+                            <img src="<?= Url::to($url.'payment__visa.svg') ?>">
+                        </div>
+                        <div class="pay-footer__sys">
+                            <img src="<?= Url::to($url.'payment__mastercard.svg') ?>">
+                        </div>
+                        <div class="pay-footer__sys pay-footer__paypal">
+                            <img src="<?= Url::to($url.'payment__paypal.svg') ?>">
+                        </div>
+                    </div>
+                </div>
+
                 <nav class="row-nav__nav">
                     <?php array_pop($menu); ?>
                     <?= Menu::widget([

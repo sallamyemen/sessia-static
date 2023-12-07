@@ -266,4 +266,5 @@ return [
     'Воспользуйтесь нашей передовой CRM- системой, чтобы управлять продажами и продвигать ваши продукты!' => 'Use our advanced CRM system to manage sales and promote your products!',
     'Наши талантливые разработчики готовы настроить платформу Sessia специально для вашего бизнеса!' => 'Our talented developers are ready to set up the Sessia platform just for your business!',
     'Услуга {br}{span}White Label{close}' => 'Service {br}{span}White Label{close}',
+    'Мы работаем с системами:' => 'We are working with the systems:',
 ];
