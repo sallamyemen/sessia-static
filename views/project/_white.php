@@ -101,6 +101,8 @@ $url = '@web/storage/project/white/';
                </div>
            </details>
 
+           <div class="offset-lg-1 col-lg-10" style="padding-left: 150px;"><hr></div>
+
            <details class="white-2__details">
                <summary class="white-2__summary offset-lg-1">
                    <p class="col-lg-3 white-2__summary_h1" style="padding-left: 0">Plus</p>
@@ -161,6 +163,8 @@ $url = '@web/storage/project/white/';
                </div>
            </details>
 
+           <div class="offset-lg-1 col-lg-10" style="padding-left: 150px;"><hr></div>
+
            <details class="white-2__details">
                <summary class="white-2__summary offset-lg-1">
                    <p class="col-lg-3 white-2__summary_h1" style="padding-left: 0">Pro</p>
@@ -186,35 +190,44 @@ $url = '@web/storage/project/white/';
                        <li><?= Yii::t('app', 'Календарь событий от бизнеса в приложении клиента') ?></li>
                        <li><?= Yii::t('app', 'Доступ к бизнес-версии приложения') ?>
                            <ul class="white-2__sub-list">
-                               <li><?= Yii::t('app', 'Настройка профайла компании (или нескольких)') ?></li>
-                               <li><?= Yii::t('app', 'Настройка профайла магазина (или нескольких)') ?></li>
-                               <li><?= Yii::t('app', 'Управление учётными записями сотрудников компании') ?></li>
-                               <li><?= Yii::t('app', 'Перевод денег между магазинами')?></li>
-                               <li><?= Yii::t('app', 'POS-материалы')?></li>
+                               <li>&minus; <?= Yii::t('app', 'Настройка профайла компании') ?>
+                                   <br>&nbsp;&nbsp;<?= Yii::t('app', '(или нескольких)') ?>
+                               </li>
+                               <li>&minus; <?= Yii::t('app', 'Настройка профайла магазина') ?>
+                                   <br>&nbsp;&nbsp;<?= Yii::t('app', '(или нескольких)') ?>
+                               </li>
+                               <li>&minus; <?= Yii::t('app', 'Управление учётными записями сотрудников компании') ?></li>
+                               <li>&minus; <?= Yii::t('app', 'Перевод денег между магазинами')?></li>
+                               <li>&minus; <?= Yii::t('app', 'POS-материалы')?></li>
                            </ul>
                        </li>
                        <li><?= Yii::t('app', 'Программа лояльности: Подарок клиенту за визит') ?></li>
                        <li><?= Yii::t('app', 'Подключение своего интернет эквайринга. Сейчас доступны:') ?>
                            <ul class="white-2__sub-list">
-                               <li>&minus; <?= Yii::t('app', 'Тинькофф') ?></li>
-                               <li>&minus; <?= Yii::t('app', 'Газпромбанк') ?></li>
+<!--                               <li>&minus; --><?//= Yii::t('app', 'Тинькофф') ?><!--</li>-->
+<!--                               <li>&minus; --><?//= Yii::t('app', 'Газпромбанк') ?><!--</li>-->
+                               <li> <img src="<?= Url::to($url . 'tinkoff.png') ?>" alt=""></li>
+                               <li> <img src="<?= Url::to($url . 'gazprom.png') ?>" alt=""></li>
                            </ul>
                        </li>
                    </ul>
-                   <div class="col-lg-3">
-                      <div class="white-2__tinkoff">
-                          <img src="<?= Url::to($url . 'tinkoff.png') ?>" alt="">
-                      </div>
-                      <div class="white-2__gazprom">
-                          <img src="<?= Url::to($url . 'gazprom.png') ?>" alt="">
-                      </div>
-                   </div>
+<!--                   <div class="col-lg-3">-->
+<!--                      <div class="white-2__tinkoff">-->
+<!--                          <img src="--><?//= Url::to($url . 'tinkoff.png') ?><!--" alt="">-->
+<!--                      </div>-->
+<!--                      <div class="white-2__gazprom">-->
+<!--                          <img src="--><?//= Url::to($url . 'gazprom.png') ?><!--" alt="">-->
+<!--                      </div>-->
+<!--                   </div>-->
                </div>
            </details>
+
+           <div class="offset-lg-1 col-lg-10" style="padding-left: 150px;"><hr></div>
 
            <details class="white-2__details dop">
                <summary class="white-2__summary offset-lg-1 dop__summary">
                    <p class="col-lg-3 white-2__summary_h1" style="padding-left: 0"><?= Yii::t('app', 'Дополнительные услуги') ?></p>
+                   <p class="col-lg-6 white-2__summary_text"><?= Yii::t('app', 'Нужны дополнительные настройки? Наши талантливые разработчики готовы настроить Kicksback специально для вашего бизнеса!') ?></p>
                    <p class="col-lg-3 white-2__summary_plus">
                        <svg class="control-icon control-icon-expand" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
                            <line x1="1" y1="21.8462" x2="44" y2="21.8462" stroke="black" stroke-width="2" stroke-linecap="round"/>
