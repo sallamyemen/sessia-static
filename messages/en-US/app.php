@@ -90,7 +90,7 @@ return [
     "мобильное приложение" => "mobile application",
     "рублей составил {br} оборот средств через{br}наши приложения" => "rubles was the {br}turnover of funds using {br}our apps",
     "сотрудников в штате, {br} из которых 10%{br}тестировщиков" => "employees, {br}with 10% of them being {br}testers",
-    "стран где работают {br}с нашими продуктами" => "countries where {br}our products are used",
+    "где работают {br}с нашими продуктами" => "where {br}our products are used",
     "строк кода было написано {br} нашими программистами{br}за 6 лет" => "lines of code were written {br}by our programmers {br}in 6 years",
     "экспертный опыт {br}в разработке" => "of expertise {br}in development",
     "$186 млрд" => "$186 billion",

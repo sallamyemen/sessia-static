@@ -90,7 +90,7 @@ return [
     "мобильное приложение" => "ứng dụng di động",
     "рублей составил {br} оборот средств через{br}наши приложения" => "rúp đạt {br} doanh thu tiền thông qua {br} ứng dụng của chúng tôi",
     "сотрудников в штате, {br} из которых 10%{br}тестировщиков" => "nhân viên trong biên chế, {br} trong đó 10% {br} là người test",
-    "стран где работают {br}с нашими продуктами" => "các quốc gia nơi {br} làm việc với các sản phẩm của chúng tôi",
+    "где работают {br}с нашими продуктами" => "quốc gia nơi {br} làm việc với các sản phẩm của chúng tôi",
     "строк кода было написано {br} нашими программистами{br}за 6 лет" => "dòng mã được viết {br} bởi các lập trình viên của chúng tôi {br} trong hơn 6 năm",
     "экспертный опыт {br}в разработке" => "chuyên môn {br} trong phát triển",
     "$186 млрд" => "$186 đô la Mỹ",

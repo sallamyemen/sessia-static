@@ -132,7 +132,7 @@ $this->title = 'SESSIA. GET IT RIGHT';
                 </div>
                 <div class="company__elem wow fadeIn">
                     <div class="company__elem-header"><?= Yii::t('app', '{number} стран', ['number' => '<span class="counter" data-count="17">0</span>']) ?></div>
-                    <?= Yii::t('app', 'стран где работают {br}с нашими продуктами', ['br' => '<br>']) ?>
+                    <?= Yii::t('app', 'где работают {br}с нашими продуктами', ['br' => '<br>']) ?>
                 </div>
             </div>
             <div class="company__item">
