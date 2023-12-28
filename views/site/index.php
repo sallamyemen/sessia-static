@@ -255,12 +255,13 @@ $lang = Yii::$app->language;
             </div>
             <div class="contacts__agree">
                 <div class="contacts__text"><?= Html::a(
-                        'Пользовательское соглашение.',
+                        'Пользовательское соглашение. ',
                         ['/project/view', 'project' => 'privacy'],
                         ['class' => 'contacts__link', 'style' => 'white-space: nowrap;']) ?>
                 </div>
+                &nbsp;
                 <div class="contacts__text"><?= Html::a(
-                        'Защита персональных данных',
+                        'Защита персональных данных.',
                         ['/project/view', 'project' => 'agreement'],
                         ['class' => 'contacts__link', 'style' => 'white-space: nowrap;']) ?>
                 </div>
