@@ -148,7 +148,7 @@ body {
 }
 
 .wrapper_block {
-    padding: 150px 0;
+    padding: 150px 0 55px 0;
 }
 
 .wrapper_narek {
@@ -536,7 +536,7 @@ body {
 }
 
 .input{
-    width: 44%;
+   // width: 44%;
     z-index: 1000;
 }
 

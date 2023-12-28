@@ -4,10 +4,15 @@ use app\widgets\langswitcher\LangSwitcher;
 use yii\helpers\Url;
 use app\assets\AppOldAsset;
 use yii\web\View;
+use yii\helpers\Html;
 
 $url = '@web/storage/project/white/';
 
 $this->title = 'SESSIA. GET IT RIGHT';
+
+$lang = Yii::$app->language;
+
+//dd($lang);die;
 
 ?>
 
@@ -226,21 +231,77 @@ $this->title = 'SESSIA. GET IT RIGHT';
     </div>
 </div>
 
-<div class="contact" style="position: relative;">
-    <div class="wrapper wrapper_block">
-        <div class="contact__header wow fadeIn"><?= Yii::t('app', 'Свяжитесь с нами') ?></div>
-        <div class="form wow fadeIn">
-            <form class="" action="" method="">
-                <input type="text" placeholder="<?= Yii::t('app', 'Как к Вам обращаться') ?>" class="input">
-                <input type="text" placeholder="<?= Yii::t('app', 'Как с Вами связаться') ?>" class="input"><br>
-                <input type="text" placeholder="<?= Yii::t('app', 'Ваше сообщение') ?>" class="input-text">
 
-                <button class="send"><?= Yii::t('app', 'Отправить') ?></button>
-            </form>
+<div class="contacts">
+    <div class="contact contacts__left">
+        <div class="wrapper wrapper_block">
+            <div class="contacts__h1 "><?= Yii::t('app', 'О компании') ?></div>
+        <?php if ($lang == 'ru-RU' ): ?>
+            <div class="contacts__text contacts__block-one"><?= Yii::t('app', 'ООО «Сейшн» {br} ОГРН 1167746297960 {br} ИНН 7722358888', ['br'=> '<br>']) ?></div>
+            <div class="contacts__h2"><?= Yii::t('app', 'E-mail') ?></div>
+            <div class="contacts__text"><?= Html::a(
+                    'info@sessia.com',
+                    'mailto:info@sessia.com',
+                    ['class' => 'contacts-menu__text link']) ?>
+            </div>
+            <div class="contacts__h2"><?= Yii::t('app', 'Юридический адрес') ?></div>
+            <div class="contacts__text"><?= Yii::t('app', '115093, город Москва, {br}ул. Большая Серпуховская, дом 44, помещение 3/1/3', ['br'=> '<br>']) ?></div>
+            <div class="contacts__h2"><?= Yii::t('app', 'Телефон') ?></div>
+            <div class="contacts__text">
+                <?= Html::a(
+                    '+7 916 168 48 86',
+                    'tel:79161684886',
+                    ['class' => 'contacts__text link', 'style' => 'white-space: nowrap;']) ?>
+            </div>
+            <div class="contacts__agree">
+                <div class="contacts__text"><?= Html::a(
+                        'Пользовательское соглашение.',
+                        ['/project/view', 'project' => 'privacy'],
+                        ['class' => 'contacts__link', 'style' => 'white-space: nowrap;']) ?>
+                </div>
+                <div class="contacts__text"><?= Html::a(
+                        'Защита персональных данных',
+                        ['/project/view', 'project' => 'agreement'],
+                        ['class' => 'contacts__link', 'style' => 'white-space: nowrap;']) ?>
+                </div>
+            </div>
+        <?php else : ?>
+
+            <div class="contacts__h2"><?= Yii::t('app', 'E-mail') ?></div>
+            <div class="contacts__text"><?= Html::a(
+                    'info@sessia.com',
+                    'mailto:info@sessia.com',
+                    ['class' => 'contacts-menu__text link']) ?>
+            </div>
+            <div class="contacts__h2"><?= Yii::t('app', 'Address') ?></div>
+            <div class="contacts__text"><?= Yii::t('app', 'SIEBENBRUNNENGASSE 46/2/40, 1050 VIENNA', ['br'=> '<br>']) ?></div>
+            <div class="contacts__h2"><?= Yii::t('app', 'Телефон') ?></div>
+            <div class="contacts__text">
+                <?= Html::a(
+                    '+43 681 10776076',
+                    'tel:4368110776076',
+                    ['class' => 'contacts-menu__text link', 'style' => 'white-space: nowrap;']) ?>
+            </div>
+        <?php endif ?>
         </div>
-        <img class="circle" src="<?= Url::to('@web/front/img-main/ellipse.png?v=1') ?>" alt=""/>
+    </div>
+    <div class="contact contacts__right">
+        <div class="wrapper wrapper_block">
+            <div class="contact__header contacts__title wow fadeIn"><?= Yii::t('app', 'Свяжитесь с нами') ?></div>
+            <div class="contacts__form wow fadeIn ">
+                <form class="" action="" method="">
+                    <input type="text" placeholder="<?= Yii::t('app', 'Как к Вам обращаться') ?>" class="input-text">
+                    <input type="text" placeholder="<?= Yii::t('app', 'Как с Вами связаться') ?>" class="input-text"><br>
+                    <input type="text" placeholder="<?= Yii::t('app', 'Ваше сообщение') ?>" class="input-text">
+
+                    <button class="send"><?= Yii::t('app', 'Отправить') ?></button>
+                </form>
+            </div>
+<!--            <img class="circle" src="--><?//= Url::to('@web/front/img-main/ellipse.png?v=1') ?><!--" alt=""/>-->
+        </div>
     </div>
 </div>
+
 
 <?php
 

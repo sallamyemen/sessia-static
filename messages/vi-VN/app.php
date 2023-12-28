@@ -269,5 +269,7 @@ return [
     'Наши талантливые разработчики готовы настроить платформу Sessia специально для вашего бизнеса!' => 'Đội ngũ phát triển chuyên nghiệp sẵn sàng tùy chỉnh nền tảng Sessia theo nhu cầu doanh nghiệp của bạn!',
     'Услуга {br}{span}White Label{close}' => 'Service {br}{span}White Label{close}',
     'Мы работаем с системами:' => 'We are working with the systems:',
+    'О компании' => 'about',
+    'Телефон' => 'Phone',
 
 ];

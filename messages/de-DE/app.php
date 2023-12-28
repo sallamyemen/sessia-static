@@ -155,7 +155,6 @@ return [
     "NRK87.— это авторская techwear одежда с интегрированными GPS-трекерами, помогающими найти человека и быть с ним на связи" => "NRK87. ist techwear Designer-Kleidung mit den integrierten GPS-Trackern, die Ihnen helfen, eine Person zu finden und mit ihr in Kontakt zu bleiben",
     "NRK87. создает лимитированные коллекции, руководствуясь принципами личной безопасности, ответственным отношением к Земле и планами освоения Марса" => "NRK87. kreiert limitierte Sammlungen, geleitet von den Grundsätzen der persönlichen Sicherheit, einer verantwortungsvollen Haltung gegenüber der Erde und Plänen für die Entwicklung des Mars",
     "Приложение {br} для клиентов бренда с функционалом онлайн-магазина и сервисом поддержки GPS-трекер" => "Eine App {br} für Kunden der Marke mit Online-Shop-Funktionalität und GPS-Tracker Supportdienst ",
-    "Онлайн-магазин" => "Online-Shop",
     "с возможностями быстрой покупки, оплаты и отслеживания истории заказов" => "mit der Möglichkeit der schnellen Kauf, Bezahlung und Verfolgung des Bestellverlaufs",
     "Приватные звонки для связи с обладателем одежды NRK87., оснащенной GPS-трекером" => "Private Anrufe zur Kommunikation mit dem Träger von NRK87.-Kleidung, die mit einem GPS-Tracker ausgestattet ist",
     "GPS-трекинг" => "GPS-Tracking",
@@ -268,5 +267,7 @@ return [
     'Наши талантливые разработчики готовы настроить платформу Sessia специально для вашего бизнеса!' => 'Our talented developers are ready to set up the Sessia platform just for your business!',
     'Услуга {br}{span}White Label{close}' => 'Service {br}{span}White Label{close}',
     'Мы работаем с системами:' => 'We are working with the systems:',
+    'О компании' => 'about',
+    'Телефон' => 'Phone',
 
 ];

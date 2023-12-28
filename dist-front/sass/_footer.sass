@@ -33,3 +33,67 @@
 			width: 100%
 	&__paypal
 		width: 88px
+
+.contacts
+	display: flex
+	position: relative
+	@media (max-width : $bpMedium)
+		flex-direction: column-reverse
+	&__h1
+		color: #000
+		font-size: 50px
+		font-style: normal
+		font-weight: 700
+		line-height: normal
+		letter-spacing: 2.5px
+		text-transform: uppercase
+		text-align: left
+	&__h2
+		font-size: 24px
+		font-style: normal
+		font-weight: 700
+		line-height: normal
+		padding-top: 25px
+	&__text
+		font-size: 16px
+		font-style: normal
+		font-weight: 500
+		line-height: 20px
+		padding-top: 10px
+	&__wrapper
+		padding-top: 150px 1px
+	&__form
+		padding-top: 80px
+		padding-left: 11%
+		@media (max-width : $bpLarge)
+			padding-left: 0
+	&__left
+		background-color: #F7F7F7 !important
+		color: #000000
+		width: 50%
+		padding-left: 17%
+		@media (max-width : $bpExtraLarge)
+			padding-left: 0
+		@media (max-width : $bpMedium)
+			width: unset
+	&__right
+		padding-left: 5%
+		@media (max-width : $bpLarge)
+			padding-left: 0
+	&__title
+		padding-left: 60px
+		@media (max-width : $bpLarge)
+			padding-left: 0
+	&__block-one
+		margin-top: 60px
+	&__agree
+		padding-top: 30px
+		display: flex
+		flex-wrap: wrap
+	&__link
+		color: rgba(0, 0, 0, 0.50)
+		font-size: 14px
+		font-style: normal
+		font-weight: 400
+		line-height: 30px
+		text-decoration-line: underline
