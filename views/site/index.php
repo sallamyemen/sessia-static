@@ -249,8 +249,8 @@ $lang = Yii::$app->language;
             <div class="contacts__h2"><?= Yii::t('app', 'Телефон') ?></div>
             <div class="contacts__text">
                 <?= Html::a(
-                    '+7 916 168 48 86',
-                    'tel:79161684886',
+                    '+7 989 562 68 11',
+                    'tel:79895626811',
                     ['class' => 'contacts__text link', 'style' => 'white-space: nowrap;']) ?>
             </div>
             <div class="contacts__agree">
