@@ -147,7 +147,7 @@ $lang = Yii::$app->language;
                 </div>
                 <div class="company__elem wow fadeIn">
                     <div class="company__elem-header"><?= Yii::t('app', '{number}+ млн', ['number' => '<span class="counter" data-count="500">0</span>']) ?></div>
-                    <?= Yii::t('app', 'рублей составил {br} оборот средств через{br}наши приложения', ['br' => '<br>']) ?>
+                    <?= Yii::t('app', 'долларов составил {br} оборот средств через{br}наши приложения', ['br' => '<br>']) ?>
                 </div>
                 <div class="company__elem wow fadeIn">
                     <div class="company__elem-header"><?= Yii::t('app', '{number}+ млн', ['number' => '<span class="counter" data-count="6">0</span>']) ?></div>

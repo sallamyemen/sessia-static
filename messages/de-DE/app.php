@@ -88,7 +88,7 @@ return [
     "выше доход" => "Einkommen ist höher",
     "которые мы придумали {br}и реализовали самостоятельно" => "die wir unabhängig {br}erstellt und implementiert haben",
     "мобильное приложение" => "mobile Applikation",
-    "рублей составил {br} оборот средств через{br}наши приложения" => "Rubel war der {br}Geldumsatz mit {br}unseren Apps",
+    "долларов составил {br} оборот средств через{br}наши приложения" => "Dollars war der {br}Geldumsatz mit {br}unseren Apps",
     "сотрудников в штате, {br} из которых 10%{br}тестировщиков" => "Mitarbeiter, {br}von denen 10 % {br}Tester sind",
     "где работают {br}с нашими продуктами" => "in denen {br}unsere Produkte verwendet werden",
     "строк кода было написано {br} нашими программистами{br}за 6 лет" => "Codezeilen wurden {br}von unseren Programmierern {br}in 6 Jahren geschrieben",
