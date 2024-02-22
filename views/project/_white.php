@@ -202,14 +202,14 @@ $url = '@web/storage/project/white/';
                            </ul>
                        </li>
                        <li><?= Yii::t('app', 'Программа лояльности: Подарок клиенту за визит') ?></li>
-                       <li><?= Yii::t('app', 'Подключение своего интернет эквайринга. Сейчас доступны:') ?>
-                           <ul class="white-2__sub-list">
-<!--                               <li>&minus; --><?//= Yii::t('app', 'Тинькофф') ?><!--</li>-->
-<!--                               <li>&minus; --><?//= Yii::t('app', 'Газпромбанк') ?><!--</li>-->
-                               <li> <img src="<?= Url::to($url . 'tinkoff.png') ?>" alt=""></li>
-                               <li> <img src="<?= Url::to($url . 'gazprom.png') ?>" alt=""></li>
-                           </ul>
-                       </li>
+<!--                       <li>--><?//= Yii::t('app', 'Подключение своего интернет эквайринга. Сейчас доступны:') ?>
+<!--                           <ul class="white-2__sub-list">-->
+<!--<!--                               <li>&minus; --><?////= Yii::t('app', 'Тинькофф') ?><!--</li>-->
+<!--<!--                               <li>&minus; --><?////= Yii::t('app', 'Газпромбанк') ?><!--</li>-->
+<!--                               <li> <img src="--><?//= Url::to($url . 'tinkoff.png') ?><!--" alt=""></li>-->
+<!--                               <li> <img src="--><?//= Url::to($url . 'gazprom.png') ?><!--" alt=""></li>-->
+<!--                           </ul>-->
+<!--                       </li>-->
                    </ul>
 <!--                   <div class="col-lg-3">-->
 <!--                      <div class="white-2__tinkoff">-->

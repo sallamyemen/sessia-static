@@ -88,7 +88,7 @@ return [
     "выше доход" => "higher income",
     "которые мы придумали {br}и реализовали самостоятельно" => "that we created {br}and implemented independently",
     "мобильное приложение" => "mobile application",
-    "долларов составил {br} оборот средств через{br}наши приложения" => "dollars was the {br}turnover of funds using {br}our apps",
+    "евро составил {br} оборот средств через{br}наши приложения" => "euros was the {br}turnover of funds using {br}our apps",
     "сотрудников в штате, {br} из которых 10%{br}тестировщиков" => "employees, {br}with 10% of them being {br}testers",
     "где работают {br}с нашими продуктами" => "where {br}our products are used",
     "строк кода было написано {br} нашими программистами{br}за 6 лет" => "lines of code were written {br}by our programmers {br}in 6 years",

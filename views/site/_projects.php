@@ -86,10 +86,10 @@ $projects = [
     (object) [
         'id' => 8,
         'header' => Yii::t('app', 'Добро.Будильник'),
-        'subtitle' => Yii::t('app', 'web-версия'),
+        'subtitle' => Yii::t('app', 'мобильное приложение'),
         'description' => Yii::t('app', 'Социальный проект, который помогает делать первые шаги в благотворительности и совершать добровольные пожертвования на регулярной основе'),
-        'link' => ['/project/view', 'project' => 'dobro'],
-        'store_link' => 'https://play.google.com/store/apps/details?id=com.sessia.alarm',
+        'link' => null,
+        'store_link' => null,
         'img' => 'phone8.png?v=1',
     ],
 ];

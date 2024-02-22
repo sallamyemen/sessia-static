@@ -29,7 +29,7 @@ $lang = Yii::$app->language;
                     <li><a href="#projects"><?= Yii::t('app', 'Проекты') ?></a></li>
                     <li><a href="<?= Url::to(['/project/view', 'project' => 'white']) ?>"><?= Yii::t('app', 'White Label') ?></a></li>
                     <li><a href="#team"><?= Yii::t('app', 'Команда') ?></a></li>
-                    <li><a href="#news"><?= Yii::t('app', 'Новости') ?></a></li>
+<!--                    <li><a href="#news">--><?//= Yii::t('app', 'Новости') ?><!--</a></li>-->
                     <li class="lang">
                         <?= LangSwitcher::widget() ?>
                     </li>
@@ -147,7 +147,7 @@ $lang = Yii::$app->language;
                 </div>
                 <div class="company__elem wow fadeIn">
                     <div class="company__elem-header"><?= Yii::t('app', '{number}+ млн', ['number' => '<span class="counter" data-count="500">0</span>']) ?></div>
-                    <?= Yii::t('app', 'долларов составил {br} оборот средств через{br}наши приложения', ['br' => '<br>']) ?>
+                    <?= Yii::t('app', 'евро составил {br} оборот средств через{br}наши приложения', ['br' => '<br>']) ?>
                 </div>
                 <div class="company__elem wow fadeIn">
                     <div class="company__elem-header"><?= Yii::t('app', '{number}+ млн', ['number' => '<span class="counter" data-count="6">0</span>']) ?></div>
