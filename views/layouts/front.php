@@ -13,7 +13,7 @@ AppAsset::register($this);
 
 $menu = [
     [
-        'label' => Yii::t('app', 'О нас'),
+        'label' => Yii::t('app', 'О насss'),
         'url' => ['/site/index', '#' => 'about'],
     ],
     [
