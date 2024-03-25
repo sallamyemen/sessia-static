@@ -29,7 +29,6 @@ class SiteController extends Controller
     public function actionDeleteAccount()
     {
         $this->layout = 'instructions';
-//        dd("ok");die;
         return $this->render('delete-account');
     }
 }

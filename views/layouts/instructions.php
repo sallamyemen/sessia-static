@@ -60,3 +60,4 @@ $jslang = $lang;
 //JS;
 //
 //$this->registerJS($js, View:: POS_READY);
+
