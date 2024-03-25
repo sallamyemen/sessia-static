@@ -1,0 +1,80 @@
+$font: 'Roboto', sans-serif
+
+.intro
+  position: relative
+  min-height: 500px
+  margin: 0 164px 70px
+  border-bottom: 1px solid black
+  @media screen and (max-width: 1640px)
+    min-height: 435px
+  @media screen and (max-width: 1450px)
+    min-height: 350px
+  @media screen and (max-width: 1250px)
+    //min-height: 300px
+    margin: 0 100px 90px 80px
+  @media screen and (max-width: 970px)
+    min-height: 230px
+    margin-bottom: 50px
+  @media screen and (max-width: 670px)
+    margin: 0 16px 35px
+    min-height: 160px
+  @media screen and (max-width: 470px)
+    margin: 0 16px 35px
+    min-height: 220px
+  @media screen and (max-width: 340px)
+    min-height: 180px
+
+  &__title
+    font-family: $font
+    font-size: 96px
+    font-style: normal
+    font-weight: 700
+    line-height: 103.714%
+    letter-spacing: -2.88px
+    text-transform: uppercase
+    color: #8C35E3
+    text-align: left
+    margin: 0
+    @media screen and (max-width: 1640px)
+      font-size: 80px
+    @media screen and (max-width: 1450px)
+      font-size: 70px
+    @media screen and (max-width: 1250px)
+      font-size: 60px
+    @media screen and (max-width: 970px)
+      font-size: 50px
+    @media screen and (max-width: 750px)
+      font-size: 36px
+
+  &__picture
+    position: absolute
+    right: 55px
+    top: 19px
+    max-width: 920px
+    //min-height: 454px
+
+    @media screen and (max-width: 1640px)
+      height: 400px
+      top: 8px
+
+    @media screen and (max-width: 1450px)
+      height: 380px
+      width: 600px
+      top: -40px
+
+    @media screen and (max-width: 1250px)
+      right: 30px
+
+    @media screen and (max-width: 970px)
+      height: 200px
+      top: 0
+      right: -85px
+
+    @media screen and (max-width: 670px)
+      height: 144px
+      width: 292px
+      right: 30px
+    @media screen and (max-width: 470px)
+      top: 60px
+    @media screen and (max-width: 340px)
+      height: 100px

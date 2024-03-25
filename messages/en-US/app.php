@@ -269,4 +269,15 @@ return [
 'Мы работаем с системами:' => 'We are working with the systems:',
     'О компании' => 'about',
     'Телефон' => 'Phone',
+    'Инструкция'=>'Instruction',
+    'Удаление аккаунта пользователем{br} {span}через самообслуживание{close}'=>'{span}Self-service{close} user account deletion',
+    'Открываем боковое меню и переходим в раздел - настройки.'=>'Open the side menu and go to settings',
+    'В пункте {span}"Безопасность"{close} кликаем на {span}"Удалить учетную запись"{close}.'=> 'In the {span}“Security”{close} section, click on {span}“Remove account”{close}.',
+    'После этого пользователю открывается модальное окно с подтверждением, в котором при нажатии на кнопку {span}"Удалить учетную запись"{close}, аккаунт пользователя удаляется.'=>'After this, a modal window for confirmation will open. Once you click on the {span}“Delete”{close} button confirmation, the user’s account will be deleted (all personal data will be deleted).',
+    'Удаление аккаунта {span}через поддержку{close}' => 'User account deletion through {span}support{close}',
+    'Открываем боковое меню и переходим в раздел - поддержка.' => 'Open the side window and go to support.',
+    'После перехода на страницу с поддержкой, нажимаем на кнопку {span}"Создать новый запрос"{close}.'=>'After accessing to the support page, click on the {span}“Create a new request”{close} button.',
+    'Нам открывается экран с созданием нового запроса в поддержку, где в категории проблемы необходимо выбрать {span}"Другое"{close} и написать примерно следующий текст: {span}"Хочу удалить свою учетную запись"{close}.'=>'A screen for creating a new support request will open. In it, for the problem category, you need to select  {span}“I want to delete my account”{close} or {span}“Other issues”{close} and write something like the following text: {span}“I want to delete my account"{close}.',
+    'Нажимаем кнопку {span}"Отправить"{close}, после чего сотрудник поддержки в порядке очередности запросов вернется с обратной связью.'=> 'Click the {span}"Send"{close} button. Following this, a support employee will return with feedback in the order of requests.',
+    'Сотрудник поддержки спросить вас о ваших точных намерениях удалить свою учетную запись, так как этот процесс нельзя будет восстановить, после вашего окончательного подтверждения о удаление учетной запись, сотрудник поддержки удалит вашу учетную запись.'=>'The support representative will ask you about your true intentions to delete your account, since this process cannot be restored. After your final confirmation to delete your account, the support representative will delete your account (all the personal data will be deleted).'
 ];

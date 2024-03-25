@@ -25,4 +25,10 @@ class SiteController extends Controller
         $this->layout = 'front-empty';
         return $this->render('index');
     }
+
+    public function actionDeleteAccount()
+    {
+        $this->layout = 'instructions';
+        return $this->render('delete-account');
+    }
 }

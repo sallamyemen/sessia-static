@@ -1,0 +1,25 @@
+@import "params"
+@import "delete-instruction/intro"
+@import "delete-instruction/self-service"
+@import "delete-instruction/section-title"
+@import "delete-instruction/instructions"
+@import "delete-instruction/support"
+
+
+body
+  margin: 0
+
+.app
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 100vw
+  min-height: 100vh
+
+
+.main
+  flex-grow: 1
+  width: 100%
+  margin: 109px 0 0
+  @media screen and (max-width: 920px)
+    margin-top: 60px
