@@ -12,8 +12,6 @@ $this->title = 'SESSIA. GET IT RIGHT';
 
 $lang = Yii::$app->language;
 
-//dd($lang);die;
-
 ?>
 
 <div class="header">
