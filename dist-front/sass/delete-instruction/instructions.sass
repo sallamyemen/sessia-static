@@ -1,0 +1,120 @@
+$font: 'Roboto', sans-serif
+
+.instructions
+  margin: 78px 0 118px 48px
+  display: flex
+  flex-direction: column
+  gap: 40px
+  counter-reset: num
+  padding-inline-start: 0
+  @media screen and (max-width: 1450px)
+    margin: 50px 0 60px 48px
+  @media screen and (max-width: 920px)
+    gap: 21px
+  @media screen and (max-width: 670px)
+    margin: 41px 0 35px 40px
+
+
+  &__point
+    font-family: $font
+    display: inline
+    font-size: 32px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    border-bottom: 1px solid black
+    padding: 0 0 33px 0
+    list-style-type: none
+    position: relative
+    @media screen and (max-width: 1640px)
+      font-size: 28px
+    @media screen and (max-width: 1250px)
+      font-size: 26px
+    @media screen and (max-width: 670px)
+      font-size: 20px
+      padding-bottom: 16px
+
+  &__point:last-child
+    border-bottom: none
+    @media screen and (max-width: 920px)
+      padding: 0
+
+  &__point:before
+    content: counter(num)
+    counter-increment: num
+    display: inline-block
+    position: absolute
+    bottom: 25px
+    left: -48px
+    font-size: 48px
+    font-style: normal
+    font-weight: 900
+    line-height: normal
+    width: 28px
+    height: 56px
+    //color: #FFCA00
+    text-align: center
+    @media screen and (max-width: 670px)
+      left: -38px
+      bottom: 0
+
+  &__point_color_yellow:before
+    color: #FFCA00
+
+  &__point_color_yellow:last-child:before
+    bottom: 60px
+    @media screen and (max-width: 670px)
+      bottom: 23px
+    @media screen and (max-width: 467px)
+      bottom: 72px
+
+  &__point_color_purple:before
+    color: #8C35E3
+
+  &__point_color_purple:nth-child(2):before
+    @media screen and (max-width: 1146px)
+      bottom: 50px
+    @media screen and (max-width: 670px)
+      bottom: 15px
+
+  &__point_color_purple:nth-child(3):before
+    bottom: 95px
+    @media screen and (max-width: 1640px)
+      bottom: 83px
+    @media screen and (max-width: 1101px)
+      bottom: 112px
+    @media screen and (max-width: 904px)
+      bottom: 145px
+    @media screen and (max-width: 904px)
+      bottom: 145px
+    @media screen and (max-width: 670px)
+      bottom: 63px
+
+  &__point_color_purple:nth-child(4):before
+    @media screen and (max-width: 1909px)
+      bottom: 60px
+    @media screen and (max-width: 1640px)
+      bottom: 50px
+    @media screen and (max-width: 904px)
+      bottom: 83px
+    @media screen and (max-width: 670px)
+      bottom: 15px
+    @media screen and (max-width: 592px)
+      bottom: 41px
+
+
+  &__point_color_purple:nth-child(5):before
+    bottom: 95px
+    @media screen and (max-width: 1640px)
+      bottom: 83px
+    @media screen and (max-width: 1250px)
+      bottom: 112px
+    @media screen and (max-width: 1025px)
+      bottom: 145px
+    @media screen and (max-width: 920px)
+      bottom: 112px
+    @media screen and (max-width: 670px)
+      bottom: 72px
+
+  &__span
+    font-weight: 600
