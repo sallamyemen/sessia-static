@@ -13,5 +13,6 @@ composer.phar
 #
 runtime/logs/*
 web/assets/*
+web/storage/*
 
 
