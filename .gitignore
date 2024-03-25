@@ -14,5 +14,9 @@ composer.phar
 runtime/logs/*
 web/assets/*
 web/storage/*
+web/img-main/*
+web/img-main/de/*
+web/img-main/en/*
+web/img-main/vi/*
 
 
