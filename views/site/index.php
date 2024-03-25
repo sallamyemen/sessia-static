@@ -46,7 +46,7 @@ $lang = Yii::$app->language;
     <div class="wrapper wrapper_block" style="position: relative;">
         <div class="services__block">
             <div>
-                <div class="services__header wow fadeIn"><?= Yii::t('app', 'Правильные {br}IT-решения {br}любой сложности', ['br' => '<br>']) ?></div>
+                <div class="services__header wow fadeIn"><?= Yii::t('app', 'Правильные ****{br}IT-решения {br}любой сложности', ['br' => '<br>']) ?></div>
                 <div class="services__item-header services__sub-header wow fadeIn" style="font-size: 40px; line-height: 42px; padding: 50px 0; text-transform: uppercase; font-weight: 600"><?= Yii::t('app', 'We offer{br} White label solutions &reg;	', ['br' => '<br>']) ?></div>
             </div>
             <div class="services__items">
