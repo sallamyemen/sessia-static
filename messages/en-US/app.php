@@ -282,3 +282,4 @@ return [
     'Сотрудник поддержки спросить вас о ваших точных намерениях удалить свою учетную запись, так как этот процесс нельзя будет восстановить, после вашего окончательного подтверждения о удаление учетной запись, сотрудник поддержки удалит вашу учетную запись.'=>'The support representative will ask you about your true intentions to delete your account, since this process cannot be restored. After your final confirmation to delete your account, the support representative will delete your account (all the personal data will be deleted).'
 
 ];
+
