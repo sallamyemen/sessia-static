@@ -459,3 +459,4 @@ jQuery(document).ready(function($) {
 
 JS;
 $this->registerJs($js, View::POS_END);
+
