@@ -23,13 +23,16 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $this->layout = 'front-empty';
+//        Yii::$app->cache->flush();
+//        Yii::app()->cache->gc();
+        $cache=new CFileCache();
+        $cache->flush();
         return $this->render('index');
     }
 
     public function actionDeleteAccount()
     {
         $this->layout = 'instructions';
-//        dd("ok");die;
         return $this->render('delete-account');
     }
 }
