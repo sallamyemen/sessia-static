@@ -25,8 +25,8 @@ class SiteController extends Controller
         $this->layout = 'front-empty';
 //        Yii::$app->cache->flush();
 //        Yii::app()->cache->gc();
-        $cache=new CFileCache();
-        $cache->flush();
+//        $cache=new CFileCache();
+//        $cache->flush();
         return $this->render('index');
     }
 
