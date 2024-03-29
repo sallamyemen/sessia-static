@@ -3,6 +3,10 @@
 use yii\helpers\Html;
 use yii\helpers\Url;
 
+$unset = array_search(4, array_column($langs, 'id'));
+if ($langCurrent != 'Ru')
+    unset ($langs[3]);
+
 ?>
 
 <a href="javascript:void(0);" tabindex="1"><?= $langCurrent ?></a>

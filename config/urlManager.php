@@ -11,5 +11,6 @@ return [
         'project/<project:[a-z0-9-_\.]+?>' => 'project/view',
         '' => 'site/index',
         'delete-account' =>'site/delete-account',
+        'no-page' => 'site/no-page',
     ],
 ];
