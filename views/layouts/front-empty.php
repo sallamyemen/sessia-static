@@ -29,10 +29,10 @@ $menu = [
         'label' => Yii::t('app', 'Команда'),
         'url' => ['/site/index', '#' => 'team'],
     ],
-    [
-        'label' => Yii::t('app', 'Новости'),
-        'url' => ['/site/index', '#' => 'news'],
-    ],
+//    [
+//        'label' => Yii::t('app', 'Новости'),
+//        'url' => ['/site/index', '#' => 'news'],
+//    ],
     [
         'label' => 'lang-item',
         'url' => null,

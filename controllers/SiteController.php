@@ -35,4 +35,10 @@ class SiteController extends Controller
         $this->layout = 'instructions';
         return $this->render('delete-account');
     }
+
+    public function actionNoPage()
+    {
+        $this->layout = 'empty-page';
+        return $this->render('no-page');
+    }
 }
