@@ -1,0 +1,363 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card .owl-nav button span:focus{
+    border: none!important;
+}
+.components{
+  width: 13%;
+  font-size: 12px;
+  text-align: left;
+}
+.img_components{
+  width: 22%;
+  padding: 0;
+
+}
+.card__img2 {
+    width: 100%;
+    text-align: center;
+}
+
+.card__table-comp {
+  width: 100%;
+  border: none!important;
+}
+
+.card__img2 img{
+    width: 60%;
+    text-align: center;
+}
+
+.card {
+    background-color: #f7f5f6;
+    padding: 50px 0;
+}
+.card__container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.card__wrapper {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgb(0 0 0 / 5%);
+}
+.card__header, .card__table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card__img, .card__title, .card__col-lt, .card__col-rt {
+    flex-basis: 50%;
+    width: 50%;
+}
+.card__col-lt {
+    margin-right: 10px;
+}
+.card__img img{
+    width: 100%;
+}
+.card__img_400 {
+    max-width: 400px;
+}
+.card__h1 {
+    font-size: 26px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 32px;
+}
+.card__subtitle {
+    margin: 15px 0;
+    font-size: 24px;
+    line-height: 1.5;
+}
+.card__description {
+    margin-bottom: 15px;
+}
+
+.card__hr {
+    margin: 40px 0;
+    height: 1px;
+    width: 100%;
+    background-color: #a4a3a3;
+}
+.card__description {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.card__quantity {
+    font-weight: 700;
+}
+.card__goods {
+    font-size: 24px;
+    line-height: 1.5;
+}
+.card__item{
+    position: relative;
+    margin-top: 20px;
+    padding-left: 48px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+.card__item::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    background-image: url('https://sessia.coffeecell.com/front/images/card-item.svg?v=1');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.card__table-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.card__item-text {
+    margin: 10px 0 0;
+}
+.card__date {
+    font-size: 12px;
+    color: #5e5d5d;
+}
+.card__ul {
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.card__ul li{
+    /*margin: 3px 0;*/
+}
+
+.card__img_cosmetic {
+    text-align: center;
+}
+
+.card__img_cosmetic img{
+    height: 360px;
+    width: auto!important;
+}
+
+.table-feed {
+  display: flex;
+  flex-direction: row;
+}
+
+.table-feed__left {
+  margin-right: 80px;
+}
+
+.composition {
+    width: 100%;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    padding: 0!important;
+    margin-top: 10px;
+    margin-left: 0;
+}
+.composition li {
+    list-style-type: none;
+    border-bottom: 1px dotted #C2C2C2;
+    position: relative;
+    padding: 0;
+    margin-bottom:5px;
+}
+.composition li span {
+    background-color: #FFF;
+    margin: 0;
+}
+.composition li span.composition__title, .composition li span.composition__quantity {
+    bottom: -5px; /
+}
+.composition span.composition__title {
+    position :relative;
+    margin-right:7em;
+    padding-right:2px;
+}
+.composition span.composition__quantity {
+    position: absolute;
+    right: 0;
+    padding-left:2px;
+}
+
+.owl-carousel {
+    position: relative;
+}
+
+.card .owl-carousel .owl-nav{
+    position: absolute;
+    top: -67px;
+    right: 0;
+}
+
+.card .owl-carousel .owl-nav .owl-prev, .card .owl-carousel .owl-nav .owl-next{
+   font-size: 30px;
+    padding: 7px!important;
+}
+
+.card .owl-carousel .owl-nav .owl-prev:hover, .card .owl-carousel .owl-nav .owl-next:hover{
+    background: none;
+    color: #000;
+}
+
+.card__video {
+    width: 100%;
+}
+
+.card .owl-carousel .item a img{
+    width: 100%;
+}
+
+.card_new .card__item:before{
+    content: none;
+}
+
+.card_new .card__item{
+    padding-left: 0;
+}
+
+.card__bullet  {
+    margin-right: 4px;
+    width: 30px;
+    vertical-align: middle;
+    margin-bottom: 4px;
+}
+
+.card__letter {
+    display: inline-block;
+    color:#00a2de;
+    font-weight: bold;
+}
+
+.card__letter:after {
+    content: " ";
+    background-color: #000;
+    height: 19px;
+    width: 2px;
+    display: inline-block;
+    margin: 0 6px;
+}
+
+.card_new .card__header, .card_new .card__table {
+    display: block;
+}
+
+.card_new  .card__container {
+    max-width: 600px;
+}
+
+
+.card_new .card__img, .card_new .card__title, .card_new .card__col-lt, .card_new .card__col-rt {
+    flex-basis: 100%;
+    width: 100%;
+}
+
+
+@media (max-width: 900px) {
+
+    .card__video__wrapper {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .card__item::before {
+        width: 24px;
+        height: 24px;
+    }
+    .card__item {
+        position: relative;
+        padding-left: 35px;
+    }
+
+    .card__img {
+        text-align: center;
+    }
+    .card__img img, .card__img img{
+        width: 80%!important;
+        max-width: 80%!important;
+    }
+
+    .card__img_400 {
+       width: 100%!important;
+        max-width: 100%!important;
+    }
+
+     .card__img_400 img {
+        width: 50%!important;
+        max-width: 50%!important;
+    }
+
+    .card__img_cosmetic img {
+        width: auto!important;
+        max-width: auto!important;
+        height: 350px!important;
+    }
+    .card__header, .card__table {
+        flex-direction: column;
+    }
+    .card__title, .card__col-lt, .card__col-rt, .card__img {
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .card__h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .card__subtitle {
+        margin: 10px 0;
+    }
+    .card__hr {
+        margin: 20px 0;
+    }
+
+
+    .card {
+        padding: 0;
+    }
+    .card__wrapper {
+      border-radius: 0;
+    }
+    .card__wrapper {
+        padding: 40px 20px;
+    }
+    .img__example {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .img__example img{
+        width: 50%!important;
+        max-width: 50%!important;
+    }
+}
+
+@media (max-width: 600px) {
+    .card .owl-carousel {
+        width: 100%;
+    }
+    .table-feed__left {
+      margin-right: 0;
+    }
+    .table-feed {
+      justify-content: space-between;
+    }
+}
+
+@media (max-width: 414px) {
+
+    .img__example img{
+        width: 100%!important;
+        max-width: 100%!important;
+    }
+    .card__wrapper {
+        padding: 15px;
+    }
+
+}
