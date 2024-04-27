@@ -20,10 +20,10 @@ $menu = [
         'label' => Yii::t('app', 'Проекты'),
         'url' => ['/site/index', '#' => 'projects'],
     ],
-    [
-        'label' => Yii::t('app', 'White Label'),
-        'url' => ['/project/view', 'project' => 'white'],
-    ],
+//    [
+//        'label' => Yii::t('app', 'White Label'),
+//        'url' => ['https://wl.sessia.com/', 'project' => 'white'],
+//    ],
     [
         'label' => Yii::t('app', 'Команда'),
         'url' => [Url::to('/site/index'), '#' => 'team'],
@@ -60,6 +60,7 @@ $menu = [
                             'activeCssClass' => 'active',
                             'encodeLabels' => false,
                         ])); ?>
+                        <ul class='row-nav__menu menu'><li><a href="https://wl.sessia.com/">White Label</a></li></ul>
                     </nav>
                     <div class="hum"><span class="hum__item hum__item_one"></span><span class="hum__item hum__item_second"></span><span class="hum__item hum__item_third"></span></div>
                 </div>
@@ -84,6 +85,7 @@ $menu = [
                         'activeCssClass' => 'active',
                         'encodeLabels' => false,
                     ]); ?>
+                    <ul class='row-nav__menu menu'><li><a href="https://wl.sessia.com/">White Label</a></li></ul>
                 </nav>
             </div>
         </div>
