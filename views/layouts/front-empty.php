@@ -78,6 +78,7 @@ $url = '@web/storage/project/white/';
                 </div>
 
                 <nav class="row-nav__nav">
+                    <ul class='row-nav__menu menu'><li><a href="https://wl.sessia.com/">White Label</a></li></ul>
                     <?php array_pop($menu); ?>
                     <?= Menu::widget([
                         'items' => $menu,
@@ -88,7 +89,7 @@ $url = '@web/storage/project/white/';
                         'activeCssClass' => 'active',
                         'encodeLabels' => false,
                     ]); ?>
-                    <ul class='row-nav__menu menu'><li><a href="https://wl.sessia.com/">White Label</a></li></ul>
+
                 </nav>
             </div>
         </div>

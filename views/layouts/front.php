@@ -51,6 +51,7 @@ $menu = [
                 <div class="row-nav">
                     <?= Html::a(Html::img(Url::to('@web/front/img/logo.svg?v=1'), ['class' => 'row-nav__logo-img']), ['/site/index'], ['class' => 'row-nav__logo']) ?>
                     <nav class="row-nav__nav">
+                        <ul class='row-nav__menu menu'><li><a href="https://wl.sessia.com/">White Label</a></li></ul>
                         <?= str_replace('lang-item', LangSwitcher::widget(), Menu::widget([
                             'items' => $menu,
                             'options' => [
@@ -60,7 +61,7 @@ $menu = [
                             'activeCssClass' => 'active',
                             'encodeLabels' => false,
                         ])); ?>
-                        <ul class='row-nav__menu menu'><li><a href="https://wl.sessia.com/">White Label</a></li></ul>
+
                     </nav>
                     <div class="hum"><span class="hum__item hum__item_one"></span><span class="hum__item hum__item_second"></span><span class="hum__item hum__item_third"></span></div>
                 </div>
@@ -75,6 +76,7 @@ $menu = [
             <div class="row-nav">
                 <?= Html::a(Html::img(Url::to('@web/front/img/logo.svg?v=1'), ['class' => 'row-nav__logo-img']), ['/site/index'], ['class' => 'row-nav__logo']) ?>
                 <nav class="row-nav__nav">
+                    <ul class='row-nav__menu menu'><li><a href="https://wl.sessia.com/">White Label</a></li></ul>
                     <?php array_pop($menu); ?>
                     <?= Menu::widget([
                         'items' => $menu,
@@ -85,7 +87,7 @@ $menu = [
                         'activeCssClass' => 'active',
                         'encodeLabels' => false,
                     ]); ?>
-                    <ul class='row-nav__menu menu'><li><a href="https://wl.sessia.com/">White Label</a></li></ul>
+
                 </nav>
             </div>
         </div>
