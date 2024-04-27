@@ -23,10 +23,6 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $this->layout = 'front-empty';
-//        Yii::$app->cache->flush();
-//        Yii::app()->cache->gc();
-//        $cache=new CFileCache();
-//        $cache->flush();
         return $this->render('index');
     }
 
