@@ -23,9 +23,9 @@ $lang = Yii::$app->language;
             <div class="header__nav">
                 <div class="header__logo wow fadeInUp"><span class="blue">SESSIA.</span> GET <span class="blue">IT</span> RIGHT</div>
                 <ul class="header__list wow fadeInUp">
+                    <li><a href="https://wl.sessia.com/"><?= Yii::t('app', 'White Label') ?></a></li>
                     <li><a href="#about"><?= Yii::t('app', 'О нас') ?></a></li>
                     <li><a href="#projects"><?= Yii::t('app', 'Проекты') ?></a></li>
-                    <li><a href="<?= Url::to(['/project/view', 'project' => 'white']) ?>"><?= Yii::t('app', 'White Label') ?></a></li>
                     <li><a href="#team"><?= Yii::t('app', 'Команда') ?></a></li>
 <!--                    <li><a href="#news">--><?//= Yii::t('app', 'Новости') ?><!--</a></li>-->
                     <li class="lang">
